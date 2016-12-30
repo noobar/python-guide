@@ -6,12 +6,12 @@
 .. The Hitchhiker's Guide to Python!
 .. =================================
 
-ヒッチハイク Python ガイド
+Python ヒッチハイク・ガイド
 ===========================
 
 .. Greetings, Earthling! Welcome to The Hitchhiker's Guide to Python.
 
-ヒッチハイク Python ガイドへようこそ。
+Python ヒッチハイク・ガイド へようこそ。
  
 .. **This is a living, breathing guide.**  If you'd like to contribute,
 .. `fork us on GitHub <https://github.com/kennethreitz/python-guide>`_!
