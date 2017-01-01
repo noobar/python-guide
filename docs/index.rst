@@ -31,7 +31,7 @@ Python ヒッチハイク・ガイド へようこそ。
 
 このガイドは、ほとんど **独断的なもの** であり、Python の公式文書とは **異なります** 。
 ここでは、すべての Python Webフレームワーク の一覧は見つからないでしょう。
-むしろ、強く推奨される簡潔なリストを見つけるでしょう。
+むしろ、強く推奨される簡潔なリストが見つかるでしょう。
 
 .. Let's get started! But first, let's make sure you know where your towel is.
 
