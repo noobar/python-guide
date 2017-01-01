@@ -1,14 +1,21 @@
-XML parsing
-===========
+.. XML parsing
+.. ===========
+
+XML解析
+=======
 
 untangle
 --------
 
-`untangle <https://github.com/stchris/untangle>`_ is a simple library which
-takes an XML document and returns a Python object which mirrors the nodes and
-attributes in its structure.
+.. `untangle <https://github.com/stchris/untangle>`_ is a simple library which
+.. takes an XML document and returns a Python object which mirrors the nodes and
+.. attributes in its structure.
 
-For example, an XML file like this:
+`untangle <https://github.com/stchris/untangle>`_ は、XML文書を受け取り、構造内のノードと属性を反映するPythonオブジェクトを返す単純なライブラリです。
+
+.. For example, an XML file like this:
+
+たとえば、次のようなXMLファイルがあります:
 
 .. code-block:: xml
 
@@ -17,28 +24,38 @@ For example, an XML file like this:
         <child name="child1">
     </root>
 
-can be loaded like this:
+.. can be loaded like this:
+
+次のようにロードすることができます:
 
 .. code-block:: python
 
     import untangle
     obj = untangle.parse('path/to/file.xml')
 
-and then you can get the child elements name like this:
+.. and then you can get the child elements name like this:
+
+そして次のように子要素の名前を取得できます:
 
 .. code-block:: python
 
     obj.root.child['name']
 
-untangle also supports loading XML from a string or an URL.
+.. untangle also supports loading XML from a string or an URL.
+
+untangleは、文字列またはURLからXMLを読み込むこともサポートしています。
 
 xmltodict
 ---------
 
-`xmltodict <http://github.com/martinblech/xmltodict>`_ is another simple
-library that aims at making XML feel like working with JSON.
+.. `xmltodict <http://github.com/martinblech/xmltodict>`_ is another simple
+.. library that aims at making XML feel like working with JSON.
 
-An XML file like this:
+`xmltodict <http://github.com/martinblech/xmltodict>`_ は、XMLをJSONのように扱えるようにするためのもう一つの単純なライブラリです。
+
+.. An XML file like this:
+
+次のようなXMLファイル:
 
 .. code-block:: xml
 
@@ -52,7 +69,9 @@ An XML file like this:
       </plus>
     </mydocument>
 
-can be loaded into a Python dict like this:
+.. can be loaded into a Python dict like this:
+
+次のようにPython dictにロードすることができます:
 
 .. code-block:: python
 
@@ -61,7 +80,9 @@ can be loaded into a Python dict like this:
     with open('path/to/file.xml') as fd:
         doc = xmltodict.parse(fd.read())
 
-and then you can access elements, attributes and values like this:
+.. and then you can access elements, attributes and values like this:
+
+次に、次のように要素、属性、および値にアクセスできます:
 
 .. code-block:: python
 
@@ -70,6 +91,8 @@ and then you can access elements, attributes and values like this:
     doc['mydocument']['plus']['@a'] # == u'complex'
     doc['mydocument']['plus']['#text'] # == u'element as well'
 
-xmltodict also lets you roundtrip back to XML with the unparse function,
-has a streaming mode suitable for handling files that don't fit in memory
-and supports namespaces.
+.. xmltodict also lets you roundtrip back to XML with the unparse function,
+.. has a streaming mode suitable for handling files that don't fit in memory
+.. and supports namespaces.
+
+xmltodictは、未解析関数を使用してXMLへのラウンドトリップを可能にし、メモリに収まらないファイルを処理するのに適したストリーミングモードを持ち、名前空間をサポートします。
