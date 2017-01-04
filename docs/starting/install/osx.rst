@@ -31,8 +31,8 @@ OS X に同梱されている Python のバージョンは学習には最適で�
 .. Doing it Right
 .. --------------
 
-正しく行う
-----------
+正しい方法でやりましょう
+-------------------
 
 .. Let's install a real version of Python.
 
@@ -73,7 +73,7 @@ OS X には多数の UNIX ユーティリティが付属していますが、Lin
 .. To `install Homebrew <http://brew.sh/#install>`_, open :file:`Terminal` or
 .. your favorite OSX terminal emulator and run
 
-`Homebrew をインストールする <http://brew.sh/#install>`_ には :file:`Terminal` かお気に入りのOSX端末エミュレータを起動して実行してください
+`Homebrew をインストールする <http://brew.sh/#install>`_ には :file:`Terminal` かお気に入りのOSX端末エミュレータを起動して実行してください。
 
 .. code-block:: console
 
@@ -85,7 +85,7 @@ OS X には多数の UNIX ユーティリティが付属していますが、Lin
 .. of your :envvar:`PATH` environment variable. You can do this by adding the following
 .. line at the bottom of your :file:`~/.profile` file
 
-スクリプトは、インストールの開始前にどのような変更が行われ、プロンプトを表示するかを説明します。 Homebrew をインストールした後、:envvar:`PATH` 環境変数の先頭に Homebrew ディレクトリを挿入します。これを行うには、:file:`~/.profile` ファイルの一番下に次の行を追加します
+スクリプトは、インストールの開始前にどのような変更が行われ、プロンプトを表示するかを説明します。 Homebrew をインストールした後、:envvar:`PATH` 環境変数の先頭に Homebrew ディレクトリを挿入します。これを行うには、:file:`~/.profile` ファイルの一番下に次の行を追加します。
 
 .. code-block:: console
 
@@ -93,7 +93,7 @@ OS X には多数の UNIX ユーティリティが付属していますが、Lin
 
 .. Now, we can install Python 2.7:
 
-今、Python 2.7 をインストールできます:
+Python 2.7:
 
 .. code-block:: console
 
@@ -101,7 +101,7 @@ OS X には多数の UNIX ユーティリティが付属していますが、Lin
 
 .. or Python 3:
 
-または Python 3:
+または Python 3 をインストールできます:
 
 .. code-block:: console
 
@@ -145,7 +145,7 @@ Setuptools を使うと、単一のコマンド(``easy_install``)を使って、
 .. "Project X depends on version 1.x but, Project Y needs 4.x" dilemma, and keeps
 .. your global site-packages directory clean and manageable.
 
-仮想環境（一般に 'virtualenv' と呼ばれる）は、異なるプロジェクトが必要とする依存関係を別々の場所に保存するためのツールです。 「Project Xはバージョン1.xに依存しますが、Project Yは4.xが必要です」というジレンマを解決し、グローバルなサイトパッケージディレクトリをきれいに管理します。
+仮想環境（一般に 'virtualenv' と呼ばれます）は、異なるプロジェクトが必要とする依存関係を別々の場所に保存するためのツールです。 「Project Xはバージョン1.xに依存しますが、Project Yは4.xが必要です」というジレンマを解決し、グローバルなサイトパッケージディレクトリをきれいに管理します。
 
 .. For example, you can work on a project which requires Django 1.10 while also
 .. maintaining a project which requires Django 1.8.
@@ -154,7 +154,7 @@ Setuptools を使うと、単一のコマンド(``easy_install``)を使って、
 
 .. To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
 
-これを使い始め、さらに詳しい情報を参照する :ref:`Virtual Environments <virtualenvironments-ref>` docs。
+これを使い始め、さらに詳しい情報はこちらを参照: :ref:`Virtual Environments <virtualenvironments-ref>` docs。
 
 --------------------------------
 
