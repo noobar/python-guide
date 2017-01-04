@@ -65,6 +65,7 @@ OS Xには多数のUNIXユーティリティが付属していますが、Linux�
 .. your favorite OSX terminal emulator and run
 
 `Homebrew <http://brew.sh/#install>`_ をインストールするには :file:`Terminal` かお気に入りのOSX端末エミュレータを起動して実行してください。
+
 .. code-block:: console
 
     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
