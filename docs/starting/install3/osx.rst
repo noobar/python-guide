@@ -25,8 +25,8 @@ OS Xに同梱されているPythonのバージョンは学習には最適です�
 .. Doing it Right
 .. --------------
 
-そうすること
-------------
+正しい方法でやりましょう
+-------------------
 
 .. Let's install a real version of Python.
 
@@ -64,8 +64,7 @@ OS Xには多数のUNIXユーティリティが付属していますが、Linux�
 .. To `install Homebrew <http://brew.sh/#install>`_, open :file:`Terminal` or
 .. your favorite OSX terminal emulator and run
 
-`Homebrew <http://brew.sh/#install>`_ をインストールするには :file:`Terminal` かお気に入りのOSX端末エミュレータを起動して実行してください
-
+`Homebrew <http://brew.sh/#install>`_ をインストールするには :file:`Terminal` かお気に入りのOSX端末エミュレータを起動して実行してください。
 .. code-block:: console
 
     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -76,7 +75,7 @@ OS Xには多数のUNIXユーティリティが付属していますが、Linux�
 .. of your :envvar:`PATH` environment variable. You can do this by adding the following
 .. line at the bottom of your :file:`~/.profile` file
 
-スクリプトは、インストールの開始前にどのような変更が行われ、プロンプトを表示するかを説明します。 Homebrewをインストールした後、:envvar:`PATH` 環境変数の先頭にHomebrewディレクトリを挿入します。 これを行うには、:file:`~/.profile` ファイルの一番下に次の行を追加します
+スクリプトは、インストールの開始前にどのような変更が行われ、プロンプトを表示するかを説明します。 Homebrewをインストールした後、:envvar:`PATH` 環境変数の先頭にHomebrewディレクトリを挿入します。 これを行うには、:file:`~/.profile` ファイルの一番下に次の行を追加します。
 
 .. code-block:: console
 
@@ -84,7 +83,7 @@ OS Xには多数のUNIXユーティリティが付属していますが、Linux�
 
 .. Now, we can install Python 3:
 
-今、Python 3をインストールすることができます:
+Python 3をインストールすることができます:
 
 .. code-block:: console
 
@@ -125,7 +124,7 @@ Python 3を使って作業する
 
 .. will launch the Python 2 interpreter.
 
-Python 2インタプリタを起動します。
+で、Python 2インタプリタを起動します。
 
 .. code-block:: console
 
@@ -133,7 +132,7 @@ Python 2インタプリタを起動します。
 
 .. will launch the Python 3 interpreter
 
-Python 3インタプリタを起動する
+で、Python 3インタプリタを起動します。
 
 .. ``pip3`` and ``pip`` will both be available.  If the Homebrew version of Python
 .. 2 is not installed, they will be the same.  If the Homebrew version of Python 2
@@ -155,7 +154,7 @@ Python 3インタプリタを起動する
 .. version 1.x but, Project Y needs 4.x" dilemma, and keeps your global
 .. site-packages directory clean and manageable.
 
-仮想環境（一般に 'virtualenv'と呼ばれる）は、異なるプロジェクトが必要とする依存関係を別々の場所に保存するためのツールです。 「Project Xはバージョン1.xに依存しますが、Project Yは4.xが必要です」というジレンマを解決し、グローバルなサイトパッケージディレクトリをきれいに管理します。
+仮想環境（一般に 'virtualenv'と呼ばれます）は、異なるプロジェクトが必要とする依存関係を別々の場所に保存するためのツールです。 「Project Xはバージョン1.xに依存しますが、Project Yは4.xが必要です」というジレンマを解決し、グローバルなサイトパッケージディレクトリをきれいに管理します。
 
 .. For example, you can work on a project which requires Django 1.10 while also
 .. maintaining a project which requires Django 1.8.
@@ -164,7 +163,7 @@ Python 3インタプリタを起動する
 
 .. To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
 
-これを使い始め、さらに詳しい情報を参照する :ref:`Virtual Environments <virtualenvironments-ref>` docs。
+これを使い始め、さらに詳しい情報はこちらを参照: :ref:`Virtual Environments <virtualenvironments-ref>` docs。
 
 --------------------------------
 
