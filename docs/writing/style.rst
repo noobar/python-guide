@@ -23,12 +23,12 @@ Pythonコードの可読性が高い理由の1つは、コードスタイルガ�
 .. of code do not follow the common guidelines and fail to express its intent in
 .. what is considered the best (hear: most readable) way.
 
-ベテランのPython開発者（Pythonista）がPython以外のコード部分を呼び出すと、通常、これらのコード行は共通のガイドラインに従わず、最良のものとして意図されていることを表現することができません。 方法。
+ベテランのPython開発者（Pythonista）が "Pythonic" 以外のコード部分を呼び出すと、通常、これらのコード行は共通のガイドラインに従わず、最良の方法として意図されていることを表現することができません。 
 
 .. On some border cases, no best way has been agreed upon on how to express
 .. an intent in Python code, but these cases are rare.
 
-いくつかの国境のケースでは、Pythonコードで意図を表現するための最良の方法については合意されていませんが、これらのケースはまれです。
+いくつかの境界ケースでは、Pythonコードで意図を表現するための最良の方法については合意されていませんが、これらのケースはまれです。
 
 .. General concepts
 .. ----------------
@@ -45,7 +45,7 @@ Pythonコードの可読性が高い理由の1つは、コードスタイルガ�
 .. While any kind of black magic is possible with Python, the
 .. most explicit and straightforward manner is preferred.
 
-Pythonではあらゆる種類の黒色の魔法が可能ですが、最も明快で簡単な方法が好まれます。
+Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で簡単な方法が好まれます。
 
 .. **Bad**
 
@@ -130,7 +130,7 @@ Pythonではあらゆる種類の黒色の魔法が可能ですが、最も明�
 ..    the user of the function has no difficulty remembering that those two
 ..    functions require two arguments, and in which order.
 
-1. **位置引数** は必須であり、デフォルト値はありません。それらは引数の最も単純な形式であり、関数の意味の一部であり、順序は自然であるいくつかの関数引数に対して使用できます。例えば、 ``send(message, recipient)`` や ``point(x, y)`` では、関数のユーザは2つの引数を必要とし、
+1. **位置引数** は必須であり、デフォルト値はありません。それらは引数の最も単純な形式であり、関数の意味の一部であり、順序は自然であるいくつかの関数引数に対して使用できます。例えば、 ``send(message, recipient)`` や ``point(x, y)`` では、関数のユーザは2つの引数を必要とします。
 
 .. In those two cases, it is possible to use argument names when calling the
 .. functions and, doing so, it is possible to switch the order of arguments,
@@ -161,7 +161,7 @@ Pythonではあらゆる種類の黒色の魔法が可能ですが、最も明�
 .. syntax that is the closest to the function definition:
 .. ``send('Hello', 'World', cc='Cthulhu', bcc='God')``.
 
-キーワード引数を持つ関数をPythonで複数の方法で呼び出すことができます。たとえば、 ``send('Hello', 'World', 'Cthulhu', 'God')`` のように、引数に明示的に名前を付けずにカーボンコピーを送る。 ``send('Hello again', 'World', bcc='God', cc='Cthulhu')`` のように、別の順序で引数を指定することもできます。 ``send('Hello', 'World', cc='Cthulhu', bcc='God')`` 関数の定義に最も近い構文に従わないという強い理由がなくても、 。
+キーワード引数を持つ関数をPythonで複数の方法で呼び出すことができます。たとえば、 ``send('Hello', 'World', 'Cthulhu', 'God')`` のように、引数に明示的に名前を付けずにカーボンコピーを送る。 ``send('Hello again', 'World', bcc='God', cc='Cthulhu')`` のように、別の順序で引数を指定することもできます。 ``send('Hello', 'World', cc='Cthulhu', bcc='God')`` 関数の定義に最も近い構文に従わないという強い理由がなくても。
 
 .. As a side note, following `YAGNI <http://en.wikipedia.org/wiki/You_ain't_gonna_need_it>`_
 .. principle, it is often harder to remove an optional argument (and its logic
