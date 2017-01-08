@@ -6,7 +6,7 @@ Python 入門
 
 .. New to Python? Let's properly setup up your Python environment.
 
-Python を初めて使う？適切に Python 環境をセットアップしましょう。
+Python を初めて使いますか？ Python 環境を適切にセットアップしましょう。
 
 .. toctree::
    :maxdepth: 2
@@ -28,12 +28,12 @@ Python を初めて使う？適切に Python 環境をセットアップしま�
 .. Writing Great Python Code
 .. -------------------------
 
-偉大な Python コードを書く
+大規模な Python コードを書く
 --------------------------
 
 .. This part of the guide focuses on the best-practices for writing Python code.
 
-このガイドのこの部分では、Python コードを書くためのベストプラクティスに焦点を当てています。
+本書のこのパートは、Python コードを書くためのベストプラクティスに焦点を当てています。
 
 .. toctree::
    :maxdepth: 2
@@ -58,7 +58,7 @@ Python アプリケーションのシナリオガイド
 .. This part of the guide focuses on tool and module advice based on
 .. different scenarios.
 
-このガイドのこの部分では、さまざまなシナリオに基づいたツールとモジュールのアドバイスに焦点を当てています。
+本書のこのパートは、さまざまなシナリオに基づいたツールとモジュールのアドバイスに焦点を当てています。
 
 .. toctree::
    :maxdepth: 2
@@ -86,12 +86,12 @@ Python アプリケーションのシナリオガイド
 .. Shipping Great Python Code
 .. --------------------------
 
-偉大な Python コードへの輸送
+大規模な Python コードへの出荷
 ----------------------------
 
 .. This part of the guide focuses on deploying your Python code.
 
-このガイドのこの部分では、Python コードのデプロイメントに焦点を当てています。
+本書のこのパートは、Python コードのデプロイに焦点を当てています。
 
 .. toctree::
    :maxdepth: 2
@@ -109,7 +109,7 @@ Python 開発環境
 .. This part of the guide focus on the Python development environment,
 .. and the best-practice tools that are available for writing Python code.
 
-本書のこの部分では、Python 開発環境と、Python コードの作成に使用できるベストプラクティスツールに焦点を当てています。
+本書のこのパートは、Python 開発環境と、Python コードの作成に使用できるベストプラクティスなツールに焦点を当てています。
 
 .. toctree::
    :maxdepth: 2
@@ -130,7 +130,7 @@ Python 開発環境
 .. This part of the guide, which is mostly prose, begins with some
 .. background information about Python, then focuses on next steps.
 
-主に散文であるこのガイドの部分は、Python に関する背景情報から始まり、次のステップに焦点を当てています。
+本書のこのパートは、主に散文であり、Python に関する背景情報から始まり、次のステップに焦点を当てています。
 
 .. toctree::
    :maxdepth: 2
@@ -147,14 +147,14 @@ Python 開発環境
 ..    this note.
 
 .. note::
-   すべての音階および音階の音階で定義された音符は、この追加音符のリストから意図的に除外されています。 さらに、このメモ。
+   全音階および半音の音階で定義された備考は、追加の備考のリストからは意図的に除外されています。この備考を付け加える。
 
 
 --------------------------------------
 
 .. Contribution notes and legal information (for those interested).
 
-寄付メモと法的情報（興味がある人向け）。
+寄稿と法的情報（興味がある人向け）。
 
 .. toctree::
    :maxdepth: 2
