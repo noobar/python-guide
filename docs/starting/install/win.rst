@@ -11,7 +11,7 @@ WindowsでのPythonのインストール
 .. up-to-date version, click the Downloads > Windows link from the home page of the
 .. `Python.org web site <http://python.org>`_ .
 
-まず、`Python 2.7の最新バージョン <https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi>`_ を公式サイトからダウンロードしてください。完全に最新のバージョンをインストールしたい場合は、`Python.orgのWebサイト <http://python.org>`_ のホームページからDownloads> Windowsのリンクをクリックしてください。
+まず、`Python 2.7の最新バージョン <https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi>`_ を公式サイトからダウンロードしてください。完全に最新のバージョンをインストールしたい場合は、`Python.orgのWebサイト <http://python.org>`_ のホームページからDownloads > Windowsのリンクをクリックしてください。
 
 .. The Windows version is provided as an MSI package. To install it manually, just
 .. double-click the file. The MSI package format allows Windows administrators to
@@ -73,7 +73,7 @@ Setuptools + Pip
 .. To obtain the latest version of Setuptools for Windows, run the Python script
 .. available here: `ez_setup.py <https://bootstrap.pypa.io/ez_setup.py>`_
 
-Windows用のSetuptoolsの最新版を入手するには、Pythonスクリプトを実行してください: `ez_setup.py <https://bootstrap.pypa.io/ez_setup.py>`_
+Windows用のSetuptoolsの最新版を入手するには、ここの利用できるPythonスクリプトを実行してください: `ez_setup.py <https://bootstrap.pypa.io/ez_setup.py>`_
 
 
 .. You'll now have a new command available to you: **easy_install**. It is
@@ -86,7 +86,7 @@ Windows用のSetuptoolsの最新版を入手するには、Pythonスクリプト
 .. To install pip, run the Python script available here:
 .. `get-pip.py <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
 
-pipをインストールするには、Pythonスクリプトを実行してください: `get-pip.py <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
+pipをインストールするには、ここの利用できるPythonスクリプトを実行してください: `get-pip.py <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_
 
 
 .. Virtual Environments

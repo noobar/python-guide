@@ -54,7 +54,7 @@ Pythonインタプリタを選択するときには、"Python 2 または Python
 
 - 新しい Python アプリケーションは Python 3 を使用します。
 - Python を初めて学ぶなら、Python 2.7 を身近に感じることは非常に大切ですが、Python 3 を学ぶことよりも有用ではありません。
-- 両方を学びます。 どちらも "Python" です。
+- 両方を学ぶ。 どちらも "Python" です。
 - 既に構築されているソフトウェアは Python 2.7 に依存していることが多いです。
 - 新しいオープンソースの Python ライブラリを作成している場合は、Python 2 と Python 3 の両方を同時に作成することをお勧めします。 新しいライブラリのために Python 3 を広くサポートしたいのは政治的なものであり、多くのユーザを疎外させます。 これは問題ではありません。ゆっくりと、今後3年間で、このケースは少なくなります。
 
@@ -144,7 +144,7 @@ PyPyは、パフォーマンスを向上させながら、リファレンス CPy
 .. worth giving PyPy a try. On a suite of benchmarks, it's currently `over 5 times
 .. faster than CPython <http://speed.pypy.org/>`_.
 
-Python コードのパフォーマンスを向上させたい場合は、PyPy を試してみる価値があります。 一連のベンチマークでは、現在、`CPythonより5倍以上高速 <http://speed.pypy.org/>`_ です。
+Python コードのパフォーマンスを向上させたい場合は、PyPy を試してみる価値があります。 一連のベンチマークでは、現在、`CPythonより 5倍以上高速 <http://speed.pypy.org/>`_ です。
 
 .. PyPy supports Python 2.7. PyPy3 [#pypy_ver]_, released in beta, targets Python 3.
 
@@ -197,7 +197,7 @@ PythonNet
 .. inverse approach to that taken by IronPython (see above), to which it
 .. is more complementary than competing with.
 
-`Python for .NET <http://pythonnet.github.io/>`_ は、ネイティブにインストールされた Python インストールを .NET Common Language Runtime（CLR）にシームレスに統合するパッケージです。 これは IronPython（上記を参照）とは逆のアプローチであり、これは競合するよりも補完的です。
+`Python for .NET <http://pythonnet.github.io/>`_ は、ネイティブにインストールされた Python インストールを .NET Common Language Runtime（CLR）にシームレスに統合するパッケージです。 これは IronPython（上記を参照）とは逆のアプローチであり、これは競合するというよりも補完的です。
 
 .. In conjunction with Mono, pythonnet enables native Python
 .. installations on non-Windows operating systems, such as OS X and

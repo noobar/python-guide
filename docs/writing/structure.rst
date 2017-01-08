@@ -38,7 +38,7 @@
 .. It's Important.
 .. :::::::::::::::
 
-それは重要です。
+構造は重要です。
 ::::::::::::::::
 
 .. Just as Code Style, API Design, and Automation are essential for a
@@ -59,7 +59,7 @@
 
 - プロジェクト名
 - プロジェクトの説明
-- Bunch O 'ファイル
+- たくさんのファイル
 
 .. Only when they scroll below the fold will the user see your project's
 .. README.
@@ -70,7 +70,7 @@
 .. they might look elsewhere before even reading your beautiful
 .. documentation.
 
-あなたのレポがファイルの大量ダンプやディレクトリのネストされた混乱である場合、彼らはあなたの美しいドキュメントを読む前に他の場所を見るかもしれません。
+あなたのリポジトリが、投げ捨てられた大量のファイルやネストしたディレクトリで混乱している場合、あなたの美しいドキュメントを読む前に他の場所を見るかもしれません。
 
 ..     Dress for the job you want, not the job you have.
 
@@ -91,7 +91,7 @@
 
 .. **tl;dr**: This is what `Kenneth Reitz <http://kennethreitz.org>`_ recommends.
 
-**tl;dr**: これは、 `Kenneth Reitz <http://kennethreitz.org>`_ が推奨するものです。
+**要約**: これは、 `Kenneth Reitz <http://kennethreitz.org>`_ が推奨するものです。
 
 .. This repository is `available on
 .. GitHub <https://github.com/kennethreitz/samplemod>`__.
@@ -132,7 +132,7 @@
 .. Your module package is the core focus of the repository. It should not
 .. be tucked away:
 
-あなたのモジュールパッケージはリポジトリの中心です。 それは遠ざけてはいけません:
+あなたのモジュールパッケージはリポジトリの中心です。 遠ざけてはいけません:
 
 ::
 
@@ -402,7 +402,7 @@ Djangoアプリケーションについて
 
 .. Let's do it properly:
 
-それを正しくしよう:
+正しくしましょう:
 
 ::
 
@@ -431,7 +431,7 @@ Djangoアプリケーションについて
 .. ------------------------
 
 コードの構造は重要です
-----------------------
+------------------
 
 .. Thanks to the way imports and modules are handled in Python, it is
 .. relatively easy to structure a Python project. Easy, here, means
@@ -465,7 +465,7 @@ Djangoアプリケーションについて
 ..   you have too many assumptions about Table in Carpenter's code or the
 ..   reverse.
 
-- 非表示のカップリング: テーブルの実装の各変更は、関連のないテストケースで20回のテストを中断します。これは、カーペンターのコードを破るためです。つまり、カーペンターのコード内のテーブルについての仮定があまりにも多いか、その逆のことです。
+- 非表示のカップリング: 無関係なテストケースで20回のテストが破られるのは、Carpenterのコードを破るためです。変更を適応させるためには非常に慎重な手術が必要です。つまり、Carpenterのコード内のテーブルについての仮定があまりにも多いか、その逆のことです。
 
 
 .. - Heavy usage of global state or context: instead of explicitly
@@ -477,7 +477,7 @@ Djangoアプリケーションについて
 ..   template code is also modifying this context, messing with
 ..   table dimensions.
 
-- 大域的な状態や文脈の大量使用: 明示的に ``（高さ、幅、タイプ、木）`` に渡すのではなく、テーブルとカーペンターは変更可能なグローバル変数に依存しており、 。 矩形テーブルが正方形になった理由を理解するために、これらのグローバル変数へのすべてのアクセスを精査し、リモートテンプレートコードがこのコンテキストを変更してテーブル次元を混乱させていることを発見する必要があります。
+- グローバルな状態やコンテキストの大量使用: 明示的に ``（height, width, type, wood）`` に渡すのではなく、TableとCarpenterは変更可能なグローバル変数に依存しており。 矩形テーブルが正方形になった理由を理解するために、これらのグローバル変数へのすべてのアクセスを精査し、リモートテンプレートコードがこのコンテキストを変更してテーブル次元を混乱させていることを発見する必要があります。
 
 .. - Spaghetti code: multiple pages of nested if clauses and for loops
 ..   with a lot of copy-pasted procedural code and no
@@ -494,7 +494,7 @@ Djangoアプリケーションについて
 ..   FurnitureTable, AssetTable or Table, or even TableNew for your
 ..   task at hand, you might be swimming in ravioli code.
 
-- ラビオリのコードは、Pythonの可能性が高いです。それは、何百もの類似した小さなロジック、しばしばクラスまたはオブジェクトで構成され、適切な構造がありません。 FurnitureTable、AssetTableまたはTable、またはTableNewを使用しなければならないことを決して覚えていない場合は、ラビオリコードで泳いでいるかもしれません。
+- ラビオリコードは、Pythonの可能性が高いです: それは、何百もの類似した小さなロジック、しばしばクラスまたはオブジェクトで構成され、適切な構造がありません。 FurnitureTable、AssetTableまたはTable、またはTableNewを使用しなければならないことを決して覚えていない場合は、ラビオリコードで泳いでいるかもしれません。
 
 
 .. Modules
@@ -522,14 +522,14 @@ Pythonモジュールは、利用可能な主要な抽象レイヤーの1つで�
 .. built-in modules such as `os` and `sys`, third-party modules you have installed
 .. in your environment, or your project's internal modules.
 
-`import` 文を使うとすぐにモジュールを使います。 これらのモジュールは、`os` や `sys` などの組み込みモジュール、環境にインストールしたサードパーティモジュール、プロジェクトの内部モジュールのいずれかです。
+`import` 文を使うとすぐにモジュールを使います。 これらのモジュールは、 `os` や `sys` などの組み込みモジュール、環境にインストールしたサードパーティモジュール、プロジェクトの内部モジュールのいずれかです。
 
 .. To keep in line with the style guide, keep module names short, lowercase, and
 .. be sure to avoid using special symbols like the dot (.) or question mark (?).
 .. So a file name like :file:`my.spam.py` is one you should avoid! Naming this way
 .. will interfere with the way Python looks for modules.
 
-スタイルガイドと一致するように、モジュール名は小文字で、小文字にしておき、ドット (.) や疑問符 (?) などの特別な記号は使用しないでください。 したがって、:file:`my.spam.py` のようなファイル名は避けてください！ このように命名すると、Pythonがモジュールを探す方法が妨げられます。
+スタイルガイドと一致するように、モジュール名は小文字で、小文字にしておき、ドット (.) や疑問符 (?) などの特別な記号は使用しないでください。 したがって、 :file:`my.spam.py` のようなファイル名は避けてください！ このように命名すると、Pythonがモジュールを探す方法が妨げられます。
 
 .. In the case of `my.spam.py` Python expects to find a :file:`spam.py` file in a
 .. folder named :file:`my` which is not the case. There is an
@@ -660,7 +660,7 @@ Pythonは非常に単純なパッケージシステムを提供しています�
 .. function, or class defined in :file:`modu.py` is available in the pack.modu
 .. namespace.
 
-ディレクトリ :file:`pack/` のファイル :file:`modu.py` は、``import pack.modu`` というステートメントでインポートされます。 この文は :file:`__init __.py` ファイルを :file:`pack` で探し、すべての最上位レベルの文を実行します。 それから、:file:`pack/modu.py` という名前のファイルを探し、すべてのトップレベルのステートメントを実行します。 これらの操作の後で、:file:`modu.py` で定義された変数、関数、またはクラスは、pack.modu名前空間で使用できます。
+ディレクトリ :file:`pack/` のファイル :file:`modu.py` は、``import pack.modu`` というステートメントでインポートされます。 この文は :file:`__init __.py` ファイルを :file:`pack` で探し、すべての最上位レベルの文を実行します。 それから、:file:`pack/modu.py` という名前のファイルを探し、すべてのトップレベルのステートメントを実行します。 これらの操作の後で、 :file:`modu.py` で定義された変数、関数、またはクラスは、pack.modu名前空間で使用できます。
 
 .. A commonly seen issue is to add too much code to :file:`__init__.py`
 .. files. When the project complexity grows, there may be sub-packages and
@@ -668,13 +668,13 @@ Pythonは非常に単純なパッケージシステムを提供しています�
 .. single item from a sub-sub-package will require executing all
 .. :file:`__init__.py` files met while traversing the tree.
 
-よく見られる問題は、:file:`__init __.py` ファイルにあまりにも多くのコードを追加することです。 プロジェクトの複雑さが増すと、深いディレクトリ構造にサブパッケージとサブサブパッケージが存在する可能性があります。 この場合、サブサブパッケージから単一の項目をインポートするには、ツリーを走査中にall :file:`__init __.py` ファイルを実行する必要があります。
+よく見られる問題は、 :file:`__init __.py` ファイルにあまりにも多くのコードを追加することです。 プロジェクトの複雑さが増すと、深いディレクトリ構造にサブパッケージとサブサブパッケージが存在する可能性があります。 この場合、サブサブパッケージから単一の項目をインポートするには、ツリーを走査中にall :file:`__init __.py` ファイルを実行する必要があります。
 
 .. Leaving an :file:`__init__.py` file empty is considered normal and even a good
 .. practice, if the package's modules and sub-packages do not need to share any
 .. code.
 
-パッケージのモジュールとサブパッケージがコードを共有する必要がない場合、:file:`__init __.py` ファイルを空のままにしておくのは正常であり、良い習慣でもあります。
+パッケージのモジュールとサブパッケージがコードを共有する必要がない場合、 :file:`__init __.py` ファイルを空のままにしておくのは正常であり、良い習慣でもあります。
 
 .. Lastly, a convenient syntax is available for importing deeply nested packages:
 .. ``import very.deep.module as mod``. This allows you to use `mod` in place of the
@@ -790,7 +790,7 @@ Pythonでは、すべてがオブジェクトであり、そのように扱う�
 .. things that are manipulated (windows, buttons, avatars, vehicles) have a
 .. relatively long life of their own in the computer's memory.
 
-明らかに、オブジェクト指向は、操作されるもの（ウィンドウ、ボタン、アバター、車両）がコンピュータで比較的長生きするグラフィカルデスクトップアプリケーションやゲームを開発する場合など、多くの場合、 メモリ。
+明らかに、オブジェクト指向は、有用であり、多くの場合必要である。例えば、操作されるもの （window, buttons, avatars, vehicles） がコンピュータのメモリ内で比較的長い寿命を有するグラフィカルデスクトップアプリケーションまたはゲームを開発する場合。
 
 
 .. Decorators
@@ -806,7 +806,7 @@ Pythonでは、すべてがオブジェクトであり、そのように扱う�
 .. in Python, this can be done 'manually', but using the @decorator syntax is
 .. clearer and thus preferred.
 
-Python言語は、シンプルで強力な構文で、「デコレータ」と呼ばれています。デコレータは、関数またはメソッドをラップする（または装飾する）関数またはクラスです。 「装飾された」機能または方法は、元の「装飾されていない」機能または方法を置き換える。関数はPythonのファーストクラスのオブジェクトであるため、これは '手動で'行うことができますが、@デコレータの構文を使用する方が明確であり、したがって好ましいものです。
+Python言語は、'デコレータ'と呼ばれている、シンプルで強力な構文を提供しています。デコレータは、関数またはメソッドをラップする（またはデコレートする）関数またはクラスです。 「デコレートされた」機能または方法は、元の「デコレートされていない」機能または方法を置き換えます。関数はPythonのファーストクラスのオブジェクトであるため、これは '手動で'行うことができますが、@デコレータの構文を使用する方が明確であり、したがって好ましいものです。
 
 .. code-block:: python
 
@@ -832,7 +832,7 @@ Python言語は、シンプルで強力な構文で、「デコレータ」と�
 .. them when they have already been computed. This is clearly not part
 .. of the function logic.
 
-このメカニズムは、懸念を分離し、関数またはメソッドのコアロジックを「汚染する」外部の関連しないロジックを回避するのに便利です。 デコレーションでうまく処理される機能の良い例は `memoization <https://en.wikipedia.org/wiki/Memoization#Overview>`__ またはキャッシングです：高価な関数の結果を 既に計算されているときにそれらを再計算する代わりに直接使用することができます。 これは明らかに関数ロジックの一部ではありません。
+このメカニズムは、懸念を分離し、関数またはメソッドのコアロジックを「汚染する」外部の関連しないロジックを回避するのに便利です。 デコレーションでうまく処理される機能の良い例は `memoization <https://en.wikipedia.org/wiki/Memoization#Overview>`__ またはキャッシングです： 高価な関数の結果を 既に計算されているときにそれらを再計算する代わりに直接使用することができます。 これは明らかに関数ロジックの一部ではありません。
 
 .. Context Managers
 .. ----------------
@@ -891,7 +891,7 @@ Python言語は、シンプルで強力な構文で、「デコレータ」と�
 .. And now the generator approach using Python's own
 .. `contextlib <https://docs.python.org/2/library/contextlib.html>`_:
 
-そして今、Python独自の `contextlib <https://docs.python.org/2/library/contextlib.html>`_:
+そして、Python独自のジェネレータを使ったアプローチは `contextlib <https://docs.python.org/2/library/contextlib.html>`_:
 
 .. code-block:: python
 

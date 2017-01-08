@@ -16,7 +16,7 @@ Python ヒッチハイク・ガイド へようこそ。
 .. **This is a living, breathing guide.**  If you'd like to contribute,
 .. `fork us on GitHub <https://github.com/kennethreitz/python-guide>`_!
 
-**このガイドは生きています。** 貢献したい場合は `GitHub で fork <https://github.com/kennethreitz/python-guide>`_ してください！
+**これは生きて呼吸をしているガイドです。** 貢献したい場合は `GitHub で fork <https://github.com/kennethreitz/python-guide>`_ してください！
 
 .. This handcrafted guide exists to provide both novice and expert Python
 .. developers a best practice handbook to the installation, configuration, and
