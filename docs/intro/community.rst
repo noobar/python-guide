@@ -3,8 +3,8 @@
 .. The Community
 .. =============
 
-コミュニティー
-==============
+コミュニティ
+============
 
 BDFL
 ----
@@ -12,7 +12,7 @@ BDFL
 .. Guido van Rossum, the creator of Python, is often referred to as the BDFL — the
 .. Benevolent Dictator For Life.
 
-Pythonの創始者であるGuido van Rossumは、しばしばBDFL（生命のための優しい独裁者）と呼ばれています。
+Pythonの創始者であるGuido van Rossumは、しばしばBDFL(優しい終身の独裁者)と呼ばれています。
 
 
 
@@ -43,7 +43,7 @@ PEPは *Python拡張提案* です。 Python自体やそれを取り巻く標準
 
 .. There are three different types of PEPs (as defined by :pep:`1`):
 
-3つの異なるタイプのPEPがあります（pep:`1` で定義されています）。
+3つの異なるタイプのPEPがあります (:pep:`1` で定義されています)。
 
      **標準**
 
@@ -89,14 +89,13 @@ PEPは *Python拡張提案* です。 Python自体やそれを取り巻く標準
 ..     docstrings.
 
 - :pep:`8`: Pythonスタイルガイド。
-     これを読む。 それのすべて。 それに従ってください。
+     これを読みます。 全部です。 それに従ってください。
 
 - :pep:`20`: Pythonの禅。
      Pythonの背後にある哲学を簡単に説明する19のステートメントのリスト。
 
 - :pep:`257`: Docstringの規約。
-     Pythonに関連するセマンティクスと規約のガイドラインを示します
-     docstrings。
+     PythonのDocstringに関連するセマンティクスと慣習に関するガイドラインを示します。
 
 .. You can read more at `The PEP Index <http://www.python.org/dev/peps/>`_.
 
@@ -111,7 +110,7 @@ PEPの送信
 .. PEPs are peer-reviewed and accepted/rejected after much discussion. Anyone
 .. can write and submit a PEP for review.
 
-多くの議論の後、PEPはピアレビューされ、承認/拒否されます。 誰でもレビューのためにPEPを書いて提出することができます。
+多くの議論の後、PEPは査読され、承認/拒否されます。 誰でもレビューのためにPEPを書いて提出することができます。
 
 .. Here's an overview of the PEP acceptance workflow:
 

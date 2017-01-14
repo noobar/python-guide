@@ -110,7 +110,7 @@ PipとVirtualenvの詳細設定
 .. of the function to anything you like, just keep in mind that you will have to
 .. use that name when trying to install packages globally with pip.
 
-変更を保存して :file:`~/.bashrc` ファイルを入手したら、``gpip install`` を実行してパッケージをグローバルにインストールできます。 関数の名前を好きなものに変更することができます.pipを使ってパッケージをグローバルにインストールしようとするときにその名前を使用する必要があることに留意してください。
+変更を保存して :file:`~/.bashrc` ファイルを入手したら、``gpip install`` を実行してパッケージをグローバルにインストールできます。 関数の名前を好きなものに変更することができます。pipを使ってパッケージをグローバルにインストールしようとするときにその名前を使用する必要があることに留意してください。
 
 .. Caching packages for future use
 .. -------------------------------
@@ -171,4 +171,4 @@ UNIXシステムでは、次の行を :file:`.bashrc` または :file:`.bash_pro
 .. :file:`pip.ini` file lives. If you don't trust yourself with all of this path
 .. voodoo, just use the values provided here and you will be fine.
 
-キャッシュを保存するのに好きなパスを使用することはできますが、:file:`pip.conf` または :file:`pip.ini` ファイルが存在するフォルダに新しいフォルダ*を作成することをお勧めします。 あなたがこのパス・ブードゥーのすべてを信頼しない場合は、ここで提供されている値を使用すれば問題ありません。
+キャッシュを保存するのに好きなパスを使用することはできますが、:file:`pip.conf` または :file:`pip.ini` ファイルが存在するフォルダ *内* に新しいフォルダを作成することをお勧めします。 あなたがこのおまじないのパスのすべてを信頼しない場合は、ここで提供されている値を使用すれば問題ありません。

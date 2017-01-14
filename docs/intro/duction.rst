@@ -12,7 +12,7 @@
 .. to Tcl, Perl, Ruby, Scheme, or Java. Some of its main key features
 .. include:
 
-PythonはTcl、Perl、Ruby、Scheme、Javaに似た汎用の高水準プログラミング言語です。主な主な機能の一部は次のとおりです。
+PythonはTcl、Perl、Ruby、Scheme、Javaに似た汎用の高水準プログラミング言語です。主な機能の一部は次のとおりです。
 
 .. * **very clear, readable syntax**
 
@@ -29,9 +29,9 @@ PythonはTcl、Perl、Ruby、Scheme、Javaに似た汎用の高水準プログ�
 
 * **事実上あらゆる作業のための広範な標準ライブラリと第三者モジュール**
 
-  Pythonは、正規表現、ファイルIO、分数処理、オブジェクトの直列化などのモジュールを含む豊富な標準ライブラリのために、「電池が含まれています」という言葉で記述されることがあります。
+  Pythonは、正規表現、ファイルIO、分数処理、オブジェクトの直列化などのモジュールを含む豊富な標準ライブラリのために、「バッテリー同梱」という言葉で記述されることがあります。
 
-  さらに、 `Python Package Index <http://pypi.python.org/pypi/>`_ は、ユーザがPerlの `CPAN <http://www.cpan.org>`_ と同様に、広く使われるようにパッケージを提出することができます。 `Django <http://www.djangoproject.com>`_ ウェブフレームワークや `NumPy <http://numpy.scipy.org>`_ のような非常に強力なPythonフレームワークとツールのコミュニティが盛んです 数学のルーチン。
+  さらに、 `Python Package Index <http://pypi.python.org/pypi/>`_ は、ユーザがPerlの `CPAN <http://www.cpan.org>`_ と同様に、広く使われるようにパッケージを提出することができます。 `Django <http://www.djangoproject.com>`_ ウェブフレームワークや 数学のルーチンがセットされた `NumPy <http://numpy.scipy.org>`_ のような非常に強力なPythonフレームワークとツールのコミュニティが盛んです。
 
 ..   Python is sometimes described with the words "batteries included"
 ..   because of its extensive
@@ -51,7 +51,7 @@ PythonはTcl、Perl、Ruby、Scheme、Javaに似た汎用の高水準プログ�
 
 * **他のシステムとの統合**
 
-  Pythonは `Java libraries <http://www.jython.org>`_ と統合することができ、企業のプログラマーが慣れ親しんだ豊富なJava環境で使用することができます。 また、スピードが本質である場合、 `CまたはC ++モジュールによって拡張されます <http://docs.python.org/extending/>`_ できます。
+  Pythonは `Java libraries <http://www.jython.org>`_ と統合することができ、企業のプログラマーが慣れ親しんだ豊富なJava環境で使用することができます。 また、スピードが本質である場合、 `CまたはC ++モジュールによって拡張されます <http://docs.python.org/extending/>`_ 。
 
 ..   Python can integrate with `Java libraries <http://www.jython.org>`_,
 ..   enabling it to be used with the rich Java environment that corporate
@@ -73,7 +73,7 @@ PythonはTcl、Perl、Ruby、Scheme、Javaに似た汎用の高水準プログ�
 
 * **フレンドリーコミュニティ**
 
-  Pythonには、Wiki、会議、無数のリポジトリ、メーリングリスト、IRCチャンネルなどを管理する活気に満ちた大きな :ref:`community <the-community>` があります。 Hack、Pythonコミュニティはこのガイドを書くのにも役立っています！
+  Pythonには、Wiki、会議、無数のリポジトリ、メーリングリスト、IRCチャンネルなどを管理する活気に満ちた大きな :ref:`コミュニティ <the-community>` があります。 Pythonコミュニティはこのガイドを書くのにも役立っています！
 
 ..   Python has a vibrant and large :ref:`community <the-community>`
 ..   which maintains wikis, conferences, countless repositories,
@@ -99,7 +99,7 @@ PythonはTcl、Perl、Ruby、Scheme、Javaに似た汎用の高水準プログ�
 .. Python developers a best practice handbook for the installation, configuration,
 .. and usage of Python on a daily basis.
 
-Hitchhiker's Guide to Pythonは、初心者でも熟練のPython開発者にも、Pythonのインストール、設定、および使用に関するベストプラクティスハンドブックを毎日提供するために存在します。
+Pythonヒッチハイク・ガイド は、初心者でも熟練のPython開発者にも、Pythonのインストール、設定、および使用に関するベストプラクティスハンドブックを毎日提供するために存在します。
 
 
 .. By the Community
@@ -112,7 +112,7 @@ Hitchhiker's Guide to Pythonは、初心者でも熟練のPython開発者にも�
 .. <https://github.com/kennethreitz>`_ in an open fashion. This is a
 .. community-driven effort that serves one purpose: to serve the community.
 
-このガイドは、 `Kenneth Reitz <https://github.com/kennethreitz>`_ によってオープンな方法で設計され維持されています。 これは、コミュニティに役立つという1つの目的に役立つコミュニティ主導型の取り組みです。
+このガイドは、 `Kenneth Reitz <https://github.com/kennethreitz>`_ によってオープンな方法で設計され維持されています。 これは、コミュニティに役立つという、1つの目的のために役立つコミュニティ主導型の取り組みです。
 
 .. For the Community
 .. ~~~~~~~~~~~~~~~~~
@@ -124,7 +124,7 @@ Hitchhiker's Guide to Pythonは、初心者でも熟練のPython開発者にも�
 .. If you think there's a gap in what the Guide covers, fork the Guide on
 .. GitHub and submit a pull request.
 
-ガイドへの寄稿はすべてのレベルのPythonistasから歓迎されます。 ガイドに記載されているものにギャップがあると思われる場合は、ガイドをGitHubにフォークし、プルリクエストを提出してください。
+ガイドへの寄稿はすべてのレベルのPythonista達から歓迎されます。 ガイドに記載されているものにギャップがあると思われる場合は、ガイドをGitHubにフォークし、プルリクエストを提出してください。
 
 .. Contributions are welcome from everyone, whether they're an old hand or a
 .. first-time Pythonista, and the authors to the Guide will gladly help if you
@@ -136,4 +136,4 @@ Hitchhiker's Guide to Pythonは、初心者でも熟練のPython開発者にも�
 .. To get started working on The Hitchhiker's Guide,
 .. see the :doc:`/notes/contribute` page.
 
-The Hitchhiker's Guideの作業を開始するには、:doc:`/notes/contribute` ページを参照してください。
+ヒッチハイク・ガイドの作業を開始するには、:doc:`/notes/contribute` ページを参照してください。

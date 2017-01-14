@@ -13,7 +13,7 @@ Pythonガイドは積極的に開発されており、寄稿者も大歓迎で�
 .. Once your changes get merged back in, you'll automatically be added to the
 .. `Contributors List <https://github.com/kennethreitz/python-guide/contributors>`_.
 
-機能のリクエスト、提案、またはバグレポートがある場合は、GitHub_で新しい問題を開いてください。 パッチを提出するには、GitHub_でプルリクエストを送信してください。 変更がマージされると、自動的に `Contributors List <https://github.com/kennethreitz/python-guide/contributors>`_ に追加されます。
+機能のリクエスト、提案、またはバグレポートがある場合は、GitHub_ で新しい問題を開いてください。 パッチを提出するには、GitHub_ でプルリクエストを送信してください。 変更がマージされると、自動的に `コントリビュータ一覧 <https://github.com/kennethreitz/python-guide/contributors>`_ に追加されます。
 
 .. Style Guide
 .. -----------
@@ -35,7 +35,7 @@ Todoリスト
 
 .. If you'd like to contribute, there's plenty to do. Here's a short todo_ list.
 
-あなたが貢献したいのであれば、たくさんのことがあります。 ここに短いtodo_リストがあります。
+あなたが貢献したいのであれば、たくさんのことがあります。 ここに短い todo_ リストがあります。
 
     .. include:: ../../TODO.rst
 

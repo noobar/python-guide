@@ -53,7 +53,7 @@
 
 * Python開発に直接関係しない科目に関する情報をあまりにも多く含むことは避けてください。
 * 既に情報がある場合は、他の情報源にリンクすることをお勧めします。 何がなぜあなたがなぜリンクしているのかを記述してください。
-* `Cite <http://sphinx.pocoo.org/rest.html?highlight=citations#citations>`_ 必要に応じて参照してください。
+* `サイト <http://sphinx.pocoo.org/rest.html?highlight=citations#citations>`_ は必要に応じて参照してください。
 * サブジェクトがPythonに直接関係しないが、Python（例えば、Git、GitHub、Databases）と連動して役に立つ場合、有用なPythonになぜ役に立つのかを説明します。
 * 不確かな場合は、尋ねてください。
 
@@ -122,7 +122,7 @@
 .. submit content with a missing serial comma will result in permanent banishment
 .. from this project, due to complete and total lack of taste.
 
-`シリアルカンマ <https://en.wikipedia.org/wiki/Serial_comma>`_ （オックスフォードカンマとしても知られています）の使用は100％非オプションです。 シリアルカンマがないコンテンツを提出しようとすると、完全に完全な味がないため、このプロジェクトは永久に終了することになります。
+`シリアルカンマ <https://en.wikipedia.org/wiki/Serial_comma>`_ （オックスフォードカンマとしても知られています）の使用は100％非オプションです。 シリアルカンマがないコンテンツを提出しようとすると、全体の判断が不足し完了するため、このプロジェクトは永久に追放することになります。
 
 .. Banishment? Is this a joke? Hopefully we will never have to find out.
 
@@ -199,7 +199,7 @@ Pythonの例:
 .. * Prefer to use descriptive labels with inline links instead of leaving bare
 ..   links:
 
-* 裸のリンクを残す代わりに、インラインリンクの説明ラベルを使用することをお勧めします。
+* 空のリンクを残す代わりに、インラインリンクの説明ラベルを使用することをお勧めします。
 
   .. code-block:: rest
 
@@ -208,7 +208,7 @@ Pythonの例:
 .. * Avoid using labels such as "click here", "this", etc. preferring
 ..   descriptive labels (SEO worthy) instead.
 
-* 記述ラベル（SEOにふさわしい）を好む代わりに、「ここをクリック」、「この」などのラベルを使用しないでください。
+* 記述ラベル（SEOにふさわしい）を好む代わりに、「ここをクリック」、「これ」などのラベルを使用しないでください。
 
 .. Linking to Sections in The Guide
 .. --------------------------------
@@ -236,22 +236,22 @@ Pythonの例:
 .. Notes and Warnings
 .. ------------------
 
-ノートと警告
-------------
+注釈と警告
+----------
 
 .. Make use of the appropriate `admonitions directives
 .. <http://sphinx.pocoo.org/rest.html#directives>`_ when making notes.
 
-メモをとるときは、適切な `警告指令 <http://sphinx.pocoo.org/rest.html#directives>`_ を利用してください。
+注釈を作るときは、適切な `警告指令 <http://sphinx.pocoo.org/rest.html#directives>`_ を利用してください。
 
 .. Notes:
 
-ノート:
+注釈:
 
 .. code-block:: rest
 
     .. note::
-        ヒッチハイカーの銀河ガイドには、タオルのテーマについていくつかのことが言及されています。 星座のヒッチハイカーが持つことができる最も大量に有用なものについてタオルは言います。
+        銀河ヒッチハイク・ガイドには、タオルのテーマについていくつかのことが言及されています。 タオルは、星間のヒッチハイカーが持つことができる最も大規模で有用なものであると言います。
 
 ..     .. note::
 ..         The Hitchhiker’s Guide to the Galaxy has a few things to say
@@ -264,7 +264,7 @@ Pythonの例:
 
 .. code-block:: rest
 
-    .. warning:: パニックにはならない
+    .. warning:: パニックに陥らないでください
 
 ..     .. warning:: DON'T PANIC
 

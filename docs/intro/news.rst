@@ -9,7 +9,7 @@ Planet Python
 
 .. This is an aggregate of Python news from a growing number of developers.
 
-これは、ますます多くの開発者からのPythonニュースの集合です。
+これは、増えている開発者達からのPythonニュースの集合です。
 
     `Planet Python <http://planet.python.org>`_
 

@@ -448,7 +448,9 @@ Puppetにはいくつかのリソースタイプがありますが、パッケ�
 Blueprint
 ---------
 
-.. todo:: Write about Blueprint
+.. .. todo:: Write about Blueprint
+
+.. todo:: 青写真について書く
 
 Buildout
 --------

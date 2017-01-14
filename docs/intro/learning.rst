@@ -28,7 +28,7 @@ Python for Beginners
 .. in depth. It also teaches you some advance constructs of python like lambda expression, regular expression.
 .. At last it finishes off with  tutorial "How to access MySQL db using python"
 
-thepythonguru.comは、初心者プログラマーに焦点を当てたチュートリアルです。 多くのPythonの概念を深く網羅しています。 また、ラムダ式、正規表現のようなPythonのいくつかの先進的な構成を教えてくれます。 最後に、チュートリアル「Pythonを使用してMySQLデータベースにアクセスする方法」を終了します。
+thepythonguru.com は、初心者プログラマーに焦点を当てたチュートリアルです。 多くのPythonの概念を深く網羅しています。 また、ラムダ式、正規表現のようなPythonのいくつかの先進的な構成を教えてくれます。 最後に、チュートリアル「Pythonを使用してMySQLデータベースにアクセスする方法」を終了します。
 
 
    `Python for beginners <http://thepythonguru.com/>`_
@@ -42,7 +42,7 @@ Learn Python Interactive Tutorial
 .. interpreter built into the site that allows you to go through the lessons
 .. without having to install Python locally.
 
-Learnpython.orgはPythonを紹介するのに簡単な方法です。 このWebサイトは、人気の `Try Ruby <http://tryruby.org/>`_ ウェブサイトで使用されているのと同じアプローチを採用しています。サイトにはインタラクティブなPythonインタプリタが組み込まれており、Pythonをインストールすることなくレッスンを進めることができます ローカルに。
+Learnpython.orgはPythonを紹介するのに簡単な方法です。 このWebサイトは、人気の `Try Ruby <http://tryruby.org/>`_ ウェブサイトで使用されているのと同じアプローチを採用しています。サイトにはインタラクティブなPythonインタプリタが組み込まれており、Pythonをローカルにインストールすることなくレッスンを進めることができます。
 
     `Learn Python <http://www.learnpython.org/>`_
 
@@ -162,7 +162,7 @@ Python Koans
 .. teaching basic Python concepts.  By fixing assertion statements that fail in a
 .. test script, this provides sequential steps to learning Python.
 
-Python KoansはEdgecaseのRuby Koansのポートです。 これは、テスト駆動型アプローチ、q.v.を使用します。 基本的なPythonの概念を指導するインタラクティブなチュートリアルを提供するためのTEST DRIVEN DESIGN SECTION テストスクリプトで失敗するアサーションステートメントを修正することで、これはPythonを学習するための逐次的な手順を提供します。
+Python KoansはEdgecaseのRuby Koansのポートです。 テスト駆動型アプローチTEST DRIVEN DESIGN SECTION参照を使用して、基本的なPythonの概念を指導するインタラクティブなチュートリアルを提供します。テストスクリプトで失敗するアサーションステートメントを修正することで、これはPythonを学習するための逐次的な手順を提供します。
 
 .. For those used to languages and figuring out puzzles on their own, this can be
 .. a fun, attractive option. For those new to Python and programming, having an
@@ -234,7 +234,7 @@ Pro Python
 .. understand how and why Python works the way it does and how they can take their
 .. code to the next level.
 
-この本は中級から上級のPythonプログラマーを対象としており、Pythonがどのように動作するのか、なぜPythonがどのように動作するのか、どのようにコードを次のレベルに引き上げるのかを理解しています。
+この本は中級から上級のPythonプログラマーを対象としており、Pythonがなぜ、どのように動作するのか、どのようにコードを次のレベルに引き上げるのかを理解しています。
 
     `Pro Python <http://propython.com>`_
 
@@ -269,13 +269,13 @@ A Guide to Python's Magic Methods
 .. in Python. Magic methods are surrounded by double underscores (i.e. __init__)
 .. and can make classes and objects behave in different and magical ways.
 
-これは、Pythonで '魔法の方法'を説明するRafe Kettlerのブログ投稿集です。 マジックメソッドは二重のアンダースコア (__init__) で囲まれており、クラスとオブジェクトを違ったやり方で動作させることができます。
+これは、Pythonで '特殊メソッド' を説明するRafe Kettlerのブログ投稿集です。 マジックメソッドは二重のアンダースコア (__init__) で囲まれており、クラスとオブジェクトを違ったやり方で動作させることができます。
 
     `A Guide to Python's Magic Methods <http://www.rafekettler.com/magicmethods.html>`_
 .. .. note:: The Rafekettler.com is currently down, you can go to their Github version directly. Here you can find a PDF version:
 .. note:: Rafekettler.comは現在ダウンしています。Githubのバージョンに直接行くことができます。ここでPDFバージョンを見つけることができます:
 ..     `A Guide to Python's Magic Methods (repo on GitHub) <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_
-    `Pythonのマジックメソッドガイド（GitHubに関するレポ） <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_
+    `Pythonの特殊メソッドガイド (GitHubのリポジトリ) <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_
 
 
 .. For Engineers and Scientists
@@ -331,7 +331,7 @@ Programming Collective Intelligence
 .. formal, but rather focuses on explaining the underlying intuition and shows
 .. how to implement the algorithms in Python.
 
-集団知能プログラミングは、幅広い基本的な機械学習およびデータマイニング手法を導入しています。この展覧会は、数学的に正式な形式ではなく、基本的な直感を説明することに焦点を合わせ、Pythonでアルゴリズムを実装する方法を示します。
+集合知プログラミングは、幅広い基本的な機械学習およびデータマイニング手法を導入しています。解説は、数学的に正式な形式ではなく、基本的な直感を説明することに焦点を合わせ、Pythonでアルゴリズムを実装する方法を示します。
 
     `Programming Collective Intelligence <http://shop.oreilly.com/product/9780596529321.do>`_
 
@@ -392,7 +392,7 @@ The Python Language Reference
 .. This is Python's reference manual, it covers the syntax and the core semantics
 .. of the language.
 
-This is Python's reference manual, it covers the syntax and the core semantics of the language.
+これはPythonのリファレンスマニュアルであり、言語の構文とコアの意味を扱います。
 
     `The Python Language Reference <http://docs.python.org/reference/index.html>`_
 
@@ -439,7 +439,7 @@ Writing Idiomatic Python
 .. is important. It also contains two code samples for each idiom: the "Harmful"
 .. way to write it and the "Idiomatic" way.
 
-Jeff Knuppによって書かれた "Writing Idiomatic Python"には、識別と理解を最大限にする形式で最も一般的で重要なPythonイディオムが含まれています。 各イディオムは、一般的に使用されているコードを書く方法の推奨として提示され、そのイディオムがなぜ重要であるかについての説明が続く。 また、イディオムごとに2つのコードサンプルが含まれています。「有害な」書き方と「慣用的な」方法です。
+Jeff Knuppによって書かれた "Writing Idiomatic Python" には、指摘と理解を最大限にする形式で最も一般的で重要なPythonイディオムが含まれています。 各イディオムは、一般的に使用されているコードを書く方法の推奨として提示され、そのイディオムがなぜ重要であるかについての説明が続きます。 また、イディオムごとに2つのコードサンプルが含まれています。「有害な」書き方と「慣用的な」方法です。
 
 	`For Python 2.7.3+ <http://www.amazon.com/Writing-Idiomatic-Python-2-7-3-Knupp/dp/1482372177/>`_
 

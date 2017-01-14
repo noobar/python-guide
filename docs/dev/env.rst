@@ -28,7 +28,7 @@ Vim
 
 Vimは、メニューやアイコンの代わりにキーボードショートカットを使用するテキストエディタです。
 Vimエディタには、Python開発を支援するためのいくつかのプラグインと設定があります。
-Pythonでのみ開発する場合は、インデントと改行のデフォルト設定を:pep:`8`に準拠した値に設定するのがよいでしょう。あなたのホームディレクトリで、file： `.vimrc`というファイルを開き、
+Pythonでのみ開発する場合は、インデントと改行のデフォルト設定を :pep:`8` に準拠した値に設定するのがよいでしょう。あなたのホームディレクトリで、 :file:`.vimrc` というファイルを開き、
 次の行::
 
     set textwidth=79  " lines longer than 79 columns will be broken
@@ -45,13 +45,13 @@ Pythonでのみ開発する場合は、インデントと改行のデフォル�
 .. source files.
 
 これらの設定では、改行は79文字の後に挿入され、インデントはタブごとに4スペースに設定されます。
-Vimを他の言語にも使用している場合は、indent_という便利なプラグインがあります。
+Vimを他の言語にも使用している場合は、indent_ という便利なプラグインがあります。
 これはPythonソースファイルのインデント設定を処理します。
 
 .. There is also a handy syntax plugin called syntax_ featuring some improvements
 .. over the syntax file included in Vim 6.1.
 
-syntax_という便利な構文プラグインもあります。
+syntax_ という便利な構文プラグインもあります。
 これは、Vim 6.1に含まれている構文ファイルの改良点です。
 
 .. These plugins supply you with a basic environment for developing in Python.
@@ -62,8 +62,8 @@ syntax_という便利な構文プラグインもあります。
 
 これらのプラグインは、Pythonで開発するための基本的な環境を提供します。
 Vimを最大限に活用するには、コードの構文エラーとPEP8準拠を継続的に確認する必要があります。
-幸いにもPEP8_とPyflakes_があなたのためにこれを行います。
-あなたのVimが：option： `+ python`でコンパイルされている場合は、非常に便利なプラグインを利用してエディタ内からこれらのチェックを行うこともできます。
+幸いにも PEP8_ と Pyflakes_ があなたのためにこれを行います。
+あなたのVimが :option:`+python` でコンパイルされている場合は、非常に便利なプラグインを利用してエディタ内からこれらのチェックを行うこともできます。
 
 .. For PEP8 checking and pyflakes, you can install vim-flake8_. Now you can map the
 .. function ``Flake8`` to any hotkey or action you want in Vim. The plugin will
@@ -72,12 +72,12 @@ Vimを最大限に活用するには、コードの構文エラーとPEP8準拠�
 .. a file. In order to do this, add the following line to your
 .. :file:`.vimrc`::
 
-PEP8チェックとpyflakesの場合、vim-flake8_をインストールすることができます。
-これでVimに必要なホットキーやアクションに `` Flake8``関数をマップすることができます。
+PEP8チェックとpyflakesの場合、vim-flake8_ をインストールすることができます。
+これでVimに必要なホットキーやアクションに ``Flake8`` 関数をマップすることができます。
 プラグインは画面の下部にエラーを表示し、対応する行にジャンプする簡単な方法を提供します。
 ファイルを保存するたびにこの関数を呼び出すのは非常に便利です。
 これを行うには、次の行をファイルに追加します
-：file： `.vimrc` ::
+:file:`.vimrc`::
 
     autocmd BufWritePost *.py call Flake8()
 
@@ -86,7 +86,7 @@ PEP8チェックとpyflakesの場合、vim-flake8_をインストールするこ
 .. to do that which also shows status and warning messages in the statusbar would
 .. be::
 
-syntastic_を既に使用している場合は、書き込み時にPyflakesを実行し、クイックフィックスウィンドウでエラーと警告を表示するように設定できます。
+syntastic_ を既に使用している場合は、書き込み時にPyflakesを実行し、クイックフィックスウィンドウでエラーと警告を表示するように設定できます。
 ステータスバーにステータスと警告メッセージを表示する設定例は、次のとおりです::
 
     set statusline+=%#warningmsg#
@@ -105,7 +105,7 @@ Pythonモード
 .. Python-mode_ is a complex solution for working with Python code in Vim.
 .. It has:
 
-Python-mode_は、VimでPythonコードを操作するための複雑なソリューションです。
+Python-mode_ は、VimでPythonコードを操作するための複雑なソリューションです。
 それは：
 
 .. - Asynchronous Python code checking (``pylint``, ``pyflakes``, ``pep8``, ``mccabe``) in any combination
@@ -115,27 +115,27 @@ Python-mode_は、VimでPythonコードを操作するための複雑なソリ�
 .. - Search through Python documentation and run Python code
 .. - Auto PEP8_ error fixes
 
-- 任意の組み合わせの非同期Pythonコード検査（ `` pylint``、 `` pyflakes``、 `` pep8``、 `` mccabe``）
-- ロープによるコードリファクタリングとオートコンプリート
+- 任意の組み合わせの非同期Pythonコード検査 (``pylint``、``pyflakes``、``pep8``、``mccabe``)
+- Rope によるコードリファクタリングとオートコンプリート
 - 高速Python折りたたみ
 - Virtualenvのサポート
 - Pythonのドキュメントを検索し、Pythonコードを実行する
-- 自動PEP8_のエラー修正
+- 自動PEP8_ のエラー修正
 
 .. And more.
 
-もっと。
+そしてさらに。
 
 .. SuperTab
 .. ^^^^^^^^
 
-スーパータブ
-^^^^^^^^^^^^
+SuperTab
+^^^^^^^^
 
 .. SuperTab_ is a small Vim plugin that makes code completion more convenient by
 .. using ``<Tab>`` key or any other customized keys.
 
-SuperTab_は、 `` <Tab> ``キーや他のカスタマイズされたキーを使って、コード補完をより便利にする小さなVimプラグインです。
+SuperTab_ は、``<Tab>`` キーや他のカスタマイズされたキーを使って、コード補完をより便利にする小さなVimプラグインです。
 
 .. _indent: http://www.vim.org/scripts/script.php?script_id=974
 .. _syntax: http://www.vim.org/scripts/script.php?script_id=790
@@ -154,8 +154,8 @@ Emacs
 .. Emacs user is `Python Programming in Emacs`_ at EmacsWiki.
 
 Emacsはもう一つの強力なテキストエディタです。
-それは完全にプログラム可能です（lisp）が、それは正しくワイヤリングするいくつかの仕事かもしれません。
-既にEmacsのユーザであれば、EmacsWikiの `Python Programming in Emacs`_が良いスタートです。
+それは完全にプログラム可能（lisp）ですが、それは正しくワイヤリングするいくつかの仕事かもしれません。
+既にEmacsのユーザであれば、EmacsWikiの `Python Programming in Emacs`_ が良いスタートです。
 
 .. 1. Emacs itself comes with a Python mode.
 
@@ -171,8 +171,8 @@ TextMate
 ..     GUI, TextMate cherry-picks the best of both worlds to the benefit of expert
 ..     scripters and novice users alike.
 
-      TextMate <http://macromates.com/>` _は、オペレーティングシステムに対するAppleのアプローチをテキストエディタの世界にもたらします。
-      UNIXの基盤とGUIを橋渡しすることにより、TextMateは熟練したスクリプタや初心者ユーザの利益のために、両方の世界のベストをチェリーピックアップします。
+`TextMate <http://macromates.com/>`_ は、オペレーティングシステムに対するAppleのアプローチをテキストエディタの世界にもたらします。
+UNIXの基盤とGUIを橋渡しすることにより、TextMateは熟練したスクリプタや初心者ユーザの利益のために、両方の世界のベストをチェリーピックアップします。
 
 Sublime Text
 ------------
@@ -181,8 +181,8 @@ Sublime Text
 ..     editor for code, markup and prose. You'll love the slick user interface,
 ..     extraordinary features and amazing performance.
 
-      `Sublime Text <http://www.sublimetext.com/>`_ は、コード、マークアップ、散文の洗練されたテキストエディタです。
-      すっきりとしたユーザーインターフェイス、優れた機能、素晴らしいパフォーマンスが大好きです。
+`Sublime Text <http://www.sublimetext.com/>`_ は、コード、マークアップ、散文の洗練されたテキストエディタです。
+すっきりとしたユーザーインターフェイス、優れた機能、素晴らしいパフォーマンスが大好きです。
 
 .. Sublime Text has excellent support for editing Python code and uses Python for
 .. its plugin API. It also has a diverse variety of plugins,
@@ -190,7 +190,7 @@ Sublime Text
 .. in-editor PEP8 checking and code "linting".
 
 Sublime Textは、Pythonコードの編集をサポートしており、PythonをプラグインAPIとして使用しています。
-また、様々な種類のプラグインがあります。`その中には <https://github.com/SublimeLinter/SublimeLinter>`_ 、エディタ内のPEP8チェックとコード" linting "があります。
+また、様々な種類のプラグインがあります。`その中には <https://github.com/SublimeLinter/SublimeLinter>`_ 、エディタ内のPEP8チェックとコード "linting" があります。
 
 Atom
 ----
@@ -199,7 +199,7 @@ Atom
 ..     built on atom-shell, and based on everything we love about our favorite
 ..     editors.
 
-`Atom <https://atom.io/>`_ は、atom-shellに構築された21世紀のハック可能なテキストエディタであり、私たちがお気に入りのエディタについて愛するすべてのものに基づいています。
+`Atom <https://atom.io/>`_ は、atom-shell上に基づく21世紀のハック可能なテキストエディタであり、私たちがお気に入りのエディタについて愛するすべてのものに基づいています。
 
 .. Atom is web native (HTML, CSS, JS), focusing on modular design and easy plugin
 .. development. It comes with native package control and plethora of packages.
@@ -209,8 +209,8 @@ Atom
 
 AtomはWebネイティブ（HTML、CSS、JS）で、モジュール設計と簡単なプラグイン開発に重点を置いています。
 ネイティブのパッケージ制御と多数のパッケージが付属しています。
-Pythonの開発には、 `Linter <https://github.com/AtomLinter/Linter>`_
-`linter-flake8 <https://github.com/AtomLinter/linter-flake8>`_ 。
+Pythonの開発には、`Linter <https://github.com/AtomLinter/Linter>`_ と
+`linter-flake8 <https://github.com/AtomLinter/linter-flake8>`_ の組み合わせを推奨します。
 
 IDEs
 ::::
@@ -248,8 +248,8 @@ Enthought Canopy
 .. IDE which is focused towards Scientists and Engineers as it provides pre 
 .. installed libraries for data analysis. 
 
-`Enthought Canopy <https://www.enthought.com/products/canopy/>`_ はPythonです
-科学者とエンジニアに焦点を当てたIDEデータ分析のためにインストールされたライブラリ。
+`Enthought Canopy <https://www.enthought.com/products/canopy/>`_ は科学者とエンジニアに
+焦点を当てたデータ分析のためのライブラリがインストールされている Python IDE です。
 
 Eclipse
 -------
@@ -257,7 +257,7 @@ Eclipse
 .. The most popular Eclipse plugin for Python development is Aptana's
 .. `PyDev <http://pydev.org>`_.
 
-Python開発のための最も一般的なEclipseプラグインはAptana's`PyDev <http://pydev.org>`_ 。
+Python開発のための最も一般的なEclipseプラグインはAptanaの `PyDev <http://pydev.org>`_ です。
 
 Komodo IDE
 ----------
@@ -311,7 +311,7 @@ NINJA-IDE
 .. operating systems. Installers for these platforms can be downloaded from the
 .. website.
 
-`NINJA-IDE <http://www.ninja-ide.org/>`_（再帰的頭字語： "Ninja-IDEは単なる別のIDEではない"）はクロスプラットフォームのIDEで、Pythonアプリケーションを構築するために特別に設計されています Linux / X11、Mac OS X、Windowsデスクトップオペレーティングシステムで動作します。 これらのプラットフォームのインストーラは、Webサイトからダウンロードできます。
+`NINJA-IDE <http://www.ninja-ide.org/>`_ (再帰的頭字語: "Ninja-IDEは単なる別のIDEではない")はクロスプラットフォームのIDEで、Pythonアプリケーションを構築するために特別に設計されています Linux / X11、Mac OS X、Windowsデスクトップオペレーティングシステムで動作します。 これらのプラットフォームのインストーラは、Webサイトからダウンロードできます。
 
 .. NINJA-IDE is open-source software (GPLv3 licence) and is developed
 .. in Python and Qt. The source files can be downloaded from
@@ -353,7 +353,8 @@ Eric (The Eric Python IDE)
 .. To start using and see more information:
 .. `Virtual Environments <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs.
 
-使用を開始し、詳細情報を参照するには、 `仮想環境 <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs。
+使用を開始し、詳細情報を参照するには:
+`仮想環境 <http://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs。
 
 
 pyenv
@@ -376,7 +377,7 @@ pyenv
 .. pyenv.  pyenv then works out which version of Python should be run based on
 .. environment variables, ``.python-version`` files, and the global default.
 
-pyenvは `` shims``ディレクトリにPythonインタプリタの偽のバージョン（ `` pip``や `` 2to3``などの他のツール）を埋め込むことで動作します。 システムが `` python``という名前のプログラムを探すと、最初に `` shims``ディレクトリ内を調べ、偽のバージョンを使用してコマンドをpyenvに渡します。 pyenvは、環境変数、 `` .python-version``ファイル、およびグローバルデフォルトに基づいてどのバージョンのPythonを実行するかを決定します。
+pyenvは ``shims`` ディレクトリにPythonインタプリタの偽のバージョン (``pip`` や ``2to3 ``などの他のツール) を埋め込むことで動作します。 システムが ``python`` という名前のプログラムを探すと、最初に ``shims`` ディレクトリ内を調べ、偽のバージョンを使用してコマンドをpyenvに渡します。 pyenvは、環境変数、 ``.python-version`` ファイル、およびグローバルデフォルトに基づいてどのバージョンのPythonを実行するかを決定します。
 
 .. pyenv isn't a tool for managing virtual environments, but there is the plugin
 .. `pyenv-virtualenv <https://github.com/yyuu/pyenv-virtualenv>`_ which automates
@@ -384,7 +385,7 @@ pyenvは `` shims``ディレクトリにPythonインタプリタの偽のバー�
 .. existing pyenv tools to switch to different environments based on environment
 .. variables or ``.python-version`` files.
 
-pyenvは仮想環境を管理するツールではありませんが、さまざまな環境の作成を自動化する`pyenv-virtualenv <https://github.com/yyuu/pyenv-virtualenv>`_ プラグインがあります。 既存のpyenvツールを使用して、環境変数や `` .python-version``ファイルに基づいて異なる環境に切り替えることができます。
+pyenvは仮想環境を管理するツールではありませんが、さまざまな環境の作成を自動化する `pyenv-virtualenv <https://github.com/yyuu/pyenv-virtualenv>`_ プラグインがあります。 既存のpyenvツールを使用して、環境変数や ``.python-version`` ファイルに基づいて異なる環境に切り替えることができます。
 
 Other Tools
 :::::::::::
@@ -398,7 +399,7 @@ IDLE
 .. using Python, it is quite helpful to try out small Python snippets and
 .. experiment with different features in Python.
 
-：ref:`IDLE <python：idle>` は、Python標準ライブラリの一部である統合開発環境です。 これはPythonで完全に書かれており、Tkinter GUIツールキットを使用しています。 IDLEはPythonを使った本格的な開発には適していませんが、小さなPythonスニペットを試してみて、Pythonのさまざまな機能を試してみることは非常に役に立ちます。
+:ref:`IDLE <python：idle>` は、Python標準ライブラリの一部である統合開発環境です。 これはPythonで完全に書かれており、Tkinter GUIツールキットを使用しています。 IDLEはPythonを使った本格的な開発には適していませんが、小さなPythonスニペットを試してみて、Pythonのさまざまな機能を試してみることは非常に役に立ちます。
 
 .. It provides the following features:
 
@@ -429,8 +430,8 @@ IPython
 .. * Tools for high level and interactive parallel computing.
 
 * 強力なPythonシェル（ターミナルおよびQtベース）。
-* 同じコア機能を持ちながら、リッチメディア、テキスト、コード、数式、インラインプロットをサポートするウェブベースのノートブック。
-インタラクティブなデータの視覚化とGUIツールキットの使用をサポートします。
+* 同じコア機能を持ちながら、リッチメディア、テキスト、コード、数式、インラインプロットをサポートする
+  ウェブベースのノートブック。インタラクティブなデータの視覚化とGUIツールキットの使用をサポートします。
 * 柔軟で埋め込み可能な通訳者が自分のプロジェクトに読み込むことができます。
 * 高水準のインタラクティブな並列コンピューティングのためのツール。
 
@@ -484,7 +485,7 @@ ptpython
 .. on top of the `prompt_toolkit <http://github.com/jonathanslenders/python-prompt-toolkit>`_
 .. library. It is considered to be an alternative to BPython_. Features include:
 
-`ptpython <https://github.com/jonathanslenders/ptpython/>`_ は、 `prompt_toolkit <http://github.com/jonathanslenders/python-prompt-toolkit>`_ ライブラリの上にあるREPLビルドです。 これはBPython_の代わりと考えられています。 機能は次のとおりです。
+`ptpython <https://github.com/jonathanslenders/ptpython/>`_ は、 `prompt_toolkit <http://github.com/jonathanslenders/python-prompt-toolkit>`_ ライブラリの上にあるREPLビルドです。 これはBPython_ の代わりと考えられています。 機能は次のとおりです。
 
 .. * Syntax highlighting
 .. * Autocompletion
@@ -503,8 +504,8 @@ ptpython
 * あなたのコードの中にREPLを埋め込む
 * 構文の検証
 * タブページ
-IPythonをインストールすることで、IPython_のシェルとの統合をサポートします。
-   `` pip install ipython``と `` ptipython``を実行します。
+IPythonをインストールすることで、IPython_ のシェルとの統合をサポートします。
+   ``pip install ipython`` と ``ptipython`` を実行します。
 
 .. code-block:: console
 

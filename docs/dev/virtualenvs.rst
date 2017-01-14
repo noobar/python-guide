@@ -29,7 +29,7 @@ virtualenv
 
 .. Install virtualenv via pip:
 
-pip経由でvirtualenvをインストールする:
+pip経由でvirtualenvをインストールします:
 
 .. code-block:: console
 
@@ -61,7 +61,7 @@ pip経由でvirtualenvをインストールする:
 .. This creates a copy of Python in whichever directory you ran the command in,
 .. placing it in a folder named :file:`venv`.
 
-これにより、コマンドを実行したディレクトリの中にPythonのコピーが作成され、file:`venv` という名前のフォルダに置かれます。
+これにより、コマンドを実行したディレクトリの中にPythonのコピーが作成され、:file:`venv` という名前のフォルダに置かれます。
 
 .. You can also use the Python interpreter of your choice (like
 .. ``python2.7``).
@@ -144,7 +144,7 @@ Pythonインタプリタ（ ``python2.7`` など）を使用することもで�
 .. In order to keep your environment consistent, it's a good idea to "freeze"
 .. the current state of the environment packages. To do this, run
 
-環境を一貫性を保つために、環境パッケージの現在の状態を「フリーズ」することは良い考えです。 これを行うには、
+環境の一貫性を保つために、環境パッケージの現在の状態を「フリーズ」することは良い考えです。 これを行うには、
 
 .. code-block:: console
 
