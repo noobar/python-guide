@@ -23,7 +23,7 @@ Requests
 .. and a different web. It requires an enormous amount of work (even method
 .. overrides) to perform the simplest of tasks.
 
-Pythonの標準urllib2モジュールは必要なHTTP機能のほとんどを提供しますが、APIは完全に壊れています。 それは別の時間と別のウェブのために建てられました。 最も単純なタスクを実行するには、膨大な作業（メソッドのオーバーライドさえ）が必要です。
+Pythonの標準urllib2モジュールは必要なHTTP機能のほとんどを提供しますが、APIは完全に壊れています。 これは、異なる時間と異なるウェブのために作られました。最も単純なタスクを実行するには、膨大な作業（メソッドのオーバーライドさえ）が必要です。
 
 .. Requests takes all of the work out of Python HTTP — making your integration
 .. with web services seamless. There’s no need to manually add query strings to
@@ -31,15 +31,18 @@ Pythonの標準urllib2モジュールは必要なHTTP機能のほとんどを提
 .. pooling are 100% automatic, powered by urllib3, which is embedded within
 .. Requests.
 
-リクエストはPython HTTPからすべての作業を取り除き、Webサービスとの統合をシームレスにします。 クエリ文字列をURLに手動で追加したり、POSTデータをフォームエンコードする必要はありません。 キープアライブとHTTP接続プーリングは、リクエスト内に埋め込まれたurllib3によって100％自動化されます。
+RequestsはPython HTTPからすべての作業を取り除き、Webサービスとの統合をシームレスにします。 クエリ文字列をURLに手動で追加したり、POSTデータをフォームエンコードする必要はありません。 キープアライブとHTTP接続ポーリングは、リクエスト内に埋め込まれたurllib3によって100％自動化されます。
 
 - `Documentation <http://docs.python-requests.org/en/latest/index.html>`_
 - `PyPi <http://pypi.python.org/pypi/requests>`_
 - `GitHub <https://github.com/kennethreitz/requests>`_
 
 
-Distributed Systems
-::::::::::::::::::::
+.. Distributed Systems
+.. ::::::::::::::::::::
+
+分散システム
+::::::::::::
 
 
 ZeroMQ

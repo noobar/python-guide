@@ -13,7 +13,7 @@ Twisted
 .. IMAP or SSH protocols, instant messaging
 .. and `much more <http://twistedmatrix.com/trac/wiki/Documentation>`_.
 
-`Twisted <http://twistedmatrix.com/trac/>`_ は、イベント駆動型のネットワーキングエンジンです。 httpサーバやクライアント、SMTP、POP3、IMAP、SSHプロトコルを使用するアプリケーション、インスタントメッセージング、 `はるかに多くの <http://twistedmatrix.com/trac/wiki/Documentation>`_ 。
+`Twisted <http://twistedmatrix.com/trac/>`_ は、イベント駆動型のネットワーキングエンジンです。 httpサーバやクライアント、SMTP、POP3、IMAP、SSHプロトコルを使用するアプリケーション、インスタントメッセージング、`さらに多く <http://twistedmatrix.com/trac/wiki/Documentation>`_ を含みます。
 
 PyZMQ
 -----
@@ -33,8 +33,8 @@ PyZMQ
 ..   can have multiple steps, and loops. This is a parallel task distribution
 ..   and collection pattern.
 
-- 要求-応答: 一連のクライアントを一連のサービスに接続します。 これは、リモートプロシージャコールおよびタスク配布パターンです。
-- publish-subscribe: 一連のパブリッシャを一連のサブスクライバに接続します。 これはデータ配布パターンです。
+- リクエスト-リプライ: 一連のクライアントを一連のサービスに接続します。 これは、リモートプロシージャコールおよびタスク配布パターンです。
+- パブリッシュ-サブスクライブ: 一連のパブリッシャを一連のサブスクライバに接続します。 これはデータ配布パターンです。
 - プッシュプル（またはパイプライン）: ファンアウト/ファンインパターンで複数のステップとループを持つことができるノードを接続します。 これは、並行タスク配布および収集パターンです。
 
 .. For a quick start, read the `ZeroMQ guide <http://zguide.zeromq.org/page:all>`_.

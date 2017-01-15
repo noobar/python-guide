@@ -16,9 +16,10 @@ Python Database API（DB-API）は、Pythonデータベースアクセスモジ�
 
 .. Tutorials that explain how to work with modules that conform to this interface can be found
 
-このインタフェースに準拠したモジュールで作業する方法を説明するチュートリアルが見つかります
-`here <http://halfcooked.com/presentations/osdc2006/python_databases.html>`__ and
-`here <http://web.archive.org/web/20120815130844/http://www.amk.ca/python/writing/DB-API.html>`__.
+このインタフェースに準拠したモジュールで作業する方法を説明するチュートリアルが
+`ここ <http://halfcooked.com/presentations/osdc2006/python_databases.html>`__ と
+`ここ <http://web.archive.org/web/20120815130844/http://www.amk.ca/python/writing/DB-API.html>`__
+で見つかります。
 
 SQLAlchemy
 ----------

@@ -37,7 +37,7 @@ GTk
 .. recommended that PyGTK not be used for new projects and that existing
 .. applications be ported from PyGTK to PyGObject.
 
-PyGTKは、GTK +ツールキット用のPythonバインディングを提供します。 GTK +ライブラリ自体と同様に、現在GNU LGPLのライセンスを受けています。 PyGTKが現在Gtk-2.X API（Gtk-3.0ではない）だけをサポートしていることは注目に値する。 PyGTKを新しいプロジェクトに使用しないこと、そして既存のアプリケーションをPyGTKからPyGObjectに移植することが現在推奨されています。
+PyGTKは、GTK +ツールキット用のPythonバインディングを提供します。 GTK +ライブラリ自体と同様に、現在GNU LGPLのライセンスを受けています。 PyGTKが現在Gtk-2.X API（Gtk-3.0ではない）だけをサポートしていることは注目に値します。 PyGTKを新しいプロジェクトに使用しないこと、そして既存のアプリケーションをPyGTKからPyGObjectに移植することが現在推奨されています。
 
 PyGObject aka (PyGi)
 --------------------
@@ -126,7 +126,7 @@ Tkinterは、Tcl/Tkの上にある薄いオブジェクト指向のレイヤー�
 .. Both Tk and Tkinter are available on most Unix platforms, as well as on Windows
 .. and Macintosh systems. Starting with the 8.0 release, Tk offers native look and
 .. feel on all platforms.
-TkとTkinterの両方は、ほとんどのUnixプラットフォームやWindowsとMacintoshシステムで利用できます。 8.0リリースから、Tkはすべてのプラットフォームでネイティブのルックアンドフィールを提供します。
+TkとTkinterの両方は、ほとんどのUnixプラットフォームやWindowsとMacintoshシステムで利用できます。 8.0リリースから、Tkはすべてのプラットフォームでネイティブのルック・アンド・フィールを提供します。
 
 .. There's a good multi-language Tk tutorial with Python examples at
 .. `TkDocs <http://www.tkdocs.com/tutorial/index.html>`_. There's more information

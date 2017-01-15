@@ -21,7 +21,7 @@
 .. (hazmat).  The recipes layer provides simple API for proper symmetric
 .. encryption and the hazmat layer provides low-level cryptographic primitives.
 
-暗号は、レシピと危険物質（ハザード）の2つの層に分かれています。 レシピ層は適切な対称暗号化のための簡単なAPIを提供し、ハザード層は低レベルの暗号プリミティブを提供します。
+暗号は、レシピと危険物（ハザード）の2つの層に分かれています。 レシピ層は適切な対称暗号化のための簡単なAPIを提供し、ハザード層は低レベルの暗号プリミティブを提供します。
 
 
 
@@ -43,7 +43,7 @@
 
 .. Example code using high level symmetric encryption recipe:
 
-高レベルの対称暗号化レシピを使用したコード例:
+高レベルの共通鍵暗号レシピを使用したコード例:
 
 .. code-block:: python
 

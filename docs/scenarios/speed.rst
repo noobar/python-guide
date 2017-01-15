@@ -13,7 +13,7 @@
 .. (added loop for multiple tests), you can see the difference between CPython
 .. and PyPy's processing.
 
-`David Beazley's`_ CPUバウンドテストコード（複数のテストで追加されたループ）を若干修正したものを使用すると、CPythonとPyPyの処理の違いを見ることができます。
+`David Beazley`_ のCPUバウンドテストコード（複数のテストで追加されたループ）を若干修正したものを使用すると、CPythonとPyPyの処理の違いを見ることができます。
 
 .. code-block:: console
 
@@ -300,7 +300,7 @@ ProcessPoolExecutorは同じ方法で動作しますが、ワーカーに複数�
 .. (i.e. making requests over the network) and to use a ProcessPoolExecutor
 .. executor when the task is computationally expensive.
 
-GILの仕組みのおかげで、実行中のタスクには多くのブロッキング（ネットワーク経由での要求）があり、タスクが計算上高価な場合にはProcessPoolExecutorエグゼキュータを使用するときにThreadPoolExecutorを使用するのが良い方法です。
+GILの仕組みのおかげで、実行中のタスクには多くのブロッキング（ネットワーク経由での要求）があり、タスクが計算上高価な場合にはProcessPoolExecutorを使用するときにThreadPoolExecutorを使用するのが良い方法です。
 
 .. There are two main ways of executing things in parallel using the two
 .. Executors. One way is with the `map(func, iterables)` method. This works
@@ -413,7 +413,7 @@ add_done_callback(fn)
 .. Futures. The `as_completed(futures)` function returns an iterator over the list
 .. of futures, yielding the futures as they complete.
 
-`concurrent.futures`_ モジュールには、Futuresを扱うための2つのヘルパー関数が含まれています。 `as_completed(futures)` 関数は、先物リストのイテレーターを返し、完了したときの先物を返します。
+`concurrent.futures`_ モジュールには、Futuresを扱うための2つのヘルパー関数が含まれています。 `as_completed(futures)` 関数は、先物リストのイテレータを返し、完了したときの先物を返します。
 
 .. The `wait(futures)` function will simply block until all futures in the list of
 .. futures provided have completed.
@@ -428,8 +428,8 @@ add_done_callback(fn)
 .. Threading
 .. ---------
 
-スレッディング
---------------
+スレッド
+--------
 
 .. The standard library comes with a `threading`_ module that allows a user to
 .. work with multiple threads manually.
@@ -527,7 +527,7 @@ add_done_callback(fn)
 .. Spawning Processes
 .. ------------------
 
-産卵プロセス
+プロセス生成
 ------------
 
 
@@ -543,7 +543,7 @@ add_done_callback(fn)
 .. _`guide`: http://www.dabeaz.com/python/UnderstandingGIL.pdf
 .. _`New GIL`: http://www.dabeaz.com/python/NewGIL.pdf
 .. _`Special care`: http://docs.python.org/c-api/init.html#threads
-.. _`David Beazley's`: http://www.dabeaz.com/GIL/gilvis/measure2.py
+.. _`David Beazley`: http://www.dabeaz.com/GIL/gilvis/measure2.py
 .. _`concurrent.futures`: https://docs.python.org/3/library/concurrent.futures.html
 .. _`Future`: https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future
 .. _`threading`: https://docs.python.org/3/library/threading.html

@@ -57,7 +57,7 @@ ctypes
 .. Struct Equivalents
 .. ~~~~~~~~~~~~~~~~~~
 
-構造式等価物
+構造体の構造
 ~~~~~~~~~~~~
 
 :file:`MyStruct.h`

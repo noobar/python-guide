@@ -14,8 +14,8 @@ Pythonには、データ分析、統計、機械学習のための膨大な数�
 
 マシンラーニングやその他のデータサイエンスアプリケーションで広く使われているパッケージのいくつかを以下に挙げます。
 
-Scipy Stack
------------
+Scipyスタック
+-------------
 
 .. The Scipy stack consists of a bunch of core helper packages used in data science, for statistical analysis and visualising data. Because of its huge number of functionalities and ease of use, the Stack is considered a must-have for most data science applications.
 
@@ -45,7 +45,7 @@ Stackは以下のパッケージで構成されています（ドキュメント
 
 .. For installing the full stack, or individual packages, you can refer to the instructions given `here <https://www.scipy.org/install.html>`_.
 
-完全なスタックまたは個々のパッケージをインストールするには、 `here <https://www.scipy.org/install.html>`_ の指示を参照することができます。
+完全なスタックまたは個々のパッケージをインストールするには、 `ここ <https://www.scipy.org/install.html>`_ の指示を参照することができます。
 
 .. **NB:** `Anaconda <https://www.continuum.io/anaconda-overview>`_ is highly preferred and recommended for installing and maintaining data science packages seamlessly.
 

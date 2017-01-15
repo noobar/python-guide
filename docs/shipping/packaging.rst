@@ -19,7 +19,7 @@
 .. download and install your package either for casual experiments, or as part of
 .. large, professional systems.
 
-この配布方法の利点は、他の開発者が偶然の実験用に、または大規模で専門的なシステムの一部としてパッケージをダウンロードしてインストールすることを容易にする、PyPIやpipなどのツールの確立されたエコシステムです。
+PyPIやpipなどのツールによる配布方法の利点は、他の開発者達にあなたのパッケージのインストールとダウンロード、カジュアルな実験、大規模で専門的なシステムの一部としての使用を簡単に行え、エコシステムとして確立されています。
 
 .. It is a well-established convention for Python code to be shared this way.
 .. If your code isn't packaged on PyPI, then it will be harder
@@ -51,7 +51,8 @@
 .. To distribute applications to end-users, you should
 .. :ref:`freeze your application <freezing-your-code-ref>`.
 
-アプリケーションをエンドユーザに配布するには、以下を行う必要があります。 :ref:`アプリケーション <freezing-your-code-ref>` をフリーズします。
+アプリケーションをエンドユーザに配布するには、以下を行う必要があります。
+:ref:`freeze your application <freezing-your-code-ref>`
 
 .. On Linux, you may also want to consider
 .. :ref:`creating a Linux distro package <packaging-for-linux-distributions-ref>`
@@ -78,7 +79,7 @@ Pip vs. easy_install
 .. Use `pip <http://pypi.python.org/pypi/pip>`_.  More details
 .. `here <http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_
 
-`pip <http://pypi.python.org/pypi/pip>`_ を使用してください。 詳細は `here <http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_
+`pip <http://pypi.python.org/pypi/pip>`_ を使用してください。 詳細は `ここ <http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install>`_ 。
 
 
 .. Personal PyPI
@@ -132,7 +133,7 @@ PyPI以外のソースからパッケージをインストールする場合（�
 .. :file:`MyPackage` and keeping :file:`MyPackage.tar.gz` inside that, is
 .. *redundant*, you can still install MyPackage using:
 
-パッケージ名と同じ名前のフォルダを持つことは、ここでは **非常に重要です**。 私はそれに騙された、一度。 しかし、:file:`MyPackage` という名前のフォルダを作成し、:file:`MyPackage.tar.gz` を *redundant* にしておくと、MyPackageをインストールすることができます:
+パッケージ名と同じ名前のフォルダを持つことは、ここでは **非常に重要です**。 私は一度それに騙された。 しかし、:file:`MyPackage` という名前のフォルダを作成し、:file:`MyPackage.tar.gz` を *冗長* にしておくと、MyPackageをインストールすることができます:
 
 .. code-block:: console
 
@@ -181,7 +182,7 @@ S3-Hosted PyPi
 .. * Make sure you upload :code:`packages/simple/index.html` as well as all new files and directories
 
 * Cyberduckのようなクライアントを使って :file:`packages` フォルダ全体をs3バケットに同期させます
-* あなたが必ず :code:`packages/simple/index.html` と全ての新しいファイルとディレクトリをアップロードしてください
+* あなたは必ず :code:`packages/simple/index.html` と全ての新しいファイルとディレクトリをアップロードしてください
 
 .. 5. **Fix new file permissions**
 
@@ -220,7 +221,8 @@ Linuxディストリパッケージを作成することは、間違いなくLin
 .. makes the download and install about 2MB smaller than
 .. :ref:`freezing your application <freezing-your-code-ref>`.
 
-ディストリビューションパッケージにはPythonインタプリタが含まれていないので、ダウンロード約2MBをインストールします :ref:`アプリケーション <freezing-your-code-ref>` をフリーズします。
+ディストリビューションパッケージにはPythonインタプリタが含まれていないので、ダウンロード約2MBをインストールします
+:ref:`freezing your application <freezing-your-code-ref>` 
 
 .. Also, if a distribution releases a new security update for Python, then your
 .. application will automatically start using that new version of Python.

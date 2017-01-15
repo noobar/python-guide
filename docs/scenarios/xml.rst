@@ -71,7 +71,7 @@ xmltodict
 
 .. can be loaded into a Python dict like this:
 
-次のようにPython dictにロードすることができます:
+次のようにPython辞書にロードすることができます:
 
 .. code-block:: python
 

@@ -104,11 +104,11 @@ SaltはPythonバージョン2.6と2.7をサポートしており、pip経由で�
 .. arbitrary shell commands or use pre-built modules of complex commands on our
 .. minions.
 
-マスターサーバーと任意の数のミニオンホストを設定したら、任意のシェルコマンドを実行するか、複雑なコマンドの既成モジュールをミニオンで使用できます。
+マスターサーバーと任意の数のminionホストを設定したら、任意のシェルコマンドを実行するか、複雑なコマンドの既成モジュールをminionで使用できます。
 
 .. The following command lists all available minion hosts, using the ping module.
 
-次のコマンドは、pingモジュールを使用して利用可能なすべてのミニホストを一覧表示します。
+次のコマンドは、pingモジュールを使用して利用可能なすべてのminionホストを一覧表示します。
 
 .. code-block:: console
 
@@ -120,12 +120,12 @@ SaltはPythonバージョン2.6と2.7をサポートしており、pip経由で�
 .. system uses static host information like the operating system version or the
 .. CPU architecture to provide a host taxonomy for the Salt modules.
 
-ホストフィルタリングは、minion idを一致させるか、またはgrainシステムを使用して行います。 `grains <http://docs.saltstack.org/ja/latest/topics/targeting/grains.html>`_ システムは、オペレーティングシステムのバージョンやCPUアーキテクチャのような静的ホスト情報を使用して、Saltのホスト分類を提供します モジュール。
+ホストフィルタリングは、minion idを一致させるか、またはgrainシステムを使用して行います。 `grains <http://docs.saltstack.org/ja/latest/topics/targeting/grains.html>`_ システムは、オペレーティングシステムのバージョンまたはCPUアーキテクチャのような静的ホスト情報を使用して、Saltモジュールのホスト分類を提供します。
 
 .. The following command lists all available minions running CentOS using the
 .. grains system:
 
-次のコマンドは、粒子システムを使用してCentOSを実行している利用可能なすべてのミニオンを一覧表示します。
+次のコマンドは、grainsシステムを使用してCentOSを実行している利用可能なすべてのminionを一覧表示します。
 
 .. code-block:: console
 
@@ -134,12 +134,12 @@ SaltはPythonバージョン2.6と2.7をサポートしており、pip経由で�
 .. Salt also provides a state system. States can be used to configure the minion
 .. hosts.
 
-Saltはまた、状態システムを提供する。 状態を使用してミニオンホストを構成することができます。
+Saltはまた、状態システムを提供する。 状態を使用してminionホストを構成することができます。
 
 .. For example, when a minion host is ordered to read the following state file,
 .. it will install and start the Apache server:
 
-たとえば、ミニオンホストが次の状態ファイルを読み込むように指示されると、Apacheサーバーがインストールされ、起動されます。
+たとえば、minionホストが次の状態ファイルを読み込むように指示されると、Apacheサーバーがインストールされ、起動されます。
 
 .. code-block:: yaml
 
@@ -229,7 +229,7 @@ Ansible
 .. the client machine. Playbooks are Ansible’s configuration, deployment, and
 .. orchestration language and are written in YAML with Jinja2 for templating.
 
-`Ansible <http://ansible.com/>`_ はオープンソースのシステム自動化ツールです。 パペットやシェフに比べて最大の利点は、クライアントマシンにエージェントを必要としないことです。 PlayBookはAnipalの設定、デプロイメント、オーケストレーション言語であり、YAMLでJinja2でテンプレート化されています。
+`Ansible <http://ansible.com/>`_ はオープンソースのシステム自動化ツールです。 Puppet や Chef に比べて最大の利点は、クライアントマシンにエージェントを必要としないことです。 PlayBook は Ansible の設定、デプロイメント、オーケストレーション言語であり、YAMLでJinja2でテンプレート化されています。
 
 .. Ansible supports Python versions 2.6 and 2.7 and can be installed via pip:
 
@@ -281,7 +281,7 @@ Ansibleには、アクセス権のあるホストを記述するインベント�
 .. You can also select groups of servers using Ansible. For more information
 .. about Ansible, read the `Ansible Docs <http://docs.ansible.com/>`_.
 
-Ansoftのplaybookは :file:`hosts.yml` ファイル内のすべてのサーバにpingを実行します。また、Anabilitiesを使用してサーバーのグループを選択することもできます。 Anabilitiesの詳細については、 `Ansible Docs <http://docs.ansible.com/>`_ を参照してください。
+Ansibleのplaybookは :file:`hosts.yml` ファイル内のすべてのサーバにpingを実行します。また、Ansibleを使用してサーバーのグループを選択することもできます。 Ansibleの詳細については、 `Ansible Docs <http://docs.ansible.com/>`_ を参照してください。
 
 .. `An Ansible tutorial <https://serversforhackers.com/an-ansible-tutorial/>`_ is also a 
 .. great and detailed introduction to getting started with Ansible.
@@ -296,14 +296,14 @@ Chef
 .. virtual, or cloud location. In case this is your choice for configuration management, 
 .. you will primarily use Ruby to write your infrastructure code. 
 
-`Chef <https://www.chef.io/chef/>`_ は、サーバーやアプリケーションを物理的、仮想的、または雲の場所に簡単に展開できるシステムとクラウドインフラストラクチャの自動化フレームワークです。 これが設定管理のための選択である場合、主にRubyを使用してインフラストラクチャコードを記述します。
+`Chef <https://www.chef.io/chef/>`_ は、サーバーやアプリケーションを物理的、仮想的、またはクラウドの場所に簡単に展開できるシステムとクラウドインフラストラクチャの自動化フレームワークです。 これが設定管理のための選択である場合、主にRubyを使用してインフラストラクチャコードを記述します。
 
 .. Chef clients run on every server that is part of your infrastructure and these regularly 
 .. check with your Chef server to ensure your system is always aligned and represents the 
 .. desired state. Since each individual server has its own distinct Chef client, each server 
 .. configures itself and this distributed approach makes Chef a scalable automation platform.
 
-シェフのクライアントは、インフラストラクチャの一部であるすべてのサーバー上で実行され、シェフサーバーと定期的にチェックして、システムが常に整列し、望ましい状態を表していることを確認します。 個々のサーバーにはそれぞれ独自のChefクライアントがあるため、各サーバーが構成され、この分散型アプローチによりシェフはスケーラブルな自動化プラットフォームになります。
+Chefのクライアントは、インフラストラクチャの一部であるすべてのサーバー上で実行され、Chefサーバーと定期的にチェックして、システムが常に整列し、望ましい状態を表していることを確認します。 個々のサーバーにはそれぞれ独自のChefクライアントがあるため、各サーバーが構成され、この分散型アプローチによりシェフはスケーラブルな自動化プラットフォームになります。
 
 .. Chef works by using custom recipes (configuration elements), implemented in cookbooks. Cookbooks, which are basically 
 .. packages for infrastructure choices, are usually stored in your Chef server. 
@@ -311,12 +311,12 @@ Chef
 .. <https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_ 
 .. on chef to learn how to create a simple Chef Server.
 
-シェフは、料理レシピで実装されたカスタムレシピ（構成要素）を使用して動作します。基本的にインフラストラクチャーの選択肢のパッケージであるCookbookは、通常シェフサーバーに保存されます。
-`Digital Oceanチュートリアルシリーズ <https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_ シェフの簡単なシェフサーバーの作成方法を学びましょう。
+Chefは、クックブックで実装されたカスタムレシピ（構成要素）を使用して動作します。基本的にインフラストラクチャーの選択肢のパッケージであるクックブックは、通常Chefサーバーに保存されます。
+`Digital Oceanチュートリアルシリーズ <https://www.digitalocean.com/community/tutorials/how-to-install-a-chef-server-workstation-and-client-on-ubuntu-vps-instances>`_ Chefの簡単なChefサーバーの作成方法を学びましょう。
 
 .. To create a simple cookbook the `knife <https://docs.chef.io/knife.html>`_ command is used:
 
-シンプルな料理ブックを作成するには、 `knife <https://docs.chef.io/knife.html>`_ コマンドを使用します:
+シンプルなクックブックを作成するには、 `knife <https://docs.chef.io/knife.html>`_ コマンドを使用します:
 
 .. code-block:: console 
 
@@ -327,7 +327,7 @@ Chef
 .. serve as a good reference or tweaked to serve your infrastructure configuration needs can be 
 .. found on the `Chef Supermarket <https://supermarket.chef.io/cookbooks>`_.
 
-`シェフと一緒に始めよう <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_ は、シェフの初心者や役に立つリファレンスとして役立つ、または役立つために調整できる多くのコミュニティ管理された料理ブックの出発点ですあなたのインフラ構成のニーズは、 `シェフのスーパーマーケット <https://supermarket.chef.io/cookbooks>`_ で確認できます。
+`Getting started with Chef <http://gettingstartedwithchef.com/first-steps-with-chef.html>`_ は、Chefの初心者のための良い出発点であり、あなたのインフラストラクチャ構成のニーズを満たすために調整された良いリファレンスとして役立つことができる多くのコミュニティ管理された料理ブックは、`Chef Supermarket <https://supermarket.chef.io/cookbooks>`_ で見つけることができます。
 
 - `Chef Documentation <https://docs.chef.io/>`_
 
@@ -339,20 +339,20 @@ Puppet
 .. of their IT Infrastructure, thereby providing an elegant way to manage their
 .. fleet of physical and virtual machines.
 
-`Puppet <http://puppetlabs.com>`_ は、システム管理者がITインフラストラクチャの状態を定義できるようにする、パペット・ラボのIT自動化および構成管理ソフトウェアであり、物理マシンと仮想マシンを管理するエレガントな方法を提供します。
+`Puppet <http://puppetlabs.com>`_ は、システム管理者がITインフラストラクチャの状態を定義できるようにする、PuppetラボのIT自動化および構成管理ソフトウェアであり、物理マシンと仮想マシンを管理するエレガントな方法を提供します。
 
 .. Puppet is available both as an Open Source and an Enterprise variant. Modules
 .. are small, shareable units of code written to automate or define the state of a
 .. system.  `Puppet Forge <https://forge.puppetlabs.com/>`_ is a repository for
 .. modules written by the community for Open Source and Enterprise Puppet.
 
-Puppetはオープンソースとエンタープライズの両方で利用可能です。 モジュールは、システムの状態を自動化または定義するために書かれた、小さな、共有可能なコード単位です。 `Puppet Forge <https://forge.puppetlabs.com/>`_ は、オープンソースとエンタープライズパペットのためにコミュニティによって書かれたモジュールのリポジトリです。
+Puppetはオープンソースとエンタープライズの両方で利用可能です。 モジュールは、システムの状態を自動化または定義するために書かれた、小さな、共有可能なコード単位です。 `Puppet Forge <https://forge.puppetlabs.com/>`_ は、オープンソースとエンタープライズPuppetのためにコミュニティによって書かれたモジュールのリポジトリです。
 
 .. Puppet Agents are installed on nodes whose state needs to be monitored or
 .. changed.  A designated server known as the Puppet Master is responsible for
 .. orchestrating the agent nodes.
 
-パペットエージェントは、状態を監視または変更する必要があるノードにインストールされます。 パペットマスターと呼ばれる指定されたサーバーは、エージェントノードの編成を担当します。
+Puppetエージェントは、状態を監視または変更する必要があるノードにインストールされます。 Puppetマスターと呼ばれる指定されたサーバーは、エージェントノードの編成を担当します。
 
 .. Agent nodes send basic facts about the system such as to the operating system,
 .. kernel, architecture, ip address, hostname etc. to the Puppet Master.
@@ -382,7 +382,7 @@ Facterは、Puppetに同梱されている、システムに関する基本的�
 .. form Puppet Modules. Puppet manifest end with an extension of ``.pp``.
 .. Here is an example of 'Hello World' in Puppet.
 
-Puppetにモジュールを書くことはかなり簡単です。 パペットマニフェストが一緒にパペットモジュールを形成します。 パペットは ``.pp`` の拡張子を持つマニフェストを明示します。 Puppetの 'Hello World' の例を次に示します。
+Puppetにモジュールを書くことはかなり簡単です。 Puppetマニフェストが一緒にPuppetモジュールを形成します。 Puppetは ``.pp`` の拡張子を持つマニフェストを明示します。 Puppetの 'Hello World' の例を次に示します。
 
 .. code-block:: puppet
 
@@ -478,4 +478,4 @@ Shinken
 .. plugins.It works on any operating system, and architecture that supports Python
 .. which includes Windows, GNU/Linux, and FreeBSD.
 
-ShinkenはNagiosの設定標準とplugins.Iとの下位互換性があり、Windows、GNU / Linux、FreeBSDを含むPythonをサポートする任意のオペレーティングシステムとアーキテクチャで動作します。
+Shinkenは、Nagiosの設定標準とプラグインとの下位互換性があります。これは、Windows、GNU / Linux、FreeBSDを含むPythonをサポートする任意のオペレーティングシステムとアーキテクチャで動作します。

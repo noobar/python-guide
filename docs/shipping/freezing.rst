@@ -41,8 +41,8 @@
 .. Alternatives to Freezing
 .. ------------------------
 
-凍結の代替
-----------
+フリーズの代替
+--------------
 
 .. :ref:`Packaging your code <packaging-your-code-ref>` is for distributing
 .. libraries or tools to other developers.
@@ -53,7 +53,7 @@
 .. :ref:`create a Linux distro package <packaging-for-linux-distributions-ref>`
 .. (e.g. .deb files for Debian or Ubuntu, or .rpm files for Red Hat and SuSE.)
 
-Linuxの場合、凍結する代わりに、 :ref:`Linuxディストリビューションパッケージを作成するためのパッケージング <package-for-linux-distributions-ref>` （DebianやUbuntuでは.debファイル、Red HatやSuSEでは.rpmファイル） ）
+Linuxの場合、フリーズする代わりに、 :ref:`Linuxディストリビューションパッケージを作成するためのパッケージング <package-for-linux-distributions-ref>` （DebianやUbuntuでは.debファイル、Red HatやSuSEでは.rpmファイル） ）
 
 .. .. todo:: Fill in "Freezing Your Code" stub
 
@@ -206,7 +206,7 @@ PyInstallerをインストールするには、pipを使用します:
 
 .. all in the same folder as :code:`script.py`. PyInstaller puts all the Python libraries used in :code:`script.py` into the :code:`dist` folder, so when distributing the executable, distribute the whole :code:`dist` folder.
 
-すべて同じフォルダ内にあります :code:`script.py`。 PyInstallerは :code:`script.py` で使われているすべてのPythonライブラリを :code:`dist` フォルダに置きます。したがって、実行ファイルを配布するときには :code:`dist` フォルダ全体を配布してください。
+:code:`script.py` としてすべて同じフォルダ内にあります。 PyInstallerは :code:`script.py` で使われているすべてのPythonライブラリを :code:`dist` フォルダに置きます。したがって、実行ファイルを配布するときには :code:`dist` フォルダ全体を配布してください。
 
 .. The :code:`script.spec` file can be edited to `customise the build <http://pythonhosted.org/PyInstaller/#spec-file-operation>`_, with options such as
 
@@ -242,7 +242,7 @@ PyInstallerをインストールするには、pipを使用します:
 
 .. There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option. 
 
-いくつかのオプションがあります :code:`script.spec` はMac OS Xアプリケーションバンドルに関連しています `here <http://pythonhosted.org/PyInstaller/#spec-file-options-for-a-macos-x-bundle>`_ 。 たとえば、アプリケーションのアイコンを指定するには、 :code:`icon=\ path\to\icon.icns` オプションを使用します。
+いくつかのオプションがあります :code:`script.spec` はMac OS Xアプリケーションバンドルに関連しています `ここ <http://pythonhosted.org/PyInstaller/#spec-file-options-for-a-macos-x-bundle>`_ 。 たとえば、アプリケーションのアイコンを指定するには、 :code:`icon=\ path\to\icon.icns` オプションを使用します。
 
 
 Linux

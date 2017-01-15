@@ -40,7 +40,7 @@ Clint
 .. It supports features such as; CLI colors and indents, simple and powerful
 .. column printer, iterator based progress bars and implicit argument handling.
 
-`clint <https://pypi.python.org/pypi/clint/>`_ は、コマンドラインアプリケーションを開発するための非常に便利なツールで埋め尽くされたPythonモジュールです。 それは以下のような機能をサポートしています。 CLIの色とインデント、シンプルで強力な列プリンタ、イテレータベースのプログレスバー、暗黙的な引数処理
+`clint <https://pypi.python.org/pypi/clint/>`_ は、コマンドラインアプリケーションを開発するための非常に便利なツールで埋め尽くされたPythonモジュールです。 それは以下のような機能をサポートしています。 CLIの色とインデント、シンプルで強力な列プリンタ、イテレータベースのプログレスバー、暗黙的な引数処理。
 
 Click
 -----
@@ -84,7 +84,7 @@ Cliff
 .. the main program handles some basic argument parsing and then invokes a
 .. sub-command to do the work.
 
-`Cliff <http://docs.openstack.org/developer/cliff/>`_ は、コマンドラインプログラムを構築するためのフレームワークです。 setuptoolsのエントリーポイントを使用して、サブコマンド、出力フォーマッター、およびその他の拡張機能を提供します。 このフレームワークは、メインプログラムがいくつかの基本的な引数解析を処理し、次にサブコマンドを呼び出して作業を行う、subversionやgitなどのマルチレベルコマンドを作成するために使用されます。
+`Cliff <http://docs.openstack.org/developer/cliff/>`_ は、コマンドラインプログラムを構築するためのフレームワークです。 setuptoolsのエントリーポイントを使用して、サブコマンド、出力フォーマッタ、およびその他の拡張機能を提供します。 このフレームワークは、メインプログラムがいくつかの基本的な引数解析を処理し、次にサブコマンドを呼び出して作業を行う、subversionやgitなどのマルチレベルコマンドを作成するために使用されます。
 
 Cement
 ------
@@ -96,4 +96,4 @@ Cement
 .. Cement is flexible, and it's use cases span from the simplicity of a micro-framework 
 .. to the complexity of a meg-framework. 
 
-`Cement <http://builtcement.com/>`_ は高度なCLIアプリケーションフレームワークです。 その目的は、シンプルで複雑なコマンドラインアプリケーションの両方に標準の機能満載のプラットフォームを導入し、品質を犠牲にすることなく迅速な開発ニーズをサポートすることです。 セメントは柔軟性があり、ユースケースは、マイクロフレームワークの単純さからメグフレームワークの複雑さにまで及ぶ。
+`Cement <http://builtcement.com/>`_ は高度なCLIアプリケーションフレームワークです。 その目的は、シンプルで複雑なコマンドラインアプリケーションの両方に標準の機能満載のプラットフォームを導入し、品質を犠牲にすることなく迅速な開発ニーズをサポートすることです。Cement は柔軟性があり、ユースケースは、マイクロフレームワークの単純さからメガフレームワークの複雑さにまで及びます。

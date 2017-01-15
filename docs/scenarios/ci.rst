@@ -1,8 +1,8 @@
 .. Continuous Integration
 .. ======================
 
-継続的な統合
-============
+継続的インテグレーション
+========================
 
 
 .. Why?
@@ -14,9 +14,9 @@
 .. Martin Fowler, who first wrote about `Continuous Integration <http://martinfowler.com/articles/continuousIntegration.html>`_
 .. (short: CI) together with Kent Beck, describes the CI as follows:
 
-Kent Beckと一緒に `Continuous Integration <http://martinfowler.com/articles/continuousIntegration.html>`_ （ショート：CI）」を初めて書いたMartin Fowlerは、CIについて次のように説明しています。
+Kent Beckと一緒に `継続的インテグレーション <http://martinfowler.com/articles/continuousIntegration.html>`_ （短略: CI）」を初めて書いたMartin Fowlerは、CIについて次のように説明しています。
 
-    継続的統合とは、チームのメンバーが頻繁に作業を統合するソフトウェア開発のことで、通常は1日に少なくとも1人は統合し、1日に複数の統合につながります。 各統合は、自動化ビルド（テストを含む）によって検証され、統合エラーを可能な限り迅速に検出します。 多くのチームでは、このアプローチにより統合の問題が大幅に軽減され、チームが一貫性のあるソフトウェアをより迅速に開発できるようになりました。
+    継続的インテグレーションとは、チームのメンバーが頻繁に作業を統合するソフトウェア開発のことで、通常は1日に少なくとも1人は統合し、1日に複数のインテグレーションにつながります。 各インテグレーションは、自動化ビルド（テストを含む）によって検証され、統合エラーを可能な限り迅速に検出します。 多くのチームでは、このアプローチにより統合の問題が大幅に軽減され、チームが一貫性のあるソフトウェアをより迅速に開発できるようになりました。
 
 ..     Continuous Integration is a software development practice where members of
 ..     a team integrate their work frequently, usually each person integrates at
@@ -33,7 +33,7 @@ Jenkins
 .. `Jenkins CI <http://jenkins-ci.org>`_ is an extensible continuous integration
 .. engine. Use it.
 
-`Jenkins CI <http://jenkins-ci.org>`_ は、拡張可能な継続的統合エンジンです。 これを使って。
+`Jenkins CI <http://jenkins-ci.org>`_ は、拡張可能な継続的インテグレーションエンジンです。 これを使います。
 
 
 
@@ -66,7 +66,7 @@ Tox
 
 * 異なるPythonのバージョンとインタプリタでパッケージが正しくインストールされていることを確認する
 * 各環境でのテストの実行、テストツールの選択
-* Continuous Integrationサーバーのフロントエンドとして機能し、定型文を削減し、CIおよびシェルベースのテストをマージします。
+* 継続的インテグレーションサーバーのフロントエンドとして機能し、定型文を削減し、CIおよびシェルベースのテストをマージします。
 
 
 Travis-CI
@@ -79,7 +79,7 @@ Travis-CI
 .. build or not. So if you are hosting your code on GitHub, travis-ci is a great
 .. and easy way to get started with Continuous Integration.
 
-`Travis-CI <https://travis-ci.org/>`_ はオープンソースプロジェクトのテストを無料でビルドする分散型CIサーバです。 Pythonテストを実行する複数のワーカーを提供し、GitHubとシームレスに統合します。 この特定のチェンジセットがビルドを破るかどうかは、Pull Requestにコメントすることさえできます。 したがって、GitHubでコードをホストしている場合、travis-ciはContinuous Integrationを使い始めることができます。
+`Travis-CI <https://travis-ci.org/>`_ はオープンソースプロジェクトのテストを無料でビルドする分散型CIサーバです。 Pythonテストを実行する複数のワーカーを提供し、GitHubとシームレスに統合します。 この特定のチェンジセットがビルドを破るかどうかは、Pull Requestにコメントすることさえできます。 したがって、GitHubでコードをホストしている場合、travis-ciは継続的インテグレーションを使い始めることができます。
 
 .. In order to get started, add a :file:`.travis.yml` file to your repository with
 .. this example content::

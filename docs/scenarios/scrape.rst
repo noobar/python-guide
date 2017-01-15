@@ -24,8 +24,11 @@ WebサイトはHTMLを使用して書かれています。つまり、各Webペ�
 
 Webスクレイピングは、コンピュータプログラムを使用してWebページを調べ、必要なデータを、同時にデータの構造を保持しながら、最も便利な形式で収集するプラクティスです。
 
-lxml and Requests
------------------
+.. lxml and Requests
+.. -----------------
+
+lxml と Requests
+----------------
 
 .. `lxml <http://lxml.de/>`_ is a pretty extensive library written for parsing
 .. XML and HTML documents very quickly, even handling messed up tags in the
