@@ -46,7 +46,7 @@
 .. your project's
 .. `architecture <http://www.amazon.com/gp/product/1257638017/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=39095&creativeASIN=1257638017>`__.
 
-コードスタイル、APIデザイン、オートメーションが健全な開発サイクルに欠かせないのと同様に、リポジトリ構造はプロジェクトの `architecture <http://www.amazon.com/gp/product/1257638017/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=39095&creativeASIN=1257638017>`_ 。
+コードスタイル、APIデザイン、オートメーションが健全な開発サイクルに欠かせないのと同様に、リポジトリ構造はプロジェクト `アーキテクチャ <http://www.amazon.com/gp/product/1257638017/ref=as_li_ss_tl?ie=UTF8&tag=bookforkind-20&linkCode=as2&camp=1789&creative=39095&creativeASIN=1257638017>`_ の重要な部分です。
 
 .. When a potential user or contributor lands on your repository's page,
 .. they see a few things:
@@ -280,8 +280,8 @@ Setup.py
 .. -  Use a simple (but *explicit*) path modification to resolve the
 ..    package properly.
 
-- パッケージをサイトパッケージにインストールすることを期待してください。
-- パッケージを適切に解決するには、単純な (しかし *明示的な* )パス変更を使用します。
+- パッケージが site-packages にインストールされることを期待してください。
+- パッケージを適切に解決するために、単純な (しかし *明示的な* )パス変更を使用します。
 
 .. I highly recommend the latter. Requiring a developer to run
 .. ``setup.py develop`` to test an actively changing
@@ -372,7 +372,7 @@ Djangoアプリケーションについて
 .. How? Well, they go to their bare and fresh repository and run the
 .. following, as they always have:
 
-どうやって？ さて、彼らはいつものように、裸の新鮮なリポジトリに行き、以下を実行します:
+どうやって？ 彼らはいつも空で新しいリポジトリに行き、以下を実行します:
 
 ::
 
@@ -536,7 +536,7 @@ Pythonモジュールは、利用可能な主要な抽象レイヤーの1つで�
 .. `example <http://docs.python.org/tutorial/modules.html#packages>`_ of how the
 .. dot notation should be used in the Python docs.
 
-`my.spam.py` の場合、Pythonは :file:`spam.py` ファイルを :file:`my` という名前のフォルダはありません。ある `example <http://docs.python.org/tutorial/modules.html#packages>`_ Pythonドキュメントではドット表記を使用するべきです。
+`my.spam.py` の場合、Pythonは :file:`my` という名前のフォルダにある :file:`spam.py` ファイルを探します。Pythonドキュメントではドット表記をどのように使うべきかの `例 <http://docs.python.org/tutorial/modules.html#packages>`_ があります。
 
 .. If you'd like you could name your module :file:`my_spam.py`, but even our
 .. friend the underscore should not be seen often in module names.
@@ -650,7 +650,7 @@ Pythonは非常に単純なパッケージシステムを提供しています�
 .. modules, but with a special behavior for the :file:`__init__.py` file, which is
 .. used to gather all package-wide definitions.
 
-:file:`__init __.py` ファイルを持つディレクトリはPythonパッケージとみなされます。パッケージ内のさまざまなモジュールは、普通のモジュールと同様にインポートされますが、パッケージ全体の定義を集めるために使用される :file:`__init __.py` ファイルの特殊な動作を伴います。
+:file:`__init__.py` ファイルを持つディレクトリはPythonパッケージとみなされます。パッケージ内のさまざまなモジュールは、普通のモジュールと同様にインポートされますが、パッケージ全体の定義を集めるために使用される :file:`__init__.py` ファイルの特殊な動作を伴います。
 
 .. A file :file:`modu.py` in the directory :file:`pack/` is imported with the
 .. statement ``import pack.modu``. This statement will look for an
@@ -660,7 +660,7 @@ Pythonは非常に単純なパッケージシステムを提供しています�
 .. function, or class defined in :file:`modu.py` is available in the pack.modu
 .. namespace.
 
-ディレクトリ :file:`pack/` のファイル :file:`modu.py` は、``import pack.modu`` というステートメントでインポートされます。 この文は :file:`__init __.py` ファイルを :file:`pack` で探し、すべての最上位レベルの文を実行します。 それから、:file:`pack/modu.py` という名前のファイルを探し、すべてのトップレベルのステートメントを実行します。 これらの操作の後で、 :file:`modu.py` で定義された変数、関数、またはクラスは、pack.modu名前空間で使用できます。
+ディレクトリ :file:`pack/` のファイル :file:`modu.py` は、``import pack.modu`` というステートメントでインポートされます。 この文は :file:`__init__.py` ファイルを :file:`pack` で探し、すべての最上位レベルの文を実行します。 それから、:file:`pack/modu.py` という名前のファイルを探し、すべてのトップレベルのステートメントを実行します。 これらの操作の後で、 :file:`modu.py` で定義された変数、関数、またはクラスは、pack.modu名前空間で使用できます。
 
 .. A commonly seen issue is to add too much code to :file:`__init__.py`
 .. files. When the project complexity grows, there may be sub-packages and
@@ -668,13 +668,13 @@ Pythonは非常に単純なパッケージシステムを提供しています�
 .. single item from a sub-sub-package will require executing all
 .. :file:`__init__.py` files met while traversing the tree.
 
-よく見られる問題は、 :file:`__init __.py` ファイルにあまりにも多くのコードを追加することです。 プロジェクトの複雑さが増すと、深いディレクトリ構造にサブパッケージとサブサブパッケージが存在する可能性があります。 この場合、サブサブパッケージから単一の項目をインポートするには、ツリーを走査中にall :file:`__init __.py` ファイルを実行する必要があります。
+よく見られる問題は、 :file:`__init__.py` ファイルにあまりにも多くのコードを追加することです。 プロジェクトの複雑さが増すと、深いディレクトリ構造にサブパッケージとサブサブパッケージが存在する可能性があります。 この場合、サブサブパッケージから単一の項目をインポートするには、ツリーを走査中に全ての :file:`__init__.py` ファイルを実行する必要があります。
 
 .. Leaving an :file:`__init__.py` file empty is considered normal and even a good
 .. practice, if the package's modules and sub-packages do not need to share any
 .. code.
 
-パッケージのモジュールとサブパッケージがコードを共有する必要がない場合、 :file:`__init __.py` ファイルを空のままにしておくのは正常であり、良い習慣でもあります。
+パッケージのモジュールとサブパッケージがコードを共有する必要がない場合、 :file:`__init__.py` ファイルを空のままにしておくのは正常であり、良い習慣でもあります。
 
 .. Lastly, a convenient syntax is available for importing deeply nested packages:
 .. ``import very.deep.module as mod``. This allows you to use `mod` in place of the
@@ -739,7 +739,7 @@ Pythonでは、すべてがオブジェクトであり、そのように扱う�
 .. after the first process loaded the item, and then we have to mark as read a
 .. deleted object.
 
-いくつかのアーキテクチャ、通常はWebアプリケーションでは、複数のインスタンスのPythonプロセスが生成され、同時に発生する可能性のある外部要求に応答します。この場合、いくつかの状態をインスタンス化されたオブジェクトに保持することは、世界に関するいくつかの静的情報を保持することを意味し、並行性の問題または競合状態になりがちです。時には、オブジェクトの状態の初期化（通常は ``__init __()`` メソッドで行われます）とそのメソッドの1つによるオブジェクト状態の実際の使用の間に、世界が変更された可能性があります。時代遅れである。例えば、要求はメモリ内のアイテムをロードし、ユーザによってそれを読み取りとしてマークすることができる。別のリクエストで同時にこのアイテムの削除が必要な場合は、最初のプロセスがアイテムをロードした後に実際に削除が行われ、削除されたオブジェクトを読み取り済みとしてマークする必要があります。
+いくつかのアーキテクチャ、通常はWebアプリケーションでは、複数のインスタンスのPythonプロセスが生成され、同時に発生する可能性のある外部要求に応答します。この場合、いくつかの状態をインスタンス化されたオブジェクトに保持することは、世界に関するいくつかの静的情報を保持することを意味し、並行性の問題または競合状態になりがちです。時には、オブジェクトの状態の初期化（通常は ``__init__()`` メソッドで行われます）とそのメソッドの1つによるオブジェクト状態の実際の使用の間に、世界が変更された可能性があります。時代遅れである。例えば、要求はメモリ内のアイテムをロードし、ユーザによってそれを読み取りとしてマークすることができる。別のリクエストで同時にこのアイテムの削除が必要な場合は、最初のプロセスがアイテムをロードした後に実際に削除が行われ、削除されたオブジェクトを読み取り済みとしてマークする必要があります。
 
 .. This and other issues led to the idea that using stateless functions is a
 .. better programming paradigm.
@@ -1028,7 +1028,7 @@ Pythonには、組み込み型とユーザー定義型の2種類があります�
 .. :py:meth:`list.append` or :py:meth:`list.pop`, and can be modified in place.
 .. The same goes for dictionaries.
 
-変更可能なタイプは、コンテンツのインプレース変更を可能にするタイプです。 典型的な変数はリストと辞書です: 全てのリストには :py:meth: `list.append` や :py:meth:`list.pop` のようなメソッドの変更があります。 辞書についても同じことが言えます。
+変更可能なタイプは、コンテンツのインプレース変更を可能にするタイプです。 典型的な変数はリストと辞書です: 全てのリストには :py:meth:`list.append` や :py:meth:`list.pop` のようなメソッドの変更があります。 辞書についても同じことが言えます。
 
 .. Immutable types provide no method for changing their content. For instance, the
 .. variable x set to the integer 6 has no "increment" method. If you want to

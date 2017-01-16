@@ -54,7 +54,7 @@
 .. Logging in a Library
 .. --------------------
 
-ライブラリのログイン
+ライブラリのロギング
 --------------------
 
 .. Notes for `configuring logging for a library`_ are in the 
@@ -82,7 +82,7 @@
 .. Here is an example of best practice from the `requests source`_ -- place
 .. this in your ``__init__.py``
 
-ここでは、 `requests source`_ からのベストプラクティスの例を示します - これをあなたの ``__init __.py`` に置きます
+ここでは、 `requests source`_ からのベストプラクティスの例を示します - これをあなたの ``__init__.py`` に置きます
 
 .. code-block:: python
 

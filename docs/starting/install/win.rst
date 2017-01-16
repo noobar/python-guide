@@ -34,7 +34,7 @@ Windows版はMSIパッケージとして提供されています。 手動でイ
 .. Assuming that your Python installation is in :file:`C:\\Python27\\`, add this to your
 .. :envvar:`PATH`:
 
-Pythonインタプリタのフルパス名を入力するたびに退屈になるので、デフォルトのPythonバージョンのディレクトリを :envvar:`PATH` に追加してください。 あなたのPythonのインストールが :file:`C:\\Python27\\` にあると仮定して、これをあなたの :envvar:`PATH` に追加してください:
+Pythonインタプリタのフルパス名を入力するたびにうんざりするので、デフォルトのPythonバージョンのディレクトリを :envvar:`PATH` に追加してください。 あなたのPythonのインストールが :file:`C:\\Python27\\` にあると仮定して、これをあなたの :envvar:`PATH` に追加してください:
 
 .. code-block:: console
 
@@ -68,7 +68,7 @@ Setuptools + Pip
 .. command. It also enables you to add this network installation capability to
 .. your own Python software with very little work.
 
-最も重要な第三者のPythonソフトウェアはSetutoolです。これは標準ライブラリのdistutilsによって提供されるパッケージとインストール機能を拡張します。 SetuptoolsをPythonシステムに追加すると、単一のコマンドで対応するPythonソフトウェア製品をダウンロードしてインストールすることができます。 また、このネットワークインストール機能をごくわずかな作業で独自のPythonソフトウェアに追加することもできます。
+最も重要な第三者のPythonソフトウェアはSetutoolsです。これは標準ライブラリのdistutilsによって提供されるパッケージとインストール機能を拡張します。 SetuptoolsをPythonシステムに追加すると、単一のコマンドで対応するPythonソフトウェア製品をダウンロードしてインストールすることができます。 また、このネットワークインストール機能をごくわずかな作業で独自のPythonソフトウェアに追加することもできます。
 
 .. To obtain the latest version of Setuptools for Windows, run the Python script
 .. available here: `ez_setup.py <https://bootstrap.pypa.io/ez_setup.py>`_
@@ -109,7 +109,7 @@ pipをインストールするには、ここの利用できるPythonスクリ�
 
 .. To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
 
-これを使い始め、さらに詳しい情報を参照する :ref:`Virtual Environments <virtualenvironments-ref>` docs。
+これを使い始めるには、さらに詳細を見ます :ref:`Virtual Environments <virtualenvironments-ref>` docs。
 
 
 --------------------------------

@@ -1,14 +1,14 @@
 .. Reading Great Code
 .. ==================
 
-グレートコードを読む
-====================
+優れたコードを読む
+==================
 
 .. One of the core tenets behind the design of Python is creating
 .. readable code. The motivation behind this design is simple: The number
 .. one thing that Python programmers do is read code.
 
-Pythonの設計の背後にある主な原則の1つは、読み取り可能なコードを作成することです。 この設計の背景にある動機は簡単です :Pythonプログラマが行う最も重要なことはコードを読むことです。
+Pythonの設計の背後にある主な原則の1つは、読み取り可能なコードを作成することです。 この設計の背景にある動機は簡単です: Pythonプログラマが行う最も重要なことはコードを読むことです。
 
 .. One of the secrets of becoming a great Python programmer is to read,
 .. understand, and comprehend excellent code.

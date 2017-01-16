@@ -95,7 +95,7 @@ PEPは *Python拡張提案* です。 Python自体やそれを取り巻く標準
      Pythonの背後にある哲学を簡単に説明する19のステートメントのリスト。
 
 - :pep:`257`: Docstringの規約。
-     PythonのDocstringに関連するセマンティクスと慣習に関するガイドラインを示します。
+     PythonのDocstringに関連するセマンティクスと慣習に関するガイドラインを示します。
 
 .. You can read more at `The PEP Index <http://www.python.org/dev/peps/>`_.
 

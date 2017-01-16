@@ -377,7 +377,7 @@ pyenv
 .. pyenv.  pyenv then works out which version of Python should be run based on
 .. environment variables, ``.python-version`` files, and the global default.
 
-pyenvは ``shims`` ディレクトリにPythonインタプリタの偽のバージョン (``pip`` や ``2to3 ``などの他のツール) を埋め込むことで動作します。 システムが ``python`` という名前のプログラムを探すと、最初に ``shims`` ディレクトリ内を調べ、偽のバージョンを使用してコマンドをpyenvに渡します。 pyenvは、環境変数、 ``.python-version`` ファイル、およびグローバルデフォルトに基づいてどのバージョンのPythonを実行するかを決定します。
+pyenvは ``shims`` ディレクトリにPythonインタプリタの偽のバージョン (``pip`` や ``2to3`` などの他のツール) を埋め込むことで動作します。 システムが ``python`` という名前のプログラムを探すと、最初に ``shims`` ディレクトリ内を調べ、偽のバージョンを使用してコマンドをpyenvに渡します。 pyenvは、環境変数、 ``.python-version`` ファイル、およびグローバルデフォルトに基づいてどのバージョンのPythonを実行するかを決定します。
 
 .. pyenv isn't a tool for managing virtual environments, but there is the plugin
 .. `pyenv-virtualenv <https://github.com/yyuu/pyenv-virtualenv>`_ which automates
@@ -485,7 +485,7 @@ ptpython
 .. on top of the `prompt_toolkit <http://github.com/jonathanslenders/python-prompt-toolkit>`_
 .. library. It is considered to be an alternative to BPython_. Features include:
 
-`ptpython <https://github.com/jonathanslenders/ptpython/>`_ は、 `prompt_toolkit <http://github.com/jonathanslenders/python-prompt-toolkit>`_ ライブラリの上にあるREPLビルドです。 これはBPython_ の代わりと考えられています。 機能は次のとおりです。
+`ptpython <https://github.com/jonathanslenders/ptpython/>`_ は、 `prompt_toolkit <http://github.com/jonathanslenders/python-prompt-toolkit>`_ ライブラリの上にあるREPLビルドです。 これは BPython_ の代わりと考えられています。 機能は次のとおりです。
 
 .. * Syntax highlighting
 .. * Autocompletion

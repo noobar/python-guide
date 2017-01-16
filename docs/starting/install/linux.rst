@@ -36,14 +36,14 @@ RHELとCentOSの古いバージョンにはPython 2.4が付属していますが
 .. for real-world use. In particular, you should always install Setuptools and pip, as
 .. it makes it much easier for you to use other third-party Python libraries.
 
-Pythonを使用するために何か他のものをインストールしたり設定したりする必要はありません。 しかし、実際の使用のためにPythonアプリケーションを構築する前に、次のセクションで説明するツールとライブラリをインストールすることを強くお勧めします。 特に、他のサードパーティのPythonライブラリを使うのがはるかに簡単になるので、Setuptoolsとpipをインストールする必要があります。
+Pythonを使用するために何か他のものをインストールしたり設定したりする必要はありません。 しかし、Pythonアプリケーションを実際に使用して構築する前に、次のセクションで説明するツールとライブラリをインストールすることを強くお勧めします。 特に、他のサードパーティのPythonライブラリを使うのがはるかに簡単になるので、Setuptoolsとpipをインストールする必要があります。
 
 Setuptools & Pip
 ----------------
 
 .. The two most crucial third-party Python packages are `setuptools <https://pypi.python.org/pypi/setuptools>`_ and `pip <https://pip.pypa.io/en/stable/>`_.
 
-最も重要な2つのサードパーティのPythonパッケージは、 `setuptools <https://pypi.python.org/pypi/setuptools>`_ と `pip <https://pip.pypa.io/en/stable/>`_ 。
+最も重要な2つのサードパーティのPythonパッケージは、 `setuptools <https://pypi.python.org/pypi/setuptools>`_ と `pip <https://pip.pypa.io/en/stable/>`_ です。
 
 .. Once installed, you can download, install and uninstall any compliant Python software 
 .. product with a single command. It also enables you to add this network installation 
@@ -88,7 +88,7 @@ pipをインストールするには、`公式のpipインストールガイド 
 
 .. To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
 
-これを使い始め、さらに詳しい情報を参照する :ref:`Virtual Environments <virtualenvironments-ref>` docs。
+これを使い始めるには、さらに詳細を見ます :ref:`Virtual Environments <virtualenvironments-ref>` docs。
 
 .. You can also use :ref:`virtualenvwrapper <virtualenvwrapper-ref>` to make it easier to
 .. manage your virtual environments.

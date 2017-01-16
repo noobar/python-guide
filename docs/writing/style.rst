@@ -139,7 +139,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 .. compared to the more straightforward calls to ``send('Hello', 'World')`` and
 .. ``point(1, 2)``.
 
-この2つのケースでは、関数を呼び出すときに引数名を使用することができます。そうすることで、引数の順序を切り替えることができます。例えば ``send(recipient='World', message='Hello')`` ``send('Hello', 'World')`` と ``point(y=2, x=1)`` へのより単純な呼び出しに比べて、``point(1, 2)``。
+この2つのケースでは、関数を呼び出すときに引数名を使用することができます。そうすることで、引数の順序を切り替えることができます。例えば、``send(recipient='World', message='Hello')`` と ``point(y=2, x=1)`` を呼び出す引数の順序を ``send('Hello', 'World')`` と ``Point(1,2)`` に切り替えることが可能ですが、これは可読性を低下させ、不必要で冗長です。 
 
 .. 2. **Keyword arguments** are not mandatory and have default values. They are
 ..    often used for optional parameters sent to the function. When a function has
@@ -362,8 +362,8 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 .. Idioms
 .. ------
 
-慣用句
-------
+イディオム
+----------
 
 .. A programming idiom, put simply, is a *way* to write code. The notion of
 .. programming idioms is discussed amply at `c2 <http://c2.com/cgi/wiki?ProgrammingIdiom>`_
@@ -390,7 +390,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 .. Unpacking
 .. ~~~~~~~~~
 
-開梱
+解凍
 ~~~~
 
 .. If you know the length of a list or tuple, you can assign names to its

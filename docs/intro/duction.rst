@@ -29,7 +29,7 @@ PythonはTcl、Perl、Ruby、Scheme、Javaに似た汎用の高水準プログ�
 
 * **事実上あらゆる作業のための広範な標準ライブラリと第三者モジュール**
 
-  Pythonは、正規表現、ファイルIO、分数処理、オブジェクトの直列化などのモジュールを含む豊富な標準ライブラリのために、「バッテリー同梱」という言葉で記述されることがあります。
+  Pythonは、正規表現、ファイルIO、分数処理、オブジェクトのシリアライズなどのモジュールを含む豊富な標準ライブラリのために、「バッテリー同梱」という言葉で記述されることがあります。
 
   さらに、 `Python Package Index <http://pypi.python.org/pypi/>`_ は、ユーザがPerlの `CPAN <http://www.cpan.org>`_ と同様に、広く使われるようにパッケージを提出することができます。 `Django <http://www.djangoproject.com>`_ ウェブフレームワークや 数学のルーチンがセットされた `NumPy <http://numpy.scipy.org>`_ のような非常に強力なPythonフレームワークとツールのコミュニティが盛んです。
 
@@ -51,7 +51,7 @@ PythonはTcl、Perl、Ruby、Scheme、Javaに似た汎用の高水準プログ�
 
 * **他のシステムとの統合**
 
-  Pythonは `Java libraries <http://www.jython.org>`_ と統合することができ、企業のプログラマーが慣れ親しんだ豊富なJava環境で使用することができます。 また、スピードが本質である場合、 `CまたはC ++モジュールによって拡張されます <http://docs.python.org/extending/>`_ 。
+  Pythonは `Java libraries <http://www.jython.org>`_ と統合することができ、企業のプログラマーが慣れ親しんだ豊富なJava環境で使用することができます。 また、スピードが本質である場合、 `CまたはC ++モジュールによって拡張 <http://docs.python.org/extending/>`_ されます。
 
 ..   Python can integrate with `Java libraries <http://www.jython.org>`_,
 ..   enabling it to be used with the rich Java environment that corporate

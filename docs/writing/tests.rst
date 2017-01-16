@@ -117,7 +117,7 @@
 .. library. Its API will be familiar to anyone who has used any of the
 .. JUnit/nUnit/CppUnit series of tools.
 
-:mod:`unittest` は、Pythonの標準ライブラリに含まれる電池内蔵テストモジュールです。 そのAPIは、JUnit/nUnit/CppUnitシリーズのいずれかを使用している人にとっては馴染み深いものです。
+:mod:`unittest` は、Pythonの標準ライブラリに含まれるバッテリー同梱のテストモジュールです。 そのAPIは、JUnit/nUnit/CppUnitシリーズのいずれかを使用している人にとっては馴染み深いものです。
 
 .. Creating test cases is accomplished by subclassing :class:`unittest.TestCase`.
 

@@ -462,7 +462,7 @@ Buildout
 .. format of the software being developed or deployed. Recipes for build tasks in any
 .. environment can be created, and many are already available.
 
-`Buildout <http://www.buildout.org>`_ はオープンソースのソフトウェアビルドツールです。 Buildoutは、Pythonプログラミング言語を使用して作成されます。 設定を行うスクリプトと設定の分離の原則を実装しています。 Buildoutは主に、開発またはデプロイされるソフトウェアのPythonの卵形式で依存関係をダウンロードして設定するために使用されます。 どのような環境でもビルドタスクのためのレシピを作成することができ、すでに多数のレシピが利用可能です。
+`Buildout <http://www.buildout.org>`_ はオープンソースのソフトウェアビルドツールです。 Buildoutは、Pythonプログラミング言語を使用して作成されます。 設定を行うスクリプトと設定の分離の原則を実装しています。 Buildoutは主に、開発またはデプロイされるソフトウェアの Python eggs 形式で依存関係をダウンロードして設定するために使用されます。 どのような環境でもビルドタスクのためのレシピを作成することができ、すでに多数のレシピが利用可能です。
 
 Shinken
 -------

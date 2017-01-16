@@ -8,7 +8,7 @@
 .. and code documentation. Following some simple best practices can save
 .. both you and others a lot of time.
 
-読みやすさは、プロジェクトとコードの両方のドキュメントで、Python開発者の主な焦点です。いくつかの簡単なベストプラクティスに従えば、あなたと他の人の両方に多くの時間を節約できます。
+可読性は、プロジェクトとコードのドキュメント両方ともPython開発者の主な焦点となっています。いくつかの簡単なベストプラクティスに従えば、あなたと他の人の両方に多くの時間を節約できます。
 
 .. Project Documentation
 .. ---------------------
@@ -92,25 +92,25 @@ Sphinx
 .. into a range of output formats including HTML, LaTeX (for printable
 .. PDF versions), manual pages, and plain text.
 
-Sphinx_ は、最も人気のあるPythonドキュメントツールです。 **それを使用する。** :ref:`restructuredtext-ref` マークアップ言語を、HTML、LaTeX（印刷可能なPDF版用）、マニュアルページ、プレーンテキストなどの出力フォーマットの範囲に変換する。
+Sphinx_ は、最も人気のあるPythonドキュメントツールです。 **これを使用します。** :ref:`restructuredtext-ref` マークアップ言語を、HTML、LaTeX（印刷可能なPDF版用）、マニュアルページ、プレーンテキストなどの出力フォーマットの範囲に変換する。
 
 .. There is also **great**, **free** hosting for your Sphinx_ docs:
 .. `Read The Docs`_. Use it. You can configure it with commit hooks to
 .. your source repository so that rebuilding your documentation will
 .. happen automatically.
 
-あなたの Sphinx_ docsのための **素晴らしい**、**無料の** ホスティングもあります: `Read The Docs`_。 これを使って。 ドキュメントの再構築が自動的に行われるように、ソースリポジトリへのコミットフックを設定することができます。
+あなたの Sphinx_ docsのための **素晴らしい**、**無料の** ホスティングもあります: `Read The Docs`_。 これを使用します。 ドキュメントの再構築が自動的に行われるように、ソースリポジトリへのコミットフックを設定することができます。
 
 .. When run, Sphinx_ will import your code and using Python's introspection 
 .. features it will extract all function, method and class signatures. It will
 .. also extract the accompanying docstrings, and compile it all into well
 .. structured and easily readable documentation for your project.  
 
-実行すると、Sphinx_はコードをインポートし、Pythonのイントロスペクション機能を使用して、すべての関数、メソッド、クラスのシグネチャを抽出します。 また付属のドキュメントストリングを抽出し、それをすべて構造化された、簡単に読めるドキュメントにコンパイルしてプロジェクトに合わせます。
+実行すると、Sphinx_ はコードをインポートし、Pythonのイントロスペクション機能を使用して、すべての関数、メソッド、クラスのシグネチャを抽出します。 また付属のドキュメントストリングを抽出し、それをすべて構造化された、簡単に読めるドキュメントにコンパイルしてプロジェクトに合わせます。
 
 .. note::
 
-    SphinxはAPIの生成で有名ですが、一般的なプロジェクトのドキュメントでもうまく機能します。 このガイドはSphinx_で構築され、 `Read The Docs`_
+    SphinxはAPIの生成で有名ですが、一般的なプロジェクトのドキュメントでもうまく機能します。 このガイドはSphinx_ で構築され、 `Read The Docs`_ でホスティングされています。
 
 .. .. note::
 .. 
@@ -195,7 +195,7 @@ Pythonでは、*docstrings* はモジュール、クラス、関数を記述し�
 .. such as unit test logic. Those can be nice, but you won't ever go
 .. wrong with vanilla "here's what this does."
 
-一部のツールでは、ドキュメントテストロジックなどのドキュメントよりも多くの動作を埋め込むためにドキュメントストリングを使用します。 それらは素晴らしいことができますが、あなたはバニラに間違って行くことはありません "ここにこれが何をしています。
+一部のツールでは、ドキュメントテストロジックなどのドキュメントよりも多くの動作を埋め込むためにドキュメントストリングを使用します。 それらは素晴らしいことができますが、あなたは vanilla に間違って行くことはありません "ここでこれが何かをしています。
 
 .. Tools like Sphinx_ will parse your docstrings as reStructuredText and render it
 .. correctly as HTML. This makes it very easy to embed snippets of example code in
@@ -250,7 +250,7 @@ Docstringsとブロックコメント
 .. Docstrings are accessible from both the `__doc__` dunder attribute for almost 
 .. every Python object, as well as with the built in `help()` function.
 
-ブロックコメントとは異なり、ドキュメントストリングはPython言語自体に組み込まれています。 つまり、Pythonの強力なイントロスペクション機能をすべて使用して、最適化されたコメントと比較して、実行時にドキュメントストリングにアクセスすることができます。 Docstringは、ほとんどすべてのPythonオブジェクトのための `__doc__` dunder属性と組み込みの `help()` 関数の両方からアクセスできます。
+ブロックコメントとは異なり、docstrings はPython言語自体に組み込まれています。 つまり、Pythonの強力なイントロスペクション機能をすべて使用して、最適化されたコメントと比較して、実行時に docstrings にアクセスすることができます。 Docstringは、ほとんどすべてのPythonオブジェクトのための `__doc__` dunder属性と組み込みの `help()` 関数の両方からアクセスできます。
 
 .. While block comments are usually used to explain *what* a section of code is
 .. doing, or the specifics of an algorithm, docstrings are more intended for

@@ -1,8 +1,8 @@
 .. Common Gotchas
 .. ==============
 
-共通ゴッチャ
-============
+共通の落とし穴
+==============
 
 .. For the most part, Python aims to be a clean and consistent language that
 .. avoids surprises. However, there are a few cases that can be confusing to
@@ -111,7 +111,7 @@ Pythonのデフォルト引数は、関数が定義されているときに評�
 .. When the Gotcha Isn't a Gotcha
 .. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ゴッチャがゴチチャでないとき
+落とし穴が落とし穴でないとき
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. Sometimes you can specifically "exploit" (read: use as intended) this behavior
@@ -245,7 +245,7 @@ Pythonのクロージャは *late binding* です。 これは、内部関数が
 .. When the Gotcha Isn't a Gotcha
 .. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ゴッチャがゴチチャでないとき
+落とし穴が落とし穴でないとき
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. Sometimes you want your closures to behave this way. Late binding is good in
