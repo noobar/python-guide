@@ -59,6 +59,8 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 
 .. **Good**
 
+**良い**
+
 .. code-block:: python
 
     def make_complex(x, y):
@@ -149,7 +151,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 ..    ``send(message, to, cc=None, bcc=None)``. Here ``cc`` and ``bcc`` are
 ..    optional, and evaluate to ``None`` when they are not passed another value.
 
-2. **キーワード引数** は必須ではなく、デフォルト値を持ちます。これらは、関数に送信されるオプションのパラメータによく使用されます。関数に2つまたは3つ以上の位置パラメータがある場合、そのシグネチャは覚えにくく、キーワード引数をデフォルト値で使用すると便利です。例えば、より完全な ``send`` 関数は ``send(message, to, cc=None, bcc=None)`` として定義できます。ここで、 ``cc`` と ``bcc`` はオプションで、別の値が渡されないときは ``None`` と評価されます。
+2. **キーワード引数** は必須ではなく、デフォルト値を持ちます。これらは、関数に送信されるオプションのパラメータによく使用されます。関数に2つまたは3つ以上の位置パラメータがある場合、そのシグネチャは覚えにくいため、キーワード引数をデフォルト値で使用すると便利です。例えば、より完全な ``send`` 関数は ``send(message, to, cc=None, bcc=None)`` として定義できます。ここで、 ``cc`` と ``bcc`` はオプションで、別の値が渡されないときは ``None`` と評価されます。
 
 .. Calling a function with keyword arguments can be done in multiple ways in
 .. Python, for example it is possible to follow the order of arguments in the
@@ -190,7 +192,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 .. the recipient list as a list beforehand, and it opens the possibility to pass
 .. any sequence, including iterators, that cannot be unpacked as other sequences.
 
-しかしながら、この構築物にはいくつかの欠点があり、慎重に使用すべきである。ある関数が同じ性質の引数のリストを受け取った場合、それを1つの引数の関数として定義することがより明確であり、その引数はリストまたは任意のシーケンスです。ここで ``send`` に複数の受信者がある場合、``send('Hello', ['God', 'Mom', 'Cthulhu'])`` で明示的に ``send(message, recipients')``。この方法では、関数のユーザーは受信者リストをあらかじめリストとして操作し、イテレーターを含む他のシーケンスとして解凍できないシーケンスを渡す可能性を開きます。
+しかしながら、この構築物にはいくつかの欠点があり、慎重に使用すべきです。ある関数が同じ性質の引数のリストを受け取った場合、それを1つの引数の関数として定義することがより明確であり、その引数はリストまたは任意のシーケンスです。ここで ``send`` に複数の受信者がある場合、``send('Hello', ['God', 'Mom', 'Cthulhu'])`` で明示的に ``send(message, recipients)``。この方法では、関数のユーザーは受信者リストをあらかじめリストとして操作し、イテレーターを含む他のシーケンスとして解凍できないシーケンスを渡す可能性を開きます。
 
 .. 4. The **arbitrary keyword argument dictionary** is the last way to pass
 ..    arguments to functions. If the function requires an undetermined series of
@@ -206,7 +208,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 .. proven necessity to use them, and they should not be used if the simpler and
 .. clearer construct is sufficient to express the function's intention.
 
-同様の理由から、*任意の引数リスト* の場合と同じ注意が必要です。これらの強力な手法は、実証された必要性がある場合に使用されるものであり、よりシンプルで明確な構成が関数の意図を表現するのに十分である。
+同様の理由から、*任意の引数リスト* の場合と同じ注意が必要です。これらの強力な手法は、実証された必要性がある場合に使用されるものであり、よりシンプルで明確な構成が関数の意図を十分に表現することが可能です。
 
 .. It is up to the programmer writing the function to determine which arguments
 .. are positional arguments and which are optional keyword arguments, and to
@@ -214,7 +216,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 .. the advice above is followed wisely, it is possible and enjoyable to write
 .. Python functions that are:
 
-どの引数が定位置引数であり、かつオプションのキーワード引数であるかを決定し、任意の引数渡しの高度な技術を使用するかどうかを決定するのは、関数を記述するプログラマの責任です。上記のアドバイスが賢明に守られれば、Pythonの関数を書くことが可能で楽しいです:
+どの引数が定位置引数であり、かつオプションのキーワード引数であるかを決定し、任意の引数渡しの高度な技術を使用するかどうかを決定するのは、関数を記述するプログラマの責任です。上記のアドバイスが賢明に守られれば、Pythonの関数を書くことが楽しくなるでしょう:
 
 .. * easy to read (the name and arguments need no explanations)
 
@@ -235,7 +237,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 .. tools allowing you to do almost any kind of tricky tricks. For instance, it is
 .. possible to do each of the following:
 
-ハッカー向けの強力なツールであるPythonには、非常に豊富なフックやツールが付属しており、あらゆる種類のトリッキーなトリックを行うことができます。 たとえば、以下のそれぞれを行うことができます。
+ハッカー向けの強力なツールであるPythonには、非常に豊富なフックやツールが付属しており、あらゆる種類のトリッキーなトリックを行うことができます。 例えば、以下について行うことができます。
 
 .. * change how objects are created and instantiated
 
@@ -247,7 +249,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 
 .. * it is even possible (and recommended if needed) to embed C routines in Python.
 
-* CのルーチンをPythonに埋め込むことも可能です（必要に応じてお勧めします）。
+* CのルーチンをPythonに埋め込むことも可能です（必要に応じてお勧めします）
 
 .. However, all these options have many drawbacks and it is always better to use
 .. the most straightforward way to achieve your goal. The main drawback is that
@@ -305,7 +307,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 .. existing code; it will always be possible to publicize a private property,
 .. but making a public property private might be a much harder operation.
 
-このコンベンションを惜しみなく使用することをお勧めします。クライアントコードで使用されないメソッドやプロパティには、アンダースコアを前に付ける必要があります。 これにより、任務の分離と既存のコードの変更が容易になります。 プライベートプロパティを公開することは常に可能ですが、パブリックプロパティをプライベートにすることは、はるかに難しい操作になる可能性があります。
+このコンベンションを惜しみなく使用することをお勧めします。クライアントコードで使用されないメソッドやプロパティには、アンダースコアを前に付ける必要があります。 これにより、任務の分離と既存のコードの変更が容易になります。 プライベートプロパティを公開することは常に可能ですが、パブリックプロパティをプライベートにすることは、非常に難しい操作になる可能性があります。
 
 .. Returning values
 .. ~~~~~~~~~~~~~~~~
@@ -325,7 +327,7 @@ Pythonではあらゆる種類の黒魔術が可能ですが、最も明快で�
 .. indicate a wrong input parameter or any other reason for the function to not be
 .. able to complete its computation or task.
 
-関数内で値を返す主なケースが2つあります。関数の結果が正常に処理されたときの結果と、誤った入力パラメータを示すエラーケース、または関数が計算を完了できないその他の理由またはタスク。
+関数内で値を返す主なケースが2つあります。関数の結果が正常に処理されたときの結果と、誤った入力パラメータを示すエラーケース、または関数が計算を完了できないその他の理由またはタスクです。
 
 .. If you do not wish to raise exceptions for the second case, then returning a
 .. value, such as None or False, indicating that the function could not perform
@@ -531,7 +533,7 @@ Note: Python 3では xrange() の代わりに range() を使用してくださ�
 
 .. Take the following code for example:
 
-たとえば、次のコードを実行します:
+例えば、次のコードを実行します:
 
 .. code-block:: python
 
@@ -558,7 +560,7 @@ Note: Python 3では xrange() の代わりに range() を使用してくださ�
 .. take on each of these data structures, see
 .. `this page <https://wiki.python.org/moin/TimeComplexity?>`_.
 
-* *lookup_set* はPythonのセットがハッシュテーブルであるという事実を利用しているので、両方の関数が同じに見えますが、2つのルックアップのパフォーマンスは大きく異なります。項目がリストにあるかどうかを判断するには、Pythonは一致する項目が見つかるまで各項目を調べなければなりません。これは時間がかかります。特に長いリストの場合は特にそうです。一方、あるセットでは、アイテムのハッシュは、セット内のどこで一致するアイテムを探すかをPythonに指示します。その結果、セットが大きい場合であっても、迅速に検索を行うことができます。辞書での検索も同じように機能します。詳細は、この `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_ ページを参照してください。これらのデータ構造のそれぞれに共通するさまざまな操作の詳細については、 `このページ <https://wiki.python.org/moin/TimeComplexity？>`_ を参照してください。これらのパフォーマンスの違いのため、リストの代わりにセットまたは辞書を使用することは、しばしば良い考えです：
+* *lookup_set* はPythonのセットがハッシュテーブルであるという事実を利用しているので、両方の関数が同じに見えますが、2つのルックアップのパフォーマンスは大きく異なります。項目がリストにあるかどうかを判断するには、Pythonは一致する項目が見つかるまで各項目を調べなければなりません。これは時間がかかります。長いリストの場合は特にそうです。一方、あるセットでは、アイテムのハッシュは、セット内のどこで一致するアイテムを探すかをPythonに指示します。その結果、セットが大きい場合であっても、迅速に検索を行うことができます。辞書での検索も同じように機能します。詳細は、この `StackOverflow <http://stackoverflow.com/questions/513882/python-list-vs-dict-for-look-up-table>`_ ページを参照してください。これらのデータ構造のそれぞれに共通するさまざまな操作の詳細については、 `このページ <https://wiki.python.org/moin/TimeComplexity？>`_ を参照してください。これらのパフォーマンスの違いのため、リストの代わりにセットまたは辞書を使用することは、良い考えであると言えます。：
 
 .. Because of these differences in performance, it is often a good idea to use
 .. sets or dictionaries instead of lists in cases where:
@@ -575,7 +577,7 @@ Note: Python 3では xrange() の代わりに range() を使用してくださ�
 
 .. * You do not have duplicate items.
 
-* 重複アイテムはありません。
+* 重複アイテムはありません
 
 .. For small collections, or collections which you will not frequently be
 .. searching through, the additional time and memory required to set up the
