@@ -27,14 +27,14 @@ Windows版はMSIパッケージとして提供されています。 手動でイ
 .. modify the :envvar:`PATH` environment variable, so that you always have control over
 .. which copy of Python is run.
 
-仕様上、Pythonはバージョン番号が埋め込まれたディレクトリにインストールされます。 Pythonバージョン2.7は :file:`C:\\Python27\\` にインストールされます。これにより、同じシステム上に複数のバージョンのPythonを競合することなく使用できます。 もちろん、Pythonファイルタイプのデフォルトアプリケーションは、1つのインタプリタだけです。 :envvar:`PATH` 環境変数も自動的には変更されません。そのため、あなたは常にPythonのコピーが実行されるかどうかを制御できます。
+仕様上、Pythonはバージョン番号が埋め込まれたディレクトリにインストールされます。 Pythonバージョン2.7は :file:`C:\\Python27\\` にインストールされます。これにより、同じシステム上に複数のバージョンのPythonを競合することなく使用できます。 もちろん、Pythonファイルタイプのデフォルトアプリケーションは、1つのインタプリタだけです。 :envvar:`PATH` 環境変数も自動的には変更されません。そのため、あなたは常にPythonのコピーが実行されるかどうかを制御することができます。
 
 .. Typing the full path name for a Python interpreter each time quickly gets
 .. tedious, so add the directories for your default Python version to the :envvar:`PATH`.
 .. Assuming that your Python installation is in :file:`C:\\Python27\\`, add this to your
 .. :envvar:`PATH`:
 
-Pythonインタプリタのフルパス名を入力するたびにうんざりするので、デフォルトのPythonバージョンのディレクトリを :envvar:`PATH` に追加してください。 あなたのPythonのインストールが :file:`C:\\Python27\\` にあると仮定して、これをあなたの :envvar:`PATH` に追加してください:
+Pythonインタプリタのフルパス名を何度も入力するのはうんざりするので、デフォルトのPythonバージョンのディレクトリを :envvar:`PATH` に追加してください。 あなたのPythonのインストールが :file:`C:\\Python27\\` にあると仮定して、以下をあなたの :envvar:`PATH` に追加してください:
 
 .. code-block:: console
 
@@ -56,7 +56,7 @@ Pythonインタプリタのフルパス名を入力するたびにうんざり�
 .. real-world use. In particular, you should always install Setuptools, as it
 .. makes it much easier for you to use other third-party Python libraries.
 
-2番目の (:file:`Scripts`) ディレクトリは、特定のパッケージがインストールされているときにコマンドファイルを受け取りますので、非常に便利です。 Pythonを使用するために何か他のものをインストールしたり設定したりする必要はありません。しかし、実際の使用のためにPythonアプリケーションを構築する前に、次のセクションで説明するツールとライブラリをインストールすることを強くお勧めします。特に、他のサードパーティのPythonライブラリを使うのがはるかに簡単なので、Setuptoolsを常にインストールしてください。
+2番目の (:file:`Scripts`) ディレクトリは、特定のパッケージがインストールされているときにコマンドファイルを受け取りますので、非常に便利です。 Pythonを使用するために何か他のものをインストールしたり設定したりする必要はありません。しかし、実際の使用のためにPythonアプリケーションを構築する前に、次のセクションで説明するツールとライブラリをインストールすることを強くお勧めします。特に、他のサードパーティのPythonライブラリを使う方が非常に簡単なので、Setuptoolsをインストールしてください。
 
 Setuptools + Pip
 ----------------
@@ -109,7 +109,7 @@ pipをインストールするには、ここの利用できるPythonスクリ�
 
 .. To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
 
-これを使い始めるには、さらに詳細を見ます :ref:`Virtual Environments <virtualenvironments-ref>` docs。
+詳しくはこちらを参照 :ref:`Virtual Environments <virtualenvironments-ref>` docs。
 
 
 --------------------------------
