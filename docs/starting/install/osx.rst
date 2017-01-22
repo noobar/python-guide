@@ -46,7 +46,7 @@ Python の実際のバージョンをインストールしましょう。
 .. `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_
 .. package.
 
-Python をインストールする前に、Cコンパイラをインストールする必要があります。 最も速い方法は ``xcode-select --install`` を実行して Xcode コマンドラインツールをインストールすることです。 また、Mac App Store または最小限だが非公式な `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_ パッケージから `Xcode <http://developer.apple.com/xcode/>`_ の完全版をダウンロードすることもできます。
+Python をインストールする前に、Cコンパイラをインストールする必要があります。 最も速い方法は ``xcode-select --install`` を実行して Xcode コマンドラインツールをインストールすることです。 また、Mac App Store または非公式ですが `OSX-GCC-Installer <https://github.com/kennethreitz/osx-gcc-installer#readme>`_ パッケージから `Xcode <http://developer.apple.com/xcode/>`_ の完全版をダウンロードすることもできます。
 
 .. note::
     すでに XCode がインストールされている場合は、OSX-GCC-Installer をインストールしないでください。ソフトウェアを組み合わせることで、診断が困難な問題を引き起こす可能性があります。
@@ -131,7 +131,7 @@ Setuptools を使うと、単一のコマンド(``easy_install``)を使って、
 .. in `several ways <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_,
 .. and is actively maintained.
 
-``pip`` は簡単に Python パッケージをインストールして管理するためのツールです。これは ``easy_install`` よりもお勧めです。 これは `いくつかの方法で <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_ 、``easy_install`` より優れており、積極的に維持されています。
+``pip`` は簡単に Python パッケージをインストールして管理するためのツールです。これは ``easy_install`` よりもお勧めです。 これは `多方面において <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_ 、``easy_install`` より優れており、積極的に維持されています。
 
 
 .. Virtual Environments
@@ -154,7 +154,7 @@ Setuptools を使うと、単一のコマンド(``easy_install``)を使って、
 
 .. To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs.
 
-これを使い始め、さらに詳しい情報はこちらを参照: :ref:`Virtual Environments <virtualenvironments-ref>` docs。
+詳しくはこちらを参照: :ref:`Virtual Environments <virtualenvironments-ref>` docs。
 
 --------------------------------
 
