@@ -11,7 +11,7 @@
 .. dependencies are clear as well as how the files and folders are organized
 .. in the filesystem.
 
-「構造」とは、プロジェクトがその目的をどのように最も満たしているかについての決定を意味します。 クリーンで効果的なコードを作成するために、Pythonの機能を最大限に活用する方法を検討する必要があります。 実際には、 "構造"とは、ロジックと依存関係が明確なクリーンなコードと、ファイルとフォルダがファイルシステムにどのように編成されているかを意味します。
+「構造」とは、プロジェクトがその目的をどのように最も満たしているかについての決定を意味します。 クリーンで効果的なコードを作成するために、Pythonの機能を最大限に活用する方法を検討する必要があります。 実際には、 "構造"とは、ロジックと依存関係が明確であるクリーンなコードと、ファイルとフォルダがファイルシステムにどのように編成されているかを意味します。
 
 .. Which functions should go into which modules? How does data flow through
 .. the project? What features and functions can be grouped together and
@@ -320,7 +320,7 @@ Setup.py
 .. users; many test suites often require additional dependencies and
 .. runtime contexts.
 
-あなた自身のモジュール内でテストを配布すべきだと主張する人もいますが、私は同意しません。 多くの場合、ユーザーの複雑さが増します。 多くのテストスイートでは、多くの場合、追加の依存関係と実行時コンテキストが必要になります。
+あなた自身のモジュール内でテストを配布すべきだと主張する人もいますが、私は同意しません。 多くの場合、ユーザーの複雑さが増します。 多くのテストスイートでは、ほとんどが追加の依存関係と実行時コンテキストが必要になります。
 
 Makefile
 ::::::::
@@ -338,7 +338,7 @@ Makefile
 .. short, make is a incredibly useful tool for defining generic tasks for
 .. your project.
 
-ほとんどのプロジェクトやPocooプロジェクトを見てみると、Makefileがあることに気付くでしょう。 どうして？ これらのプロジェクトはC言語で書かれていません...要するに、makeはプロジェクトの一般的なタスクを定義するための非常に便利なツールです。
+ほとんどのプロジェクトやPocooプロジェクトを見てみると、Makefileがあることに気付くでしょう。 なぜかというと、これらのプロジェクトはC言語で書かれていません...要するに、makeはプロジェクトの一般的なタスクを定義するために非常に便利なツールであるということです。
 
 **Sample Makefile:**
 
@@ -392,7 +392,7 @@ Djangoアプリケーションについて
 
 .. Don't do this.
 
-これはしないでください。
+しかし、このようにしないでください。
 
 .. Repetitive paths are confusing for both your tools and your developers.
 .. Unnecessary nesting doesn't help anybody (unless they're nostalgic for
@@ -402,7 +402,7 @@ Djangoアプリケーションについて
 
 .. Let's do it properly:
 
-正しくしましょう:
+正しくは以下の通りです:
 
 ::
 
@@ -440,7 +440,7 @@ Djangoアプリケーションについて
 .. pure architectural task of crafting the different parts of your
 .. project and their interactions.
 
-インポートとモジュールをPythonで処理する方法のおかげで、Pythonプロジェクトを構造化するのは比較的簡単です。 ここで簡単に言うと、あなたは多くの制約がなく、モデルをインポートするモジュールが把握しやすいということです。 したがって、プロジェクトのさまざまな部分とその相互作用を作成するという、純粋なアーキテクチャ上の任務が残っています。
+インポートとモジュールをPythonで処理する方法のおかげで、Pythonプロジェクトを構造化するのは比較的簡単です。 これを簡単に言うと、多くの制約がなく、モデルをインポートするモジュールが把握しやすいということです。 したがって、プロジェクトのさまざまな部分とその相互作用を作成するという、純粋なアーキテクチャ上の任務が残っています。
 
 .. Easy structuring of a project means it is also easy
 .. to do it poorly. Some signs of a poorly structured project
@@ -529,7 +529,7 @@ Pythonモジュールは、利用可能な主要な抽象レイヤーの1つで�
 .. So a file name like :file:`my.spam.py` is one you should avoid! Naming this way
 .. will interfere with the way Python looks for modules.
 
-スタイルガイドと一致するように、モジュール名は小文字で、小文字にしておき、ドット (.) や疑問符 (?) などの特別な記号は使用しないでください。 したがって、 :file:`my.spam.py` のようなファイル名は避けてください！ このように命名すると、Pythonがモジュールを探す方法が妨げられます。
+スタイルガイドと一致するように、モジュール名は小文字にしておき、ドット (.) や疑問符 (?) などの特別な記号は使用しないでください。 したがって、 :file:`my.spam.py` のようなファイル名は避けてください！ このように命名すると、Pythonがモジュールを探す方法が妨げられます。
 
 .. In the case of `my.spam.py` Python expects to find a :file:`spam.py` file in a
 .. folder named :file:`my` which is not the case. There is an
@@ -561,7 +561,7 @@ Pythonモジュールは、利用可能な主要な抽象レイヤーの1つで�
 .. including other imports if any. Function and class definitions are stored in
 .. the module's dictionary.
 
-一旦 :file:`modu.py` が見つかると、Pythonインタプリタはモジュールを隔離したスコープで実行します。 :file:`modu.py` 内のトップレベルのステートメントが実行されます。 関数とクラスの定義は、モジュールの辞書に格納されています。
+一旦 :file:`modu.py` が見つかると、Pythonインタプリタはモジュールを隔離したスコープで実行します。 そして、 :file:`modu.py` 内のトップレベルのステートメントが実行されます。 関数とクラスの定義は、モジュールの辞書に格納されています。
 
 .. Then, the module's variables, functions, and classes will be available to the
 .. caller through the module's namespace, a central concept in programming that is
@@ -575,14 +575,14 @@ Pythonモジュールは、利用可能な主要な抽象レイヤーの1つで�
 .. means that you generally don't have to worry that the included code could have
 .. unwanted effects, e.g. override an existing function with the same name.
 
-多くの言語では、 ``include file`` ディレクティブがプリプロセッサで使用され、ファイル内のすべてのコードを取得し、呼び出し側のコードにコピーします。 Pythonではこれが異なります。含まれているコードはモジュールの名前空間で分離されています。これは、一般的に、含まれているコードが望ましくない影響を及ぼすことを心配する必要がないことを意味します。 既存の関数を同じ名前で上書きします。
+多くの言語では、 ``include file`` ディレクティブがプリプロセッサで使用され、ファイル内のすべてのコードを取得し、呼び出し側のコードにコピーします。しかし Pythonではこれが異なります。含まれているコードはモジュールの名前空間で分離されています。これは、一般的に、含まれているコードが望ましくない影響を及ぼすことを心配する必要がないことを意味しているため、既存の関数を同じ名前で上書きします。
 
 .. It is possible to simulate the more standard behavior by using a special syntax
 .. of the import statement: ``from modu import *``. This is generally considered
 .. bad practice. **Using** ``import *`` **makes code harder to read and makes
 .. dependencies less compartmentalized**.
 
-import文の特殊な構文を使用すると、より標準的な動作をシミュレートすることができます: ``from modu import *``。 これは一般に悪い習慣とみなされます。 ``import *`` を **使うと** 、**コードの読み込みが難しくなり、依存関係をコンパートメント化しにくくなります**。
+import文の特殊な構文を使用すると、より標準的な動作をシミュレートすることができます: ``from modu import *``。 これは一般に悪い習慣とみなされます。 ``import *`` を **使うと** 、**コードの読み込みが難しくなり、依存関係をコンパートメント化しにくくなるからです**。
 
 .. Using ``from modu import func`` is a way to pinpoint the function you want to
 .. import and put it in the global namespace. While much less harmful than ``import
@@ -590,11 +590,11 @@ import文の特殊な構文を使用すると、より標準的な動作をシ�
 .. only advantage over a simpler ``import modu`` is that it will save a little
 .. typing.
 
-``from modu import func`` は、インポートする関数を特定し、グローバル名前空間に入れる方法です。 グローバルな名前空間にインポートされるものを明示的に示しているので、 ``import *`` よりも害は少ないですが、単純な ``import modu`` より唯一の利点は、少しタイピングを省くことです。
+``from modu import func`` は、インポートする関数を特定し、グローバル名前空間に入れる方法です。 グローバルな名前空間にインポートされるものを明示的に示しているので、 ``import *`` よりも害は少ないですが、単純な ``import modu`` より良い唯一の利点は、タイピングを少し省けることです。
 
 .. **Very bad**
 
-**ひどい**
+**とても悪い**
 
 .. code-block:: python
 
@@ -605,7 +605,7 @@ import文の特殊な構文を使用すると、より標準的な動作をシ�
 
 .. **Better**
 
-**より良い**
+**良い**
 
 .. code-block:: python
 
@@ -739,7 +739,7 @@ Pythonでは、すべてがオブジェクトであり、そのように扱う�
 .. after the first process loaded the item, and then we have to mark as read a
 .. deleted object.
 
-いくつかのアーキテクチャ、通常はWebアプリケーションでは、複数のインスタンスのPythonプロセスが生成され、同時に発生する可能性のある外部要求に応答します。この場合、いくつかの状態をインスタンス化されたオブジェクトに保持することは、世界に関するいくつかの静的情報を保持することを意味し、並行性の問題または競合状態になりがちです。時には、オブジェクトの状態の初期化（通常は ``__init__()`` メソッドで行われます）とそのメソッドの1つによるオブジェクト状態の実際の使用の間に、世界が変更された可能性があります。時代遅れである。例えば、要求はメモリ内のアイテムをロードし、ユーザによってそれを読み取りとしてマークすることができる。別のリクエストで同時にこのアイテムの削除が必要な場合は、最初のプロセスがアイテムをロードした後に実際に削除が行われ、削除されたオブジェクトを読み取り済みとしてマークする必要があります。
+いくつかのアーキテクチャ、通常はWebアプリケーションでは、複数のインスタンスのPythonプロセスが生成され、同時に発生する可能性のある外部要求に応答します。この場合、いくつかの状態をインスタンス化されたオブジェクトに保持することは、世界に関するいくつかの静的情報を保持することを意味し、並行性の問題または競合状態になりがちです。時には、オブジェクトの状態の初期化（通常は ``__init__()`` メソッドで行われます）とそのメソッドの1つによるオブジェクト状態の実際の使用の間に、世界が変更された可能性があります。時代遅れです。例えば、要求はメモリ内のアイテムをロードし、ユーザによってそれを読み取りとしてマークすることができる。別のリクエストで同時にこのアイテムの削除が必要な場合は、最初のプロセスがアイテムをロードした後に実際に削除が行われ、削除されたオブジェクトを読み取り済みとしてマークする必要があります。
 
 .. This and other issues led to the idea that using stateless functions is a
 .. better programming paradigm.
@@ -790,7 +790,7 @@ Pythonでは、すべてがオブジェクトであり、そのように扱う�
 .. things that are manipulated (windows, buttons, avatars, vehicles) have a
 .. relatively long life of their own in the computer's memory.
 
-明らかに、オブジェクト指向は、有用であり、多くの場合必要である。例えば、操作されるもの （window, buttons, avatars, vehicles） がコンピュータのメモリ内で比較的長い寿命を有するグラフィカルデスクトップアプリケーションまたはゲームを開発する場合。
+明らかに、オブジェクト指向は、有用であり、多くの場合必要になります。例えば、操作されるもの （window, buttons, avatars, vehicles） がコンピュータのメモリ内で比較的長い寿命を有するグラフィカルデスクトップアプリケーションまたはゲームを開発する場合などです。
 
 
 .. Decorators
@@ -915,7 +915,7 @@ Python言語は、'デコレータ'と呼ばれている、シンプルで強力
 .. ensures that ``close()`` is called whether or not there was an exception inside
 .. the ``with``.
 
-これは上のクラスの例とまったく同じように動作しますが、それはもっと簡潔です。 ``custom_open`` 関数は、 ``yield`` ステートメントに達するまで実行されます。次に ``with`` 文に制御を戻し、 ``as`` 部分に ``f`` の ``yield`` を割り当てます。 ``finally`` 節は、 ``with`` の中に例外があったかどうかにかかわらず、 ``close()`` が呼び出されるようにします。
+これは上のクラスの例とまったく同じように動作しますが、もっと簡潔です。 ``custom_open`` 関数は、 ``yield`` ステートメントに達するまで実行されます。次に ``with`` 文に制御を戻し、 ``as`` 部分に ``f`` の ``yield`` を割り当てます。 ``finally`` 節は、 ``with`` の中に例外があったかどうかにかかわらず、 ``close()`` が呼び出されるようにします。
 
 .. Since the two approaches appear the same, we should follow the Zen of Python
 .. to decide when to use which. The class approach might be better if there's
@@ -1028,13 +1028,13 @@ Pythonには、組み込み型とユーザー定義型の2種類があります�
 .. :py:meth:`list.append` or :py:meth:`list.pop`, and can be modified in place.
 .. The same goes for dictionaries.
 
-変更可能なタイプは、コンテンツのインプレース変更を可能にするタイプです。 典型的な変数はリストと辞書です: 全てのリストには :py:meth:`list.append` や :py:meth:`list.pop` のようなメソッドの変更があります。 辞書についても同じことが言えます。
+ミュータブルなタイプは、コンテンツのインプレース変更を可能にするタイプです。 典型的なミュータブルはリストと辞書です: 全てのリストには :py:meth:`list.append` や :py:meth:`list.pop` のようなメソッドの変更があります。 辞書についても同じことが言えます。
 
 .. Immutable types provide no method for changing their content. For instance, the
 .. variable x set to the integer 6 has no "increment" method. If you want to
 .. compute x + 1, you have to create another integer and give it a name.
 
-不変型は、内容を変更するためのメソッドを提供しません。 たとえば、変数xに整数6を設定すると、「インクリメント」メソッドはありません。 x + 1を計算する場合は、別の整数を作成して名前を付ける必要があります。
+イミュータブルは、内容を変更するためのメソッドを提供しません。 例えば、変数xに整数6を設定すると、「インクリメント」メソッドはありません。 x + 1を計算する場合は、別の整数を作成して名前を付ける必要があります。
 
 .. code-block:: python
 
@@ -1049,13 +1049,13 @@ Pythonには、組み込み型とユーザー定義型の2種類があります�
 .. types are not "stable", and therefore cannot be used as dictionary
 .. keys.
 
-この動作の違いの1つの結果として、変更可能なタイプは「安定」ではないため、辞書キーとして使用することはできません。
+この動作の違いの1つの結果として、ミュータブルなタイプは「安定」ではないため、辞書キーとして使用することはできません。
 
 .. Using properly mutable types for things that are mutable in nature
 .. and immutable types for things that are fixed in nature
 .. helps to clarify the intent of the code.
 
-自然に変更可能なものに対しては適切に変更可能な型を使用し、性質上固定されているものに対しては変更不可能な型を使用すると、コードの意図を明確にするのに役立ちます。
+自然に変更可能なものに対しては適切にミュータブルな型を使用し、性質上固定されているものに対してはイミュータブルなタイプを使用すると、コードの意図を明確にするのに役立ちます。
 
 .. For example, the immutable equivalent of a list is the tuple, created
 .. with ``(1, 2)``. This tuple is a pair that cannot be changed in-place,
@@ -1113,7 +1113,7 @@ Pythonには、組み込み型とユーザー定義型の2種類があります�
 .. like above or in cases where you are adding to an existing string, using
 .. ``join()`` should be your preferred method.
 
-文字列について言及する最後の1つは、 ``join()`` を使うことが必ずしも最良ではないということです。あらかじめ決められた数の文字列から新しい文字列を作成する場合は、加算演算子を使用するほうが高速ですが、上記のような場合や既存の文字列に追加する場合は ``join()`` があなたの好みの方法であるべきです。
+文字列について言及する最後の1つは、 ``join()`` を使うことが必ずしも最良ではないということです。あらかじめ決められた数の文字列から新しい文字列を作成する場合は、加算演算子を使用するほうが高速ですが、上記のような場合や既存の文字列に追加する場合は ``join()`` の方が好ましいでしょう。
 
 .. code-block:: python
 
