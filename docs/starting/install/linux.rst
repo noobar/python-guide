@@ -13,7 +13,7 @@ CentOS、Fedora、Redhat Enterprise（RHEL）、Ubuntu **の最新バージョ�
 
 .. To see which version of Python you have installed, open a command prompt and run
 
-インストールしたPythonのバージョンを確認するには、コマンドプロンプトを開いて実行してください
+インストールしたPythonのバージョンを確認するには、コマンドプロンプトを開いて実行してください。
 
 .. code-block:: console
 
@@ -58,7 +58,7 @@ Python 2.7.9以降（Python2シリーズ）、Python 3.4以降にはpipがデフ
 
 .. To see if pip is installed, open a command prompt and run
 
-pipがインストールされているかどうかを確認するには、コマンドプロンプトを開き
+pipがインストールされているかどうかを確認するには、コマンドプロンプトを開き、以下を実行してください。
 
 .. code-block:: console
 
@@ -88,7 +88,7 @@ pipをインストールするには、`公式のpipインストールガイド 
 
 .. To start using this and see more information: :ref:`Virtual Environments <virtualenvironments-ref>` docs. 
 
-これを使い始めるには、さらに詳細を見ます :ref:`Virtual Environments <virtualenvironments-ref>` docs。
+詳しくはこちらを参照 :ref:`Virtual Environments <virtualenvironments-ref>` docs。
 
 .. You can also use :ref:`virtualenvwrapper <virtualenvwrapper-ref>` to make it easier to
 .. manage your virtual environments.
