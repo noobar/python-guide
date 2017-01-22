@@ -16,7 +16,7 @@ Pythonの状態（3＆2）
 .. "Should I choose Python 2 or Python 3"? The answer is a bit more subtle than
 .. one might think.
 
-Pythonインタプリタを選択するときには、"Python 2 または Python 3 のどちらを選択する必要がありますか？" という漠然とした質問があります。答えは、思っているよりも少し微妙です。
+Pythonインタプリタを選択するときには、"Python 2 または Python 3 のどちらを選択する必要がありますか？" という漠然とした質問がありますが、どちらにするかは少々微妙なところです。
 
 
 .. The basic gist of the state of things is as follows:
@@ -53,10 +53,10 @@ Pythonインタプリタを選択するときには、"Python 2 または Python
 ..   political statment and will alienate many of your users. This is not a problem — slowly, over the next three years, this will become less the case.
 
 - 新しい Python アプリケーションは Python 3 を使用します。
-- Python を初めて学ぶなら、Python 2.7 を身近に感じることは非常に大切ですが、Python 3 を学ぶことよりも有用ではありません。
+- Python を初めて学ぶなら、Python 2.7 を身近に感じていると思いますが、Python 3 を学ぶことよりも有用ではありません。
 - 両方を学ぶ。 どちらも "Python" です。
 - 既に構築されているソフトウェアは Python 2.7 に依存していることが多いです。
-- 新しいオープンソースの Python ライブラリを作成している場合は、Python 2 と Python 3 の両方を同時に作成することをお勧めします。 新しいライブラリのために Python 3 を広くサポートしたいのは政治的なものであり、多くのユーザを疎外させます。 これは問題ではありません。ゆっくりと、今後3年間で、このケースは少なくなります。
+- 新しいオープンソースの Python ライブラリを作成している場合は、Python 2 と Python 3 の両方を同時に作成することをお勧めします。 新しいライブラリのために Python 3 を広くサポートしたいのは政治的なものであり、多くのユーザを疎外させますが、これは問題ではありません。今後3年間で、少しずつ移り変わることでしょう。
 
 .. So.... 3?
 .. ~~~~~~~~~
@@ -68,18 +68,18 @@ Pythonインタプリタを選択するときには、"Python 2 または Python
 .. recommend you use the newest Python 3.x, since every version brings new and
 .. improved standard library modules, security and bug fixes.
 
-使用する Python インタプリタを選択している場合は、最新バージョンの Python 3.x を使用することをお勧めします。これは、すべてのバージョンで新しく改良された標準ライブラリモジュール、セキュリティ、バグ修正がもたらされるからです。
+使用する Python インタプリタを選択する場合は、最新バージョンの Python 3.x を使用することをお勧めします。これは、すべてのバージョンで新しく改良された標準ライブラリモジュール、セキュリティ、バグ修正がもたらされるからです。
 
 .. Given such, only use Python 2 if you have a strong reason to, such as a
 .. pre-existing code-base, a Python 2 exclusive library, simplicity/familiarity,
 .. or, of course, you absolutely love and are inspired by Python 2. No harm in that.
 
-このように、既存のコードベース、Python 2 専用ライブラリ、シンプルさ/馴染みやすさなどの理由がある場合や、Python 2 を絶対に愛し、インスピレーションを得ている場合は、Python 2 を使用してください。 それは害ではありません。
+このように、既存のコードベース、Python 2 専用ライブラリ、シンプルさ/馴染みやすさなどの理由がある場合、Python 2 に愛着があり インスピレーションを感じている場合は、Python 2 を使用してもかまいません。 それは害ではありません。
 
 .. Check out `Can I Use Python 3? <https://caniusepython3.com/>`_ to see if any
 .. software you're depending on will block your adoption of Python 3.
 
-`Python 3 を使うことはできますか？ <https://caniusepython3.com/>`_ を実行して、依存しているソフトウェアが Python 3 の採用を妨げるかどうかを確認します。
+`Can I Use Python 3? <https://caniusepython3.com/>`_ を実行して、依存しているソフトウェアが Python 3 を採用できるかどうかを確認します。
 
 .. `Further Reading <http://wiki.python.org/moin/Python2orPython3>`_
 
