@@ -3,8 +3,8 @@
 .. Installing Python on Windows
 .. ============================
 
-WindowsでのPythonのインストール
-===============================
+Windows で Python をインストールする
+================================
 
 .. First, download the `latest version <https://www.python.org/ftp/python/2.7.12/python-2.7.12.msi>`_
 .. of Python 2.7 from the official Website. If you want to be sure you are installing a fully
