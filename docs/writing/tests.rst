@@ -29,7 +29,7 @@
 ..   a fresh dataset and may have to do some cleanup afterwards. This is
 ..   usually handled by :meth:`setUp()` and :meth:`tearDown()` methods.
 
-- 各試験ユニットは完全に独立していなければならない。各テストは、呼び出される順番に関係なく、単独で実行できなければならず、テストスイート内でも実行できなければなりません。このルールの意味は、各テストに新しいデータセットがロードされていなければならず、後で何らかのクリーンアップを行わなければならない可能性があるということです。これは通常 :meth:`setUp()` と :meth:`tearDown()` メソッドで処理されます。
+- 各試験ユニットは完全に独立していなければなりません。各テストは、呼び出される順番に関係なく、単独で実行できなければならず、テストスイート内でも実行できなければなりません。このルールの意味は、各テストに新しいデータセットがロードされていなければならず、後で何らかのクリーンアップを行わなければならない可能性があるということです。これは通常 :meth:`setUp()` と :meth:`tearDown()` メソッドで処理されます。
 
 .. - Try hard to make tests that run fast. If one single test needs more than a
 ..   few milliseconds to run, development will be slowed down or the tests will
@@ -39,7 +39,7 @@
 ..   separate test suite that is run by some scheduled task, and run all other
 ..   tests as often as needed.
 
-- 速く走るテストをするのは難しいです。 1回のテストに数ミリ秒以上の時間がかかる場合は、開発が遅くなるか、またはテストが望ましいほど頻繁に実行されません。場合によっては、複雑なデータ構造が必要であり、テストが実行されるたびにこのデータ構造をロードする必要があるため、テストを高速化することはできません。これらのより重いテストは、スケジュールされたタスクによって実行される別のテストスイートに保管し、必要に応じて他のすべてのテストを頻繁に実行します。
+- テストを高速化するのは難しいです。 1回のテストに数ミリ秒以上の時間がかかる場合は、開発が遅くなるか、またはテストが望ましいほど頻繁に実行されません。場合によっては、複雑なデータ構造が必要であり、テストが実行されるたびにこのデータ構造をロードする必要があるため、テストを高速化することはできません。これらのより重いテストは、スケジュールされたタスクによって実行される別のテストスイートに保管し、必要に応じて他のすべてのテストを頻繁に実行します。
 
 .. - Learn your tools and learn how to run a single test or a test case. Then,
 ..   when developing a function inside a module, run this function's tests 
@@ -63,7 +63,7 @@
 ..   want to develop next. When coming back to work, you will have a pointer
 ..   to where you were and get back on track faster.
 
-- 開発セッションの途中で作業を中断しなければならない場合は、次に開発したいものについて壊れた単体テストを書くことをお勧めします。仕事に戻ったときは、あなたがいた場所へのポインタを持って、すぐに軌道に乗ることができます。
+- 開発セッションの途中で作業を中断しなければならない場合は、次に開発したいものについて壊れた単体テストを書くことをお勧めします。開発作業に戻ったときに、中断した続きへポインタを持っていくことができ、すぐに軌道に乗れるでしょう。
 
 .. - The first step when you are debugging your code is to write a new test
 ..   pinpointing the bug. While it is not always possible to do, those bug
@@ -79,7 +79,7 @@
 ..   ``test_square_negative_number()``. These function names are displayed when
 ..   a test fails, and should be as descriptive as possible.
 
-- テスト関数には長い記述的な名前を使用する。ここのスタイルガイドは、短い名前がしばしば好まれる実行コードとは少し異なります。なぜなら、テスト関数は決して明示的に呼び出されないからです。実行中のコードで ``square()`` や ``sqr()`` でもOKですが、テストコードでは ``test_square_of_number_2()``, ``test_square_negative_number()`` などの名前を使用します。これらの関数名は、テストが失敗したときに表示され、可能な限り説明的でなければなりません。
+- テスト関数には長い記述的な名前を使用します。ここのスタイルガイドは、短い名前がしばしば好まれる実行コードとは少し異なります。なぜなら、テスト関数は決して明示的に呼び出されないからです。実行中のコードで ``square()`` や ``sqr()`` でもOKですが、テストコードでは ``test_square_of_number_2()``, ``test_square_negative_number()`` などの名前を使用します。これらの関数名は、テストが失敗したときに表示され、可能な限り説明的でなければなりません。
 
 .. - When something goes wrong or has to be changed, and if your code has a
 ..   good set of tests, you or other maintainers will rely largely on the
@@ -98,7 +98,7 @@
 ..   be to add a test to ensure that the new functionality is not already a 
 ..   working path that has not been plugged into the interface.
 
-- テストコードのもう1つの使用方法は、新しい開発者を紹介することです。誰かがコードベースで作業しなければならない場合、関連するテストコードを実行して読むことが、しばしば彼らが始めるためにできる最善のことです。彼らは、最も困難が発生するホットスポット、およびコーナーケースを発見するか、または発見すべきである。いくつかの機能を追加する必要がある場合は、最初にテストを追加して、新しい機能がインターフェイスにプラグインされていない現用パスでないことを確認します。
+- テストコードのもう1つの使用方法は、新しい開発者を紹介することです。誰かがコードベースで作業しなければならない場合、関連するテストコードを実行して読むことが、しばしば彼らが始めるためにできる最善のことです。彼らは、最も困難が発生するホットスポット、およびコーナーケースを発見するでしょう。いくつかの機能を追加する必要がある場合は、最初にテストを追加して、新しい機能がインターフェイスにプラグインされていない現用パスでないことを確認します。
 
 .. The Basics
 .. ::::::::::
@@ -199,7 +199,7 @@ py.test
 
 .. py.test is a no-boilerplate alternative to Python's standard unittest module.
 
-py.testは、Pythonの標準unittestモジュールの代わりに、標準ではありません。
+py.testは、Pythonの標準的なunittestモジュールに代わるものではありません。
 
 .. code-block:: console
 
@@ -209,7 +209,7 @@ py.testは、Pythonの標準unittestモジュールの代わりに、標準で�
 .. syntax. Creating a test suite is as easy as writing a module with a couple of
 .. functions:
 
-完全に機能し、拡張可能なテストツールであるにもかかわらず、それは簡単な構文を誇っています。 テストスイートを作成するのは、以下の2つの機能を持つモジュールを作成するのと同じくらい簡単です。
+完全に機能し、拡張可能なテストツールであるにもかかわらず、簡単な構文です。 テストスイートを作成するのは、以下の2つの機能を持つモジュールを作成するのと同じくらい簡単です。
 
 .. code-block:: python
 
