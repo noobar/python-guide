@@ -13,7 +13,7 @@ Pythonの設計の背後にある主な原則の1つは、読み取り可能な�
 .. One of the secrets of becoming a great Python programmer is to read,
 .. understand, and comprehend excellent code.
 
-優れたPythonプログラマーになるための秘訣の1つは、優れたコードを読み、理解し、理解することです。
+優れたPythonプログラマーになるための秘訣の1つは、優れたコードを読み、理解することです。
 
 .. raw:: html
 
@@ -32,7 +32,7 @@ Pythonの設計の背後にある主な原則の1つは、読み取り可能な�
 .. Included below is a list of recommended Python projects for
 .. reading. Each one of these projects is a paragon of Python coding.
 
-以下に、読むための推奨されるPythonプロジェクトのリストを示します。これらのプロジェクトのそれぞれは、Pythonコーディングのパラゴンです。
+以下に、読むための推奨されるPythonプロジェクトのリストを示します。それぞれのプロジェクトは、Pythonコーディングの模範です。
 
 .. - `Howdoi <https://github.com/gleitz/howdoi>`_
 ..   Howdoi is a code search tool, written in Python.
@@ -83,8 +83,8 @@ Pythonの設計の背後にある主な原則の1つは、読み取り可能な�
 
 .. .. todo:: Include code examples of exemplary code from each of the projects listed. Explain why it is excellent code. Use complex examples.
 
-.. todo:: リストされた各プロジェクトの模範的なコードのコード例を含みます。 それが優れたコードである理由を説明してください。 複雑な例を使用する。
+.. todo:: リストされた各プロジェクトの模範的なコードのコード例を含みます。 それが優れたコードである理由を説明してください。 複雑な例を使用します。
 
 .. .. todo:: Explain techniques to rapidly identify data structures, algorithms and determine what the code is doing.
 
-.. todo:: データ構造、アルゴリズムを迅速に特定し、コードが何をしているのかを判断するためのテクニックを説明する。
+.. todo:: データ構造、アルゴリズムを迅速に特定し、コードが何をしているのかを判断するためのテクニックを説明します。
