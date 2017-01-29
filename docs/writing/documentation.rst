@@ -92,14 +92,14 @@ Sphinx
 .. into a range of output formats including HTML, LaTeX (for printable
 .. PDF versions), manual pages, and plain text.
 
-Sphinx_ は、最も人気のあるPythonドキュメントツールです。 **これを使用します。** :ref:`restructuredtext-ref` マークアップ言語を、HTML、LaTeX（印刷可能なPDF版用）、マニュアルページ、プレーンテキストなどの出力フォーマットの範囲に変換する。
+Sphinx_ は、最も人気のあるPythonドキュメントツールです。 **これを使用します。** :ref:`restructuredtext-ref` マークアップ言語を、HTML、LaTeX（印刷可能なPDF版用）、マニュアルページ、プレーンテキストなどの出力フォーマットの範囲に変換します。
 
 .. There is also **great**, **free** hosting for your Sphinx_ docs:
 .. `Read The Docs`_. Use it. You can configure it with commit hooks to
 .. your source repository so that rebuilding your documentation will
 .. happen automatically.
 
-あなたの Sphinx_ docsのための **素晴らしい**、**無料の** ホスティングもあります: `Read The Docs`_。 これを使用します。 ドキュメントの再構築が自動的に行われるように、ソースリポジトリへのコミットフックを設定することができます。
+あなたの Sphinx_ docsのための **無料で**、**素晴らしい** ホスティングもあります: `Read The Docs`_。 これを使用します。 ドキュメントの再構築が自動的に行われるように、ソースリポジトリへのコミットフックを設定することができます。
 
 .. When run, Sphinx_ will import your code and using Python's introspection 
 .. features it will extract all function, method and class signatures. It will
@@ -183,7 +183,7 @@ Pythonでは、*docstrings* はモジュール、クラス、関数を記述し�
 .. editor probably has the ability to do this easily, and it is worth
 .. learning the comment/uncomment toggle.
 
-*トリプルクォート文字列を使用してコードにコメントを付けない*。 grepのような行指向のコマンドラインツールは、コメント付きコードが非アクティブであることを認識しないため、これは良い方法ではありません。コメント行ごとに適切なインデントレベルでハッシュを追加する方がよいでしょう。あなたのエディタはおそらくこれを簡単に実行する能力があり、コメント/コメント解除トグルを学ぶ価値があります。
+*トリプルクォート文字列を使用してコードにコメントを付けないでください*。 grepのような行指向のコマンドラインツールは、コメント付きコードが非アクティブであることを認識しないため、これは良い方法ではありません。コメント行ごとに適切なインデントレベルでハッシュを追加する方がよいでしょう。あなたのエディタはおそらくこれを簡単に実行する能力があり、コメント/コメント解除トグルを学ぶ価値があります。
 
 .. Docstrings and Magic
 .. ~~~~~~~~~~~~~~~~~~~~
@@ -195,7 +195,7 @@ Pythonでは、*docstrings* はモジュール、クラス、関数を記述し�
 .. such as unit test logic. Those can be nice, but you won't ever go
 .. wrong with vanilla "here's what this does."
 
-一部のツールでは、ドキュメントテストロジックなどのドキュメントよりも多くの動作を埋め込むためにドキュメントストリングを使用します。 それらは素晴らしいことができますが、あなたは vanilla に間違って行くことはありません "ここでこれが何かをしています。
+一部のツールでは、ドキュメントテストロジックなどのドキュメントよりも多くの動作を埋め込むためにドキュメントストリングを使用します。 それらは素晴らしいことができますが、あなたは vanilla に間違って行くことはありません "ここでこれが何かをしています"。
 
 .. Tools like Sphinx_ will parse your docstrings as reStructuredText and render it
 .. correctly as HTML. This makes it very easy to embed snippets of example code in
@@ -296,7 +296,7 @@ docstringは、理解しやすい方法で関数を記述する必要があり�
 .. few more lines the previous example, it allows the developer to include a lot 
 .. more information about a method, function, or class. ::
 
-コードのより詳細なドキュメンテーションについては、Numpyプロジェクトでよく使われるものがよく使われます. `Numpy style`_ と呼ばれることもあります。 これは前の例をいくつか追加していますが、開発者はメソッド、関数、またはクラスに関するさらに多くの情報を含めることができます。::
+コードのより詳細なドキュメンテーションについては、Numpyプロジェクトがよく使われます。 `Numpy style`_ と呼ばれることもあります。 これは前の例をいくつか追加していますが、開発者はメソッド、関数、またはクラスに関するさらに多くの情報を含めることができます。::
 
     def random_number_generator(arg1, arg2):
         """
@@ -331,7 +331,7 @@ docstringは、理解しやすい方法で関数を記述する必要があり�
 .. and gets the relevant points across then it has done the job it was designed to
 .. do.
 
-その日の終わりには、ドキュメントストリングを書くためにどのようなスタイルが使われているかは重要ではありません。その目的は、コードを読んだり変更したりする必要がある人のためのドキュメンテーションとして役立つことです。 それが正しい、理解できるものであれば、関連するポイントを得ることができます。
+その日の終わりには、ドキュメントストリングを書くためにどのようなスタイルが使われているかは重要ではありません。その目的は、コードを読んだり変更したりする必要がある人のためのドキュメンテーションとして役立つことです。 それを正しく理解できるものであれば、関連するポイントを得ることができます。
 
 
 .. For further reading on docstrings, feel free to consult :pep:`257`
@@ -350,7 +350,7 @@ docstringは、理解しやすい方法で関数を記述する必要があり�
 
 .. You might see these in the wild. Use :ref:`sphinx-ref`.
 
-あなたは野生でこれらを見るかもしれません。 :ref:`sphinx-ref` を使います。
+あなたは出回っているこれらを見るかもしれません。 :ref:`sphinx-ref` を使います。
 
 .. Pycco_
 ..     Pycco is a "literate-programming-style documentation generator"
