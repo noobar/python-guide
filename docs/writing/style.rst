@@ -915,14 +915,14 @@ PEP 8
 .. a white space added to the end of the line, after the backslash, will break the
 .. code and may have unexpected results.
 
-論理行のコードが許容限度より長い場合は、複数の物理行に分割する必要があります。 行の最後の文字がバックスラッシュの場合、Pythonインタプリタは連続する行を結合します。 これはいくつかの場合に役立ちますが、通常、その脆弱性のために回避する必要があります。バックスラッシュの後ろに行末に空白を追加すると、コードが壊れて予期しない結果になることがあります。
+論理行のコードが許容限度より長い場合は、複数の物理行に分割する必要があります。 行の最後の文字がバックスラッシュの場合、Pythonインタプリタは連続する行を結合します。 これはいくつかの場合に役立ちますが、通常、その脆弱性のために回避する必要があります。バックスラッシュの後ろの行末に空白を追加すると、コードが壊れて予期しない結果になることがあります。
 
 .. A better solution is to use parentheses around your elements. Left with an
 .. unclosed parenthesis on an end-of-line the Python interpreter will join the
 .. next line until the parentheses are closed. The same behavior holds for curly
 .. and square braces.
 
-より良い解決策は、要素の周りにかっこを使用することです。 行末に閉じられていないカッコが残っていると、Pythonインタプリタはカッコが閉じられるまで次の行に結合します。 中括弧と中括弧も同じ動作をします。
+より良い解決策は、要素の周りに括弧を使用することです。 行末に閉じられていない括弧が残っていると、Pythonインタプリタは括弧が閉じられるまで次の行に結合します。 中括弧と中括弧も同じ動作をします。
 
 .. **Bad**:
 
