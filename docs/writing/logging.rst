@@ -35,7 +35,7 @@
 .. the goal is to display a help statement for a command line application.
 .. Other reasons why logging is better than ``print``:
 
-コマンドラインアプリケーションのヘルプ文を表示するのが目標であるときだけ、 ``print`` がロギングより良い選択肢です。 ロギングが ``print`` より優れている理由:
+コマンドラインアプリケーションのヘルプ文を表示するのがゴールのときだけ、 ``print`` がロギングより良い選択肢です。 ロギングが ``print`` より優れている理由:
 
 .. - The `log record`_, which is created with every logging event, contains
 ..   readily available diagnostic information such as the file name, full path,
@@ -62,7 +62,7 @@
 .. dictate what happens when a logging event occurs, one admonition bears
 .. repeating:
 
-`ライブラリのログを設定する`_ の注意は `ロギングチュートリアル`_ にあります。 ライブラリーではなく *user* がロギング・イベントが発生したときに何が起こるかを指示する必要があるため、1つの警告は繰り返されます。
+`ライブラリのログを設定する`_ ときの注意は `ロギングチュートリアル`_ にあります。 ライブラリーではなく *user* がロギング・イベントが発生したときに何が起こるかを指示する必要があるため、1つの警告は繰り返されます。
 
 .. .. note::
 ..     It is strongly advised that you do not add any handlers other than
@@ -77,12 +77,12 @@
 .. hierarchy of loggers using dot notation, so using ``__name__`` ensures
 .. no name collisions.
 
-ライブラリ内のロガーをインスタンス化する際のベストプラクティスは、グローバル変数 ``__name__`` を使用してロガーを作成することです。:mod:`logging` モジュールはドット表記を使用してロガーの階層を作成するので、``__name__`` を使用すると名前は保証されません 衝突。
+ライブラリ内のロガーをインスタンス化する際のベストプラクティスは、グローバル変数 ``__name__`` を使用してロガーを作成することです。:mod:`logging` モジュールはドット表記を使用してロガーの階層を作成するので、``__name__`` を使用すると名前の衝突は保証されません。
 
 .. Here is an example of best practice from the `requests source`_ -- place
 .. this in your ``__init__.py``
 
-ここでは、 `requests source`_ からのベストプラクティスの例を示します - これをあなたの ``__init__.py`` に置きます
+ここでは、 `requests source`_ からのベストプラクティスの例を示します。 - これをあなたの ``__init__.py`` に置きます。
 
 .. code-block:: python
 
