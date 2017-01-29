@@ -16,7 +16,7 @@
 .. glance, but is generally sensible once you're aware of the underlying cause for
 .. the surprise.
 
-これらのケースのいくつかは意図的であるが、潜在的に驚くべきことである。 間違いなく、言語疣贅と見なすこともできます。 一般的には、一見すると奇妙に見える可能性のあるトリッキーな動作の集合ですが、驚きの根底にある原因を認識すると一般的には賢明です。
+これらのケースのいくつかは意図的ですが、潜在的に驚くことでしょう。 間違いなく、言語の欠点と見なすこともできます。 一般的には、一見すると奇妙に見える可能性のあるトリッキーな動作の集合ですが、驚きの根底にある原因を認識すると一般的には賢明です。
 
 .. _default_args:
 
@@ -165,8 +165,11 @@ Pythonのデフォルト引数は、関数が定義されているときに評�
     6
     8
 
-What Does Happen
-~~~~~~~~~~~~~~~~
+.. What Does Happen
+.. ~~~~~~~~~~~~~~~~
+
+何が起こるか
+~~~~~~~~~~
 
 .. testoutput::
 
@@ -323,7 +326,7 @@ Pythonのクロージャは *late binding* です。 これは、内部関数が
 .. Run that from the root directory of your project, and all ``.pyc`` files
 .. will suddenly vanish. Much better.
 
-プロジェクトのルートディレクトリから実行すると、すべての ``.pyc`` ファイルが突然消えます。 ずっといい。
+プロジェクトのルートディレクトリから実行すると、すべての ``.pyc`` ファイルが突然消えます。 はるかに良い。
 
 
 
