@@ -23,7 +23,7 @@ Pythonコードの可読性が高い理由の1つは、コードスタイルガ�
 .. of code do not follow the common guidelines and fail to express its intent in
 .. what is considered the best (hear: most readable) way.
 
-ベテランのPython開発者（Pythonista）が、コードの部分について "Pythonic" ではないと▼呼ぶとき、通常は、これらのコード行が共通のガイドラインに従っておらず、最良(最も読みやすい)と考えられる方法でその意図を表現できていないことを意味します。
+ベテランのPython開発者（Pythonista）が、コードの部分について "Pythonic" ではないと▼呼ぶとき、通常は、これらのコード行が共通のガイドラインに従っておらず、その意図を最良(最も読み取りやすい)と考えられる方法で表現できていないことを意味します。
 
 .. On some border cases, no best way has been agreed upon on how to express
 .. an intent in Python code, but these cases are rare.
