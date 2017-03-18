@@ -179,7 +179,7 @@
 .. Of course, you are also free to publish code without a license, but this
 .. would prevent many people from potentially using your code.
 
-もちろん、ライセンスなしでコードを公開することも自由ですが、これによって多くの人が潜在的にコードを使用することを防ぐことができます。
+もちろん、ライセンスなしでコードを公開することも自由ですが、それによりたくさんの人があなたのコードを使用する可能性を阻んでしまうかもしれません。
 
 Setup.py
 ::::::::
